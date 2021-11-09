@@ -41,7 +41,7 @@ exports.createDailyLog = async (req, res) => {
         res.status(201).json(saveLogDB)
         // res.json(data)
     } catch (error) {
-        console.log(error)
+        if (process.env.NODE_ENV !== 'test') console.log(error)
         if (error.code === 11000) {
             res.status(409).json({ error: 'entry with date already exists' })
         } else {
