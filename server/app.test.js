@@ -132,7 +132,6 @@ describe('GET /api/production-log', () => {
     test('Gets all Production Logs', async () => {
         const req = await request(app).get('/api/production-log').send()
 
-        console.log(req.body)
         assert.equal(req.status, 200)
     })
 })
