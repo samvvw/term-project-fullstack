@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon server/app.js",
+        "build": "webpack --mode production",
         "watch": "webpack --watch",
         "test": "jest server"
     },
