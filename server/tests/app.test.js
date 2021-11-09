@@ -1,15 +1,31 @@
 import React from 'react'
-import app from './app'
+import app from '../app'
 import request from 'supertest'
 import { assert } from 'chai'
 import render, { act } from 'react-test-renderer'
-import App from '../client/src/App'
+import App from '../../client/src/App'
 import mongoose from 'mongoose'
-import ProductionLog from './models/productionLog.model'
+import ProductionLog from '../models/productionLog.model'
+import fs from 'fs'
+import path from 'path'
+
+const SEED = JSON.parse(
+    fs.readFileSync(
+        path.resolve('server', 'tests', 'utils', 'sample-data.json')
+    )
+).seedObject
+
+const SAMPLE_DATA = JSON.parse(
+    fs.readFileSync(
+        path.resolve('server', 'tests', 'utils', 'sample-data.json')
+    )
+).requestObject
 
 beforeAll(async () => {
     try {
+        // console.log(SEED.seedObject[1])
         await ProductionLog.deleteMany({})
+        await ProductionLog.create(SEED[1])
     } catch (error) {
         console.log(error)
     }
@@ -31,45 +47,7 @@ describe('Server Running', function () {
 
 describe('POST /api/production-log', () => {
     test('Creates a new product log', async () => {
-        const data = {
-            date: '2018-9-1',
-            millManager: 'Jorge',
-            firstShift: {
-                shiftManager: 'Arcila',
-                materialType: {
-                    starched: true,
-                    weight: 180,
-                },
-                materialProduced: 19900,
-                rawMaterialConsumed: 21000,
-            },
-            secondShift: {
-                shiftManager: 'Pepe',
-                materialType: {
-                    starched: false,
-                    weight: 160,
-                },
-                materialProduced: 21900,
-                rawMaterialConsumed: 22100,
-            },
-            thirdShift: {
-                shiftManager: 'Jose',
-                materialType: {
-                    starched: true,
-                    weight: 140,
-                },
-                materialProduced: 20900,
-                rawMaterialConsumed: 21100,
-            },
-            coalUsed: 3000,
-            electricityConsumed: 212000,
-            starchConsumed: 200,
-            polycationicConsumed: 250,
-            akdConsumed: 300,
-            antifoamConsumed: 220,
-            dispro51Consumed: 222,
-            timeLost: 4,
-        }
+        const data = SAMPLE_DATA[0]
         const req = await request(app)
             .post('/api/production-log')
             .set('Content-type', 'application/json')
@@ -78,45 +56,7 @@ describe('POST /api/production-log', () => {
         assert.equal(req.status, 201)
     })
     test('Fails to create a new production log with same date', async () => {
-        const data = {
-            date: '2018-9-1',
-            millManager: 'Jorge',
-            firstShift: {
-                shiftManager: 'Arcila',
-                materialType: {
-                    starched: true,
-                    weight: 180,
-                },
-                materialProduced: 19900,
-                rawMaterialConsumed: 21000,
-            },
-            secondShift: {
-                shiftManager: 'Pepe',
-                materialType: {
-                    starched: false,
-                    weight: 160,
-                },
-                materialProduced: 21900,
-                rawMaterialConsumed: 22100,
-            },
-            thirdShift: {
-                shiftManager: 'Jose',
-                materialType: {
-                    starched: true,
-                    weight: 140,
-                },
-                materialProduced: 20900,
-                rawMaterialConsumed: 21100,
-            },
-            coalUsed: 3000,
-            electricityConsumed: 212000,
-            starchConsumed: 200,
-            polycationicConsumed: 250,
-            akdConsumed: 300,
-            antifoamConsumed: 220,
-            dispro51Consumed: 222,
-            timeLost: 4,
-        }
+        const data = SAMPLE_DATA[0]
         const req = await request(app)
             .post('/api/production-log')
             .set('Content-type', 'application/json')
