@@ -7,7 +7,7 @@
         "dev": "nodemon server/app.js",
         "build": "webpack --mode production",
         "watch": "webpack --watch",
-        "test": "jest server"
+        "test": "jest"
     },
     "author": "",
     "license": "ISC",
@@ -27,6 +27,7 @@
         "babel-loader": "^8.2.3",
         "chai": "^4.3.4",
         "css-loader": "^6.5.1",
+        "html-webpack-plugin": "^5.5.0",
         "jest": "^27.3.1",
         "jsdom": "^18.0.1",
         "mocha": "^9.1.3",
