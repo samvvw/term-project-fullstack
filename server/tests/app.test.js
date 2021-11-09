@@ -34,7 +34,7 @@ beforeAll(async () => {
     }
 })
 
-describe('Server Running', function () {
+describe('SERVER TESTS', function () {
     describe('GET /', () => {
         it('Responds with 200 status', async function () {
             const req = await request(app).get('/').send()
@@ -46,73 +46,75 @@ describe('Server Running', function () {
             assert.equal(req.status, 200)
         })
     })
+
+    describe('POST /api/production-log', () => {
+        test('Creates a new product log', async () => {
+            const data = SAMPLE_DATA[0]
+            const req = await request(app)
+                .post('/api/production-log')
+                .set('Content-type', 'application/json')
+                .send(data)
+
+            assert.equal(req.status, 201)
+        })
+        test('Fails to create a new production log with same date', async () => {
+            const data = SAMPLE_DATA[0]
+            const req = await request(app)
+                .post('/api/production-log')
+                .set('Content-type', 'application/json')
+                .send(data)
+
+            assert.equal(req.status, 409)
+        })
+    })
+
+    // GET Production Logs route test
+    let firstProductionLogId
+    describe('GET /api/production-log', () => {
+        test('Gets all Production Logs', async () => {
+            const req = await request(app).get('/api/production-log').send()
+
+            firstProductionLogId = req.body[0]._id
+            assert.equal(req.status, 200)
+        })
+    })
+
+    describe('DELETE /api/production-log/:productionLogId', () => {
+        test('Deletes a production log with Id', async () => {
+            const req = await request(app)
+                .delete(`/api/production-log/${firstProductionLogId}`)
+                .send()
+
+            assert.equal(req.status, 204)
+        })
+    })
 })
 
-describe('POST /api/production-log', () => {
-    test('Creates a new product log', async () => {
-        const data = SAMPLE_DATA[0]
-        const req = await request(app)
-            .post('/api/production-log')
-            .set('Content-type', 'application/json')
-            .send(data)
+describe('\n\n  REACT COMPONENT TESTS', () => {
+    test('App component renders', () => {
+        const component = render.create(
+            <ThemeProvider theme={theme}>
+                <GlobalStyle />
+                <App title="Helloaa" />
+            </ThemeProvider>
+        )
+        let tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
+        act(() => {
+            tree.props.onMouseEnter()
+        })
+        // re-rendering
+        tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
 
-        assert.equal(req.status, 201)
+        // manually trigger the callback
+        act(() => {
+            tree.props.onMouseLeave()
+        })
+        // re-rendering
+        tree = component.toJSON()
+        expect(tree).toMatchSnapshot()
     })
-    test('Fails to create a new production log with same date', async () => {
-        const data = SAMPLE_DATA[0]
-        const req = await request(app)
-            .post('/api/production-log')
-            .set('Content-type', 'application/json')
-            .send(data)
-
-        assert.equal(req.status, 409)
-    })
-})
-
-// GET Production Logs route test
-let firstProductionLogId
-describe('GET /api/production-log', () => {
-    test('Gets all Production Logs', async () => {
-        const req = await request(app).get('/api/production-log').send()
-
-        firstProductionLogId = req.body[0]._id
-        assert.equal(req.status, 200)
-    })
-})
-
-describe('DELETE /api/production-log/:productionLogId', () => {
-    test('Deletes a production log with Id', async () => {
-        const req = await request(app)
-            .delete(`/api/production-log/${firstProductionLogId}`)
-            .send()
-
-        assert.equal(req.status, 204)
-    })
-})
-
-test('App component renders', () => {
-    const component = render.create(
-        <ThemeProvider theme={theme}>
-            <GlobalStyle />
-            <App title="Helloaa" />
-        </ThemeProvider>
-    )
-    let tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
-    act(() => {
-        tree.props.onMouseEnter()
-    })
-    // re-rendering
-    tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
-
-    // manually trigger the callback
-    act(() => {
-        tree.props.onMouseLeave()
-    })
-    // re-rendering
-    tree = component.toJSON()
-    expect(tree).toMatchSnapshot()
 })
 
 afterAll(async () => {
