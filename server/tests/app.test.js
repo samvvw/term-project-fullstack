@@ -3,7 +3,10 @@ import app from '../app'
 import request from 'supertest'
 import { assert } from 'chai'
 import render, { act } from 'react-test-renderer'
-import App from '../../client/src/App'
+import App from '../../client/App'
+import { ThemeProvider } from 'styled-components'
+import { theme } from '../../client/theme/theme'
+import { GlobalStyle } from '../../client/theme/globalStyles'
 import mongoose from 'mongoose'
 import ProductionLog from '../models/productionLog.model'
 import fs from 'fs'
@@ -88,7 +91,12 @@ describe('DELETE /api/production-log/:productionLogId', () => {
 })
 
 test('App component renders', () => {
-    const component = render.create(<App title="test App" />)
+    const component = render.create(
+        <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            <App title="Helloaa" />
+        </ThemeProvider>
+    )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()
     act(() => {
