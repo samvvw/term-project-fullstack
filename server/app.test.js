@@ -5,11 +5,11 @@ import { assert } from 'chai'
 import render, { act } from 'react-test-renderer'
 import App from '../client/src/App'
 import mongoose from 'mongoose'
-import ProductLog from './models/productionLog.model'
+import ProductionLog from './models/productionLog.model'
 
 beforeAll(async () => {
     try {
-        await ProductLog.deleteMany({})
+        await ProductionLog.deleteMany({})
     } catch (error) {
         console.log(error)
     }
@@ -29,7 +29,7 @@ describe('Server Running', function () {
     })
 })
 
-describe('POST /api/product-log', () => {
+describe('POST /api/production-log', () => {
     test('Creates a new product log', async () => {
         const data = {
             date: '2018-9-1',
@@ -71,13 +71,13 @@ describe('POST /api/product-log', () => {
             timeLost: 4,
         }
         const req = await request(app)
-            .post('/api/product-log')
+            .post('/api/production-log')
             .set('Content-type', 'application/json')
             .send(data)
 
         assert.equal(req.status, 201)
     })
-    test('Fails to create a new product log with same date', async () => {
+    test('Fails to create a new production log with same date', async () => {
         const data = {
             date: '2018-9-1',
             millManager: 'Jorge',
@@ -118,13 +118,24 @@ describe('POST /api/product-log', () => {
             timeLost: 4,
         }
         const req = await request(app)
-            .post('/api/product-log')
+            .post('/api/production-log')
             .set('Content-type', 'application/json')
             .send(data)
 
         assert.equal(req.status, 409)
     })
 })
+
+// GET Production Logs route test
+
+describe('GET /api/production-log', () => {
+    test('Gets all Production Logs', async () => {
+        const req = await request(app).get('/api/production-log').send()
+
+        assert.equal(req.status, 200)
+    })
+})
+
 test('App component renders', () => {
     const component = render.create(<App title="test App" />)
     let tree = component.toJSON()
