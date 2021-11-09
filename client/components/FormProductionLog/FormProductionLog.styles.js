@@ -15,11 +15,11 @@ export const FormResourceConsumptionSection = styled('div')`
 `
 
 /**
- * -date
- * -millManager
+ * -date (date)
+ * -millManager (string)
  * -shiftProduction
  *      -firstShift
- *          -shiftManager
+ *          -shiftManager (string)
  *          -materialType
  *              -starched (bool)
  *              -weight (number)

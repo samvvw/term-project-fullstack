@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders 1`] = `
+exports[`
+
+  REACT COMPONENT TESTS App component renders 1`] = `
 <div
   className="normal"
   onMouseEnter={[Function]}
@@ -32,7 +34,9 @@ exports[`App component renders 1`] = `
 </div>
 `;
 
-exports[`App component renders 2`] = `
+exports[`
+
+  REACT COMPONENT TESTS App component renders 2`] = `
 <div
   className="hovered"
   onMouseEnter={[Function]}
@@ -64,7 +68,9 @@ exports[`App component renders 2`] = `
 </div>
 `;
 
-exports[`App component renders 3`] = `
+exports[`
+
+  REACT COMPONENT TESTS App component renders 3`] = `
 <div
   className="normal"
   onMouseEnter={[Function]}
