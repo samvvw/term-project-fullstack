@@ -60,3 +60,18 @@ exports.getAllProductionLogs = async (req, res) => {
         res.status(500).json({ error: error })
     }
 }
+
+exports.deleteProductionLog = async (req, res) => {
+    try {
+        const { productionLogId } = req.params
+
+        const deleteFromDB = await ProductionLog.deleteOne({
+            _id: productionLogId,
+        })
+
+        res.status(204).json(deleteFromDB)
+    } catch (error) {
+        if (process.env.NODE_ENV !== 'test') console.log(error)
+        res.status(500).json({ error: error })
+    }
+}

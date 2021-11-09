@@ -127,12 +127,23 @@ describe('POST /api/production-log', () => {
 })
 
 // GET Production Logs route test
-
+let firstProductionLogId
 describe('GET /api/production-log', () => {
     test('Gets all Production Logs', async () => {
         const req = await request(app).get('/api/production-log').send()
 
+        firstProductionLogId = req.body[0]._id
         assert.equal(req.status, 200)
+    })
+})
+
+describe('DELETE /api/production-log/:productionLogId', () => {
+    test('Deletes a production log with Id', async () => {
+        const req = await request(app)
+            .delete(`/api/production-log/${firstProductionLogId}`)
+            .send()
+
+        assert.equal(req.status, 204)
     })
 })
 

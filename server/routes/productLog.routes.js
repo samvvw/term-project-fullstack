@@ -3,10 +3,13 @@ const productionLogRouter = express.Router()
 const {
     createProductionLog,
     getAllProductionLogs,
-} = require('../controllers/productionLogController')
+    deleteProductionLog,
+} = require('../controllers/productionLog.controller')
 
 productionLogRouter.post('/', createProductionLog)
 
 productionLogRouter.get('/', getAllProductionLogs)
+
+productionLogRouter.delete('/:productionLogId', deleteProductionLog)
 
 module.exports = productionLogRouter
