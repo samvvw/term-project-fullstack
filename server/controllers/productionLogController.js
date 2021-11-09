@@ -1,6 +1,6 @@
-const ProductLog = require('../models/productionLog.model')
+const ProductionLog = require('../models/productionLog.model')
 
-exports.createDailyLog = async (req, res) => {
+exports.createProductionLog = async (req, res) => {
     try {
         const {
             date,
@@ -36,7 +36,7 @@ exports.createDailyLog = async (req, res) => {
             timeLost: timeLost,
         }
 
-        const saveLogDB = await ProductLog.create(data)
+        const saveLogDB = await ProductionLog.create(data)
 
         res.status(201).json(saveLogDB)
         // res.json(data)
@@ -47,5 +47,16 @@ exports.createDailyLog = async (req, res) => {
         } else {
             res.status(500).json({ error: error })
         }
+    }
+}
+
+exports.getAllProductionLogs = async (req, res) => {
+    try {
+        const allProductionLogsDB = await ProductionLog.find({})
+
+        res.json(allProductionLogsDB)
+    } catch (error) {
+        if (process.env.NODE_ENV !== 'test') console.log(error)
+        res.status(500).json({ error: error })
     }
 }

@@ -1,7 +1,12 @@
 const express = require('express')
-const productLogRouter = express.Router()
-const { createDailyLog } = require('../controllers/productLogController')
+const productionLogRouter = express.Router()
+const {
+    createProductionLog,
+    getAllProductionLogs,
+} = require('../controllers/productionLogController')
 
-productLogRouter.post('/', createDailyLog)
+productionLogRouter.post('/', createProductionLog)
 
-module.exports = productLogRouter
+productionLogRouter.get('/', getAllProductionLogs)
+
+module.exports = productionLogRouter
