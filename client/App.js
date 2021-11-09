@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import FormProductionLog from './components/FormProductionLog/FormProductionLog'
 
 const STATUS = {
     HOVERED: 'hovered',
@@ -22,6 +23,7 @@ export default function App({ title }) {
             onMouseLeave={onMouseLeave}
         >
             <h1>{title}</h1>
+            <FormProductionLog />
         </div>
     )
 }

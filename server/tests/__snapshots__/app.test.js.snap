@@ -7,8 +7,28 @@ exports[`App component renders 1`] = `
   onMouseLeave={[Function]}
 >
   <h1>
-    test App
+    Helloaa
   </h1>
+  <form
+    className="sc-bdvvtL dibXdD"
+  >
+    Form
+    <div
+      className="sc-gsDKAQ jvsFNb"
+    >
+      Date - MillManager
+    </div>
+    <div
+      className="sc-dkPtRN hpnlVh"
+    >
+      Shift Production Section
+    </div>
+    <div
+      className="sc-hKwDye esucPI"
+    >
+      Resource Consumption Section
+    </div>
+  </form>
 </div>
 `;
 
@@ -19,8 +39,28 @@ exports[`App component renders 2`] = `
   onMouseLeave={[Function]}
 >
   <h1>
-    test App
+    Helloaa
   </h1>
+  <form
+    className="sc-bdvvtL dibXdD"
+  >
+    Form
+    <div
+      className="sc-gsDKAQ jvsFNb"
+    >
+      Date - MillManager
+    </div>
+    <div
+      className="sc-dkPtRN hpnlVh"
+    >
+      Shift Production Section
+    </div>
+    <div
+      className="sc-hKwDye esucPI"
+    >
+      Resource Consumption Section
+    </div>
+  </form>
 </div>
 `;
 
@@ -31,7 +71,27 @@ exports[`App component renders 3`] = `
   onMouseLeave={[Function]}
 >
   <h1>
-    test App
+    Helloaa
   </h1>
+  <form
+    className="sc-bdvvtL dibXdD"
+  >
+    Form
+    <div
+      className="sc-gsDKAQ jvsFNb"
+    >
+      Date - MillManager
+    </div>
+    <div
+      className="sc-dkPtRN hpnlVh"
+    >
+      Shift Production Section
+    </div>
+    <div
+      className="sc-hKwDye esucPI"
+    >
+      Resource Consumption Section
+    </div>
+  </form>
 </div>
 `;

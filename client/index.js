@@ -1,0 +1,13 @@
+import ReactDOM from 'react-dom'
+import App from './App'
+import { ThemeProvider } from 'styled-components'
+import { theme } from './theme/theme'
+import { GlobalStyle } from './theme/globalStyles'
+
+ReactDOM.render(
+    <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <App title="Helloaa" />
+    </ThemeProvider>,
+    document.getElementById('root')
+)
