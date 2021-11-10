@@ -9,6 +9,19 @@ export const FormHeadSection = styled('div')`
 `
 export const FormShiftProductionSection = styled('div')`
     border: 1px solid ${({ theme }) => theme.pallette.primary[500]};
+
+    .shift-production-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        h3 {
+            grid-column: -1/1;
+        }
+    }
+
+    .shift-production-section {
+        border: 2px dashed ${({ theme }) => theme.pallette.primary[500]};
+    }
 `
 export const FormResourceConsumptionSection = styled('div')`
     border: 1px solid ${({ theme }) => theme.pallette.secondary[800]};

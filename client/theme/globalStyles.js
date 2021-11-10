@@ -9,7 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 
     }
     html{
-        font-family: sans-serif
+        font-family: sans-serif;
+        background-color: #eef0f7;
     }
 
 `
