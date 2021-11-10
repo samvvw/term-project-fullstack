@@ -18,17 +18,362 @@ exports[`
     <div
       className="sc-gsDKAQ jvsFNb"
     >
-      Date - MillManager
+      <div>
+        <label
+          htmlFor="millManager"
+        >
+          Mill Manager
+        </label>
+        <input
+          id="millManager"
+          name="millManager"
+          type="text"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="logDate"
+        >
+          Log Date
+        </label>
+        <input
+          id="logDate"
+          name="logDate"
+          type="date"
+        />
+      </div>
     </div>
     <div
-      className="sc-dkPtRN hpnlVh"
+      className="sc-dkPtRN hoWsZH"
     >
-      Shift Production Section
+      <div
+        className="shift-production-wrapper"
+      >
+        <h3>
+          Shift Production
+        </h3>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            First Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="firstShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="firstShiftManager"
+              name="firstShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="firstShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="firstShiftMaterialStarched"
+                name="firstShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="firstShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="firstShiftMaterialWeight"
+                name="firstShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="firstShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="firstShiftMaterialProduced"
+              min="0"
+              name="firstShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="firstShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="firstShiftRawMaterialConsumed"
+              min="0"
+              name="firstShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            Second Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="secondShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="secondShiftManager"
+              name="secondShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="secondShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="secondShiftMaterialStarched"
+                name="secondShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="secondShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="secondShiftMaterialWeight"
+                name="secondShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="secondShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="secondShiftMaterialProduced"
+              min="0"
+              name="secondShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="secondShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="secondShiftRawMaterialConsumed"
+              min="0"
+              name="secondShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            Third Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="thirdShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="thirdShiftManager"
+              name="thirdShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="thirdShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="thirdShiftMaterialStarched"
+                name="thirdShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="thirdShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="thirdShiftMaterialWeight"
+                name="thirdShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="thirdShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="thirdShiftMaterialProduced"
+              min="0"
+              name="thirdShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="thirdShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="thirdShiftRawMaterialConsumed"
+              min="0"
+              name="thirdShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <div
       className="sc-hKwDye esucPI"
     >
-      Resource Consumption Section
+      <div>
+        <label
+          htmlFor="coalUsed"
+        >
+          Coal Used
+        </label>
+        <input
+          id="coalUsed"
+          min="0"
+          name="coalUsed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="electricityConsumed"
+        >
+          Electricity Consumed
+        </label>
+        <input
+          id="electricityConsumed"
+          min="0"
+          name="electricityConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="starchConsumed"
+        >
+          Starch Consumed
+        </label>
+        <input
+          id="starchConsumed"
+          min="0"
+          name="starchConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="polycationicConsumed"
+        >
+          Polycationic Consumed
+        </label>
+        <input
+          id="polycationicConsumed"
+          min="0"
+          name="polycationicConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="akdConsumed"
+        >
+          AKD Consumed
+        </label>
+        <input
+          id="akdConsumed"
+          min="0"
+          name="akdConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="dispro51Consumed"
+        >
+          Dispro 51 Consumed
+        </label>
+        <input
+          id="dispro51Consumed"
+          min="0"
+          name="dispro51Consumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="timeLost"
+        >
+          Time Lost
+        </label>
+        <input
+          id="timeLost"
+          max="24"
+          min="0"
+          name="timeLost"
+          type="number"
+        />
+      </div>
     </div>
   </form>
 </div>
@@ -52,17 +397,362 @@ exports[`
     <div
       className="sc-gsDKAQ jvsFNb"
     >
-      Date - MillManager
+      <div>
+        <label
+          htmlFor="millManager"
+        >
+          Mill Manager
+        </label>
+        <input
+          id="millManager"
+          name="millManager"
+          type="text"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="logDate"
+        >
+          Log Date
+        </label>
+        <input
+          id="logDate"
+          name="logDate"
+          type="date"
+        />
+      </div>
     </div>
     <div
-      className="sc-dkPtRN hpnlVh"
+      className="sc-dkPtRN hoWsZH"
     >
-      Shift Production Section
+      <div
+        className="shift-production-wrapper"
+      >
+        <h3>
+          Shift Production
+        </h3>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            First Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="firstShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="firstShiftManager"
+              name="firstShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="firstShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="firstShiftMaterialStarched"
+                name="firstShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="firstShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="firstShiftMaterialWeight"
+                name="firstShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="firstShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="firstShiftMaterialProduced"
+              min="0"
+              name="firstShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="firstShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="firstShiftRawMaterialConsumed"
+              min="0"
+              name="firstShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            Second Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="secondShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="secondShiftManager"
+              name="secondShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="secondShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="secondShiftMaterialStarched"
+                name="secondShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="secondShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="secondShiftMaterialWeight"
+                name="secondShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="secondShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="secondShiftMaterialProduced"
+              min="0"
+              name="secondShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="secondShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="secondShiftRawMaterialConsumed"
+              min="0"
+              name="secondShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            Third Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="thirdShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="thirdShiftManager"
+              name="thirdShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="thirdShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="thirdShiftMaterialStarched"
+                name="thirdShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="thirdShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="thirdShiftMaterialWeight"
+                name="thirdShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="thirdShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="thirdShiftMaterialProduced"
+              min="0"
+              name="thirdShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="thirdShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="thirdShiftRawMaterialConsumed"
+              min="0"
+              name="thirdShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <div
       className="sc-hKwDye esucPI"
     >
-      Resource Consumption Section
+      <div>
+        <label
+          htmlFor="coalUsed"
+        >
+          Coal Used
+        </label>
+        <input
+          id="coalUsed"
+          min="0"
+          name="coalUsed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="electricityConsumed"
+        >
+          Electricity Consumed
+        </label>
+        <input
+          id="electricityConsumed"
+          min="0"
+          name="electricityConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="starchConsumed"
+        >
+          Starch Consumed
+        </label>
+        <input
+          id="starchConsumed"
+          min="0"
+          name="starchConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="polycationicConsumed"
+        >
+          Polycationic Consumed
+        </label>
+        <input
+          id="polycationicConsumed"
+          min="0"
+          name="polycationicConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="akdConsumed"
+        >
+          AKD Consumed
+        </label>
+        <input
+          id="akdConsumed"
+          min="0"
+          name="akdConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="dispro51Consumed"
+        >
+          Dispro 51 Consumed
+        </label>
+        <input
+          id="dispro51Consumed"
+          min="0"
+          name="dispro51Consumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="timeLost"
+        >
+          Time Lost
+        </label>
+        <input
+          id="timeLost"
+          max="24"
+          min="0"
+          name="timeLost"
+          type="number"
+        />
+      </div>
     </div>
   </form>
 </div>
@@ -86,17 +776,362 @@ exports[`
     <div
       className="sc-gsDKAQ jvsFNb"
     >
-      Date - MillManager
+      <div>
+        <label
+          htmlFor="millManager"
+        >
+          Mill Manager
+        </label>
+        <input
+          id="millManager"
+          name="millManager"
+          type="text"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="logDate"
+        >
+          Log Date
+        </label>
+        <input
+          id="logDate"
+          name="logDate"
+          type="date"
+        />
+      </div>
     </div>
     <div
-      className="sc-dkPtRN hpnlVh"
+      className="sc-dkPtRN hoWsZH"
     >
-      Shift Production Section
+      <div
+        className="shift-production-wrapper"
+      >
+        <h3>
+          Shift Production
+        </h3>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            First Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="firstShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="firstShiftManager"
+              name="firstShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="firstShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="firstShiftMaterialStarched"
+                name="firstShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="firstShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="firstShiftMaterialWeight"
+                name="firstShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="firstShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="firstShiftMaterialProduced"
+              min="0"
+              name="firstShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="firstShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="firstShiftRawMaterialConsumed"
+              min="0"
+              name="firstShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            Second Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="secondShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="secondShiftManager"
+              name="secondShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="secondShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="secondShiftMaterialStarched"
+                name="secondShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="secondShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="secondShiftMaterialWeight"
+                name="secondShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="secondShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="secondShiftMaterialProduced"
+              min="0"
+              name="secondShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="secondShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="secondShiftRawMaterialConsumed"
+              min="0"
+              name="secondShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          className="shift-production-section"
+        >
+          <h4>
+            Third Shift
+          </h4>
+          <div>
+            <label
+              htmlFor="thirdShiftManager"
+            >
+              Shift Manager
+            </label>
+            <input
+              id="thirdShiftManager"
+              name="thirdShiftManager"
+              type="text"
+            />
+          </div>
+          <div>
+            <p>
+              Material Type
+            </p>
+            <div>
+              <label
+                htmlFor="thirdShiftMaterialStarched"
+              >
+                Starched
+              </label>
+              <input
+                id="thirdShiftMaterialStarched"
+                name="thirdShiftMaterialStarched"
+                type="checkbox"
+                value="true"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="thirdShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                id="thirdShiftMaterialWeight"
+                name="thirdShiftMaterialWeight"
+                type="number"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="thirdShiftMaterialProduced"
+            >
+              Material Produced
+            </label>
+            <input
+              id="thirdShiftMaterialProduced"
+              min="0"
+              name="thirdShiftMaterialProduced"
+              type="number"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="thirdShiftRawMaterialConsumed"
+            >
+              Raw Material Consumed
+            </label>
+            <input
+              id="thirdShiftRawMaterialConsumed"
+              min="0"
+              name="thirdShiftRawMaterialConsumed"
+              type="number"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <div
       className="sc-hKwDye esucPI"
     >
-      Resource Consumption Section
+      <div>
+        <label
+          htmlFor="coalUsed"
+        >
+          Coal Used
+        </label>
+        <input
+          id="coalUsed"
+          min="0"
+          name="coalUsed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="electricityConsumed"
+        >
+          Electricity Consumed
+        </label>
+        <input
+          id="electricityConsumed"
+          min="0"
+          name="electricityConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="starchConsumed"
+        >
+          Starch Consumed
+        </label>
+        <input
+          id="starchConsumed"
+          min="0"
+          name="starchConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="polycationicConsumed"
+        >
+          Polycationic Consumed
+        </label>
+        <input
+          id="polycationicConsumed"
+          min="0"
+          name="polycationicConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="akdConsumed"
+        >
+          AKD Consumed
+        </label>
+        <input
+          id="akdConsumed"
+          min="0"
+          name="akdConsumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="dispro51Consumed"
+        >
+          Dispro 51 Consumed
+        </label>
+        <input
+          id="dispro51Consumed"
+          min="0"
+          name="dispro51Consumed"
+          type="number"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="timeLost"
+        >
+          Time Lost
+        </label>
+        <input
+          id="timeLost"
+          max="24"
+          min="0"
+          name="timeLost"
+          type="number"
+        />
+      </div>
     </div>
   </form>
 </div>
