@@ -100,20 +100,20 @@ describe('\n\n  REACT COMPONENT TESTS', () => {
         )
         let tree = component.toJSON()
         expect(tree).toMatchSnapshot()
-        act(() => {
-            tree.props.onMouseEnter()
-        })
-        // re-rendering
-        tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
+        // act(() => {
+        //     tree.props.onMouseEnter()
+        // })
+        // // re-rendering
+        // tree = component.toJSON()
+        // expect(tree).toMatchSnapshot()
 
-        // manually trigger the callback
-        act(() => {
-            tree.props.onMouseLeave()
-        })
-        // re-rendering
-        tree = component.toJSON()
-        expect(tree).toMatchSnapshot()
+        // // manually trigger the callback
+        // act(() => {
+        //     tree.props.onMouseLeave()
+        // })
+        // // re-rendering
+        // tree = component.toJSON()
+        // expect(tree).toMatchSnapshot()
     })
 })
 
