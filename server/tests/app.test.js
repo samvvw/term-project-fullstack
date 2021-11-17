@@ -11,6 +11,10 @@ import mongoose from 'mongoose'
 import ProductionLog from '../models/productionLog.model'
 import fs from 'fs'
 import path from 'path'
+import MOCK_FETCH from './utils/sample-mock-fetch.json'
+
+// const MOCK_FETCH = JSON.parse(mock_fetch)
+// console.log(mock_fetch)
 
 const SEED = JSON.parse(
     fs.readFileSync(
@@ -92,7 +96,7 @@ describe('SERVER TESTS', function () {
 
 global.fetch = jest.fn(() => {
     return Promise.resolve({
-        json: () => Promise.resolve(SEED),
+        json: () => Promise.resolve(MOCK_FETCH),
     })
 })
 

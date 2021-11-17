@@ -31,6 +31,16 @@ const shiftSchema = new Schema({
     },
 })
 
+shiftSchema.set('toJSON', { getters: true, virtuals: true })
+
+shiftSchema.virtual('fiberLoss').get(function () {
+    return (
+        ((this.rawMaterialConsumed - this.materialProduced) /
+            this.rawMaterialConsumed) *
+        100
+    )
+})
+
 const productionLogSchema = new Schema(
     {
         date: {
@@ -101,7 +111,35 @@ const productionLogSchema = new Schema(
     },
     { timestamps: true }
 )
+productionLogSchema.set('toJSON', { getters: true, virtuals: true })
+productionLogSchema
+    .virtual('shiftProduction.totalShiftProduction')
+    .get(function () {
+        return (
+            this.shiftProduction.firstShift.materialProduced +
+            this.shiftProduction.secondShift.materialProduced +
+            this.shiftProduction.thirdShift.materialProduced
+        )
+    })
 
+productionLogSchema
+    .virtual('shiftProduction.totalShiftMaterialUsed')
+    .get(function () {
+        return (
+            this.shiftProduction.firstShift.rawMaterialConsumed +
+            this.shiftProduction.secondShift.rawMaterialConsumed +
+            this.shiftProduction.thirdShift.rawMaterialConsumed
+        )
+    })
+
+productionLogSchema.virtual('shiftProduction.totalFiberLoss').get(function () {
+    return (
+        ((this.shiftProduction.totalShiftMaterialUsed -
+            this.shiftProduction.totalShiftProduction) /
+            this.shiftProduction.totalShiftMaterialUsed) *
+        100
+    )
+})
 const ProductionLog = mongoose.model('ProductionLog', productionLogSchema)
 
 module.exports = ProductionLog
