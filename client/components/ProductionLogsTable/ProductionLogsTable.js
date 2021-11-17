@@ -27,8 +27,6 @@ export function ProductionLogsTable() {
 
             const responseData = await response.json()
 
-            // console.log(responseData)
-
             setData(responseData)
             // return () => controller.abort()
         }
@@ -107,7 +105,9 @@ export function ProductionLogsTable() {
             ) : (
                 'Loading'
             )}
-            <pre>{JSON.stringify(tableData, null, 4)}</pre>
+            <pre>
+                <code>{JSON.stringify(tableData, null, 4)}</code>
+            </pre>
         </>
     )
 }
