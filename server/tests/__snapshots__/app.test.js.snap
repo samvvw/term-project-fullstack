@@ -11,36 +11,6 @@ exports[`
     className="sc-bdvvtL iAJKBS"
     onSubmit={[Function]}
   >
-    Form
-    <pre>
-      {
-    "millManager": "",
-    "logDate": "",
-    "firstShiftManager": "",
-    "firstShiftMaterialStarched": false,
-    "firstShiftMaterialWeight": "",
-    "firstShiftMaterialProduced": "",
-    "firstShiftRawMaterialConsumed": "",
-    "secondShiftManager": "",
-    "secondShiftMaterialStarched": false,
-    "secondShiftMaterialWeight": "",
-    "secondShiftMaterialProduced": "",
-    "secondShiftRawMaterialConsumed": "",
-    "thirdShiftManager": "",
-    "thirdShiftMaterialStarched": false,
-    "thirdShiftMaterialWeight": "",
-    "thirdShiftMaterialProduced": "",
-    "thirdShiftRawMaterialConsumed": "",
-    "coalUsed": "",
-    "electricityConsumed": "",
-    "starchConsumed": "",
-    "polycationicConsumed": "",
-    "akdConsumed": "",
-    "antifoamConsumed": "",
-    "dispro51Consumed": "",
-    "timeLost": ""
-}
-    </pre>
     <div
       className="sc-gsDKAQ jvsFNb"
     >
@@ -429,6 +399,181 @@ exports[`
         Submit
       </button>
     </div>
+    <pre>
+      {
+    "millManager": "",
+    "logDate": "",
+    "firstShiftManager": "",
+    "firstShiftMaterialStarched": false,
+    "firstShiftMaterialWeight": "",
+    "firstShiftMaterialProduced": "",
+    "firstShiftRawMaterialConsumed": "",
+    "secondShiftManager": "",
+    "secondShiftMaterialStarched": false,
+    "secondShiftMaterialWeight": "",
+    "secondShiftMaterialProduced": "",
+    "secondShiftRawMaterialConsumed": "",
+    "thirdShiftManager": "",
+    "thirdShiftMaterialStarched": false,
+    "thirdShiftMaterialWeight": "",
+    "thirdShiftMaterialProduced": "",
+    "thirdShiftRawMaterialConsumed": "",
+    "coalUsed": "",
+    "electricityConsumed": "",
+    "starchConsumed": "",
+    "polycationicConsumed": "",
+    "akdConsumed": "",
+    "antifoamConsumed": "",
+    "dispro51Consumed": "",
+    "timeLost": ""
+}
+    </pre>
   </form>
+  <button
+    onClick={[Function]}
+  >
+    Add
+  </button>
+  <table
+    className="sc-jRQBWg gzIqpy"
+    role="table"
+  >
+    <thead>
+      <tr
+        role="row"
+      >
+        <th
+          colSpan={1}
+          role="columnheader"
+        >
+          Column 1
+        </th>
+        <th
+          colSpan={1}
+          role="columnheader"
+        >
+          Column 2
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      role="rowgroup"
+    >
+      <tr
+        role="row"
+      >
+        <td
+          role="cell"
+        >
+          2018-09-01
+        </td>
+        <td
+          role="cell"
+        >
+          Arcila
+        </td>
+      </tr>
+      <tr
+        role="row"
+      >
+        <td
+          role="cell"
+        >
+          2018-09-02
+        </td>
+        <td
+          role="cell"
+        >
+          Arcila
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <pre>
+    [
+    {
+        "date": "2018-9-1",
+        "millManager": "Jorge",
+        "shiftProduction": {
+            "firstShift": {
+                "shiftManager": "Arcila",
+                "materialType": {
+                    "starched": true,
+                    "weight": 180
+                },
+                "materialProduced": 19900,
+                "rawMaterialConsumed": 21000
+            },
+            "secondShift": {
+                "shiftManager": "Pepe",
+                "materialType": {
+                    "starched": false,
+                    "weight": 160
+                },
+                "materialProduced": 21900,
+                "rawMaterialConsumed": 22100
+            },
+            "thirdShift": {
+                "shiftManager": "Jose",
+                "materialType": {
+                    "starched": true,
+                    "weight": 140
+                },
+                "materialProduced": 20900,
+                "rawMaterialConsumed": 21100
+            }
+        },
+        "coalUsed": 3000,
+        "electricityConsumed": 212000,
+        "starchConsumed": 200,
+        "polycationicConsumed": 250,
+        "akdConsumed": 300,
+        "antifoamConsumed": 220,
+        "dispro51Consumed": 222,
+        "timeLost": 4
+    },
+    {
+        "date": "2018-9-2",
+        "millManager": "Jorge",
+        "shiftProduction": {
+            "firstShift": {
+                "shiftManager": "Arcila",
+                "materialType": {
+                    "starched": true,
+                    "weight": 160
+                },
+                "materialProduced": 18900,
+                "rawMaterialConsumed": 20000
+            },
+            "secondShift": {
+                "shiftManager": "Pepe",
+                "materialType": {
+                    "starched": false,
+                    "weight": 140
+                },
+                "materialProduced": 20000,
+                "rawMaterialConsumed": 21100
+            },
+            "thirdShift": {
+                "shiftManager": "Jose",
+                "materialType": {
+                    "starched": true,
+                    "weight": 180
+                },
+                "materialProduced": 21900,
+                "rawMaterialConsumed": 22100
+            }
+        },
+        "coalUsed": 3100,
+        "electricityConsumed": 202000,
+        "starchConsumed": 240,
+        "polycationicConsumed": 350,
+        "akdConsumed": 330,
+        "antifoamConsumed": 240,
+        "dispro51Consumed": 252,
+        "timeLost": 2
+    }
+]
+  </pre>
 </div>
 `;

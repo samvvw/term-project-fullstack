@@ -90,14 +90,26 @@ describe('SERVER TESTS', function () {
     })
 })
 
+global.fetch = jest.fn(() => {
+    return Promise.resolve({
+        json: () => Promise.resolve(SEED),
+    })
+})
+
 describe('\n\n  REACT COMPONENT TESTS', () => {
-    test('App component renders', () => {
-        const component = render.create(
-            <ThemeProvider theme={theme}>
-                <GlobalStyle />
-                <App title="Helloaa" />
-            </ThemeProvider>
-        )
+    beforeEach(() => {
+        fetch.mockClear()
+    })
+    test('App component renders', async () => {
+        let component
+        await act(async () => {
+            component = render.create(
+                <ThemeProvider theme={theme}>
+                    <GlobalStyle />
+                    <App title="Helloaa" />
+                </ThemeProvider>
+            )
+        })
         let tree = component.toJSON()
         expect(tree).toMatchSnapshot()
         // act(() => {

@@ -8,7 +8,7 @@ import {
     Input,
 } from './FormProductionLog.styles'
 
-export function FormProductionLog(props) {
+export function FormProductionLog() {
     const [formstate, setFormstate] = useState({
         millManager: '',
         logDate: '',
@@ -108,8 +108,6 @@ export function FormProductionLog(props) {
     }
     return (
         <FormProductionLogWrapper onSubmit={handleSubmit}>
-            Form
-            <pre>{JSON.stringify(formstate, null, 4)}</pre>
             <FormHeadSection>
                 <Input
                     htmlFor="millManager"
@@ -405,6 +403,7 @@ export function FormProductionLog(props) {
             <div>
                 <button type="submit">Submit</button>
             </div>
+            <pre>{JSON.stringify(formstate, null, 4)}</pre>
         </FormProductionLogWrapper>
     )
 }
