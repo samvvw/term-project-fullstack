@@ -1,276 +1,409 @@
+import { useState } from 'react'
+import axios from 'axios'
 import {
     FormProductionLogWrapper,
     FormHeadSection,
     FormShiftProductionSection,
     FormResourceConsumptionSection,
+    Input,
 } from './FormProductionLog.styles'
 
-export default function FormProductionLog(props) {
+export function FormProductionLog() {
+    const [formstate, setFormstate] = useState({
+        millManager: '',
+        logDate: '',
+        firstShiftManager: '',
+        firstShiftMaterialStarched: false,
+        firstShiftMaterialWeight: '',
+        firstShiftMaterialProduced: '',
+        firstShiftRawMaterialConsumed: '',
+        secondShiftManager: '',
+        secondShiftMaterialStarched: false,
+        secondShiftMaterialWeight: '',
+        secondShiftMaterialProduced: '',
+        secondShiftRawMaterialConsumed: '',
+        thirdShiftManager: '',
+        thirdShiftMaterialStarched: false,
+        thirdShiftMaterialWeight: '',
+        thirdShiftMaterialProduced: '',
+        thirdShiftRawMaterialConsumed: '',
+        coalUsed: '',
+        electricityConsumed: '',
+        starchConsumed: '',
+        polycationicConsumed: '',
+        akdConsumed: '',
+        antifoamConsumed: '',
+        dispro51Consumed: '',
+        timeLost: '',
+    })
+
+    const [shiftTab, setShiftTab] = useState('firstShift')
+
+    function handleChange(e) {
+        if (e.target.type === 'checkbox') {
+            setFormstate((prev) => {
+                return { ...prev, [e.target.name]: e.target.checked }
+            })
+        } else {
+            e.preventDefault()
+            setFormstate((prev) => {
+                return { ...prev, [e.target.name]: e.target.value }
+            })
+        }
+    }
+
+    function handleTabChange(e) {
+        setShiftTab(e.target.id)
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault()
+
+        const data = {
+            date: formstate.logDate,
+            millManager: formstate.millManager,
+            firstShift: {
+                shiftManager: formstate.firstShiftManager,
+                materialType: {
+                    starched: formstate.firstShiftMaterialStarched,
+                    weight: formstate.firstShiftMaterialWeight,
+                },
+                materialProduced: formstate.firstShiftMaterialProduced,
+                rawMaterialConsumed: formstate.firstShiftRawMaterialConsumed,
+            },
+            secondShift: {
+                shiftManager: formstate.secondShiftManager,
+                materialType: {
+                    starched: formstate.secondShiftMaterialStarched,
+                    weight: formstate.secondShiftMaterialWeight,
+                },
+                materialProduced: formstate.secondShiftMaterialProduced,
+                rawMaterialConsumed: formstate.secondShiftRawMaterialConsumed,
+            },
+            thirdShift: {
+                shiftManager: formstate.thirdShiftManager,
+                materialType: {
+                    starched: formstate.thirdShiftMaterialStarched,
+                    weight: formstate.thirdShiftMaterialWeight,
+                },
+                materialProduced: formstate.thirdShiftMaterialProduced,
+                rawMaterialConsumed: formstate.thirdShiftRawMaterialConsumed,
+            },
+            coalUsed: formstate.coalUsed,
+            electricityConsumed: formstate.electricityConsumed,
+            starchConsumed: formstate.starchConsumed,
+            polycationicConsumed: formstate.polycationicConsumed,
+            akdConsumed: formstate.akdConsumed,
+            antifoamConsumed: formstate.antifoamConsumed,
+            dispro51Consumed: formstate.dispro51Consumed,
+            timeLost: formstate.timeLost,
+        }
+
+        axios
+            .post('/api/production-log', data)
+            .then((result) => {
+                console.log(result.data)
+            })
+            .catch((error) => console.error(error))
+    }
     return (
-        <FormProductionLogWrapper>
-            Form
+        <FormProductionLogWrapper onSubmit={handleSubmit}>
             <FormHeadSection>
-                <div>
-                    <label htmlFor="millManager">Mill Manager</label>
-                    <input type="text" id="millManager" name="millManager" />
-                </div>
-                <div>
-                    <label htmlFor="logDate">Log Date</label>
-                    <input type="date" id="logDate" name="logDate" />
-                </div>
+                <Input
+                    htmlFor="millManager"
+                    label="Mill Manager"
+                    type="text"
+                    onChange={handleChange}
+                    required
+                    value={formstate.millManager}
+                />
+                <Input
+                    htmlFor="logDate"
+                    label="Log Date"
+                    type="date"
+                    onChange={handleChange}
+                    required
+                    value={formstate.logDate}
+                />
             </FormHeadSection>
             <FormShiftProductionSection>
                 <div className="shift-production-wrapper">
                     <h3>Shift Production</h3>
-                    <div className="shift-production-section">
-                        <h4>First Shift</h4>
-                        <div>
-                            <label htmlFor="firstShiftManager">
-                                Shift Manager
-                            </label>
-                            <input
+                    <ul className="shift-production-tabs">
+                        <li
+                            id="firstShift"
+                            onClick={handleTabChange}
+                            style={{
+                                backgroundColor:
+                                    shiftTab === 'firstShift' ? 'gray' : '',
+                            }}
+                        >
+                            First Shift
+                        </li>
+                        <li
+                            id="secondShift"
+                            onClick={handleTabChange}
+                            style={{
+                                backgroundColor:
+                                    shiftTab === 'secondShift' ? 'gray' : '',
+                            }}
+                        >
+                            Second Shift
+                        </li>
+                        <li
+                            id="thirdShift"
+                            onClick={handleTabChange}
+                            style={{
+                                backgroundColor:
+                                    shiftTab === 'thirdShift' ? 'gray' : '',
+                            }}
+                        >
+                            Third Shift
+                        </li>
+                    </ul>
+                    {shiftTab === 'firstShift' ? (
+                        <div className="shift-production-section">
+                            <h4>First Shift</h4>
+                            <Input
+                                htmlFor="firstShiftManager"
+                                label="Shift Manager"
                                 type="text"
-                                id="firstShiftManager"
-                                name="firstShiftManager"
+                                onChange={handleChange}
+                                required
+                                value={formstate.firstShiftManager}
                             />
-                        </div>
-                        <div>
-                            <p>Material Type</p>
                             <div>
-                                <label htmlFor="firstShiftMaterialStarched">
-                                    Starched
-                                </label>
-                                <input
+                                <p>Material Type</p>
+                                <Input
+                                    htmlFor="firstShiftMaterialStarched"
+                                    label="Starched"
                                     type="checkbox"
-                                    id="firstShiftMaterialStarched"
-                                    name="firstShiftMaterialStarched"
-                                    value="true"
+                                    onChange={handleChange}
+                                    checked={
+                                        formstate.firstShiftMaterialStarched
+                                    }
                                 />
-                            </div>
-                            <div>
-                                <label htmlFor="firstShiftMaterialWeight">
-                                    Weight
-                                </label>
-                                <input
+                                <Input
+                                    htmlFor="firstShiftMaterialWeight"
+                                    label="Weight"
                                     type="number"
-                                    id="firstShiftMaterialWeight"
-                                    name="firstShiftMaterialWeight"
+                                    onChange={handleChange}
+                                    min="0"
+                                    required
+                                    value={formstate.firstShiftMaterialWeight}
                                 />
                             </div>
-                        </div>
-                        <div>
-                            <label htmlFor="firstShiftMaterialProduced">
-                                Material Produced
-                            </label>
-                            <input
+                            <Input
+                                htmlFor="firstShiftMaterialProduced"
+                                label="Material Produced"
                                 type="number"
-                                id="firstShiftMaterialProduced"
-                                name="firstShiftMaterialProduced"
                                 min="0"
+                                onChange={handleChange}
+                                required
+                                value={formstate.firstShiftMaterialProduced}
+                            />
+                            <Input
+                                htmlFor="firstShiftRawMaterialConsumed"
+                                label="Raw Material Consumed"
+                                type="number"
+                                min="0"
+                                onChange={handleChange}
+                                required
+                                value={formstate.firstShiftRawMaterialConsumed}
                             />
                         </div>
-                        <div>
-                            <label htmlFor="firstShiftRawMaterialConsumed">
-                                Raw Material Consumed
-                            </label>
-                            <input
-                                type="number"
-                                id="firstShiftRawMaterialConsumed"
-                                name="firstShiftRawMaterialConsumed"
-                                min="0"
-                            />
-                        </div>
-                    </div>
-                    <div className="shift-production-section">
-                        <h4>Second Shift</h4>
-                        <div>
-                            <label htmlFor="secondShiftManager">
-                                Shift Manager
-                            </label>
-                            <input
+                    ) : (
+                        ''
+                    )}
+                    {shiftTab === 'secondShift' ? (
+                        <div className="shift-production-section">
+                            <h4>Second Shift</h4>
+                            <Input
+                                htmlFor="secondShiftManager"
+                                label="Shift Manager"
                                 type="text"
-                                id="secondShiftManager"
-                                name="secondShiftManager"
+                                onChange={handleChange}
+                                required
+                                value={formstate.secondShiftManager}
                             />
-                        </div>
-                        <div>
-                            <p>Material Type</p>
                             <div>
-                                <label htmlFor="secondShiftMaterialStarched">
-                                    Starched
-                                </label>
-                                <input
+                                <p>Material Type</p>
+                                <Input
+                                    htmlFor="secondShiftMaterialStarched"
+                                    label="Starched"
                                     type="checkbox"
-                                    id="secondShiftMaterialStarched"
-                                    name="secondShiftMaterialStarched"
-                                    value="true"
+                                    onChange={handleChange}
+                                    checked={
+                                        formstate.secondShiftMaterialStarched
+                                    }
                                 />
-                            </div>
-                            <div>
-                                <label htmlFor="secondShiftMaterialWeight">
-                                    Weight
-                                </label>
-                                <input
+                                <Input
+                                    htmlFor="secondShiftMaterialWeight"
+                                    label="Weight"
                                     type="number"
-                                    id="secondShiftMaterialWeight"
-                                    name="secondShiftMaterialWeight"
+                                    onChange={handleChange}
+                                    min="0"
+                                    required
+                                    value={formstate.secondShiftMaterialWeight}
                                 />
                             </div>
-                        </div>
-                        <div>
-                            <label htmlFor="secondShiftMaterialProduced">
-                                Material Produced
-                            </label>
-                            <input
+                            <Input
+                                htmlFor="secondShiftMaterialProduced"
+                                label="Material Produced"
                                 type="number"
-                                id="secondShiftMaterialProduced"
-                                name="secondShiftMaterialProduced"
                                 min="0"
+                                onChange={handleChange}
+                                required
+                                value={formstate.secondShiftMaterialProduced}
+                            />
+                            <Input
+                                htmlFor="secondShiftRawMaterialConsumed"
+                                label="Raw Material Consumed"
+                                type="number"
+                                min="0"
+                                onChange={handleChange}
+                                required
+                                value={formstate.secondShiftRawMaterialConsumed}
                             />
                         </div>
-                        <div>
-                            <label htmlFor="secondShiftRawMaterialConsumed">
-                                Raw Material Consumed
-                            </label>
-                            <input
-                                type="number"
-                                id="secondShiftRawMaterialConsumed"
-                                name="secondShiftRawMaterialConsumed"
-                                min="0"
-                            />
-                        </div>
-                    </div>
-                    <div className="shift-production-section">
-                        <h4>Third Shift</h4>
-                        <div>
-                            <label htmlFor="thirdShiftManager">
-                                Shift Manager
-                            </label>
-                            <input
+                    ) : (
+                        ''
+                    )}
+                    {shiftTab === 'thirdShift' ? (
+                        <div className="shift-production-section">
+                            <h4>Third Shift</h4>
+                            <Input
+                                htmlFor="thirdShiftManager"
+                                label="Shift Manager"
                                 type="text"
-                                id="thirdShiftManager"
-                                name="thirdShiftManager"
+                                onChange={handleChange}
+                                required
+                                value={formstate.thirdShiftManager}
                             />
-                        </div>
-                        <div>
-                            <p>Material Type</p>
                             <div>
-                                <label htmlFor="thirdShiftMaterialStarched">
-                                    Starched
-                                </label>
-                                <input
+                                <p>Material Type</p>
+                                <Input
+                                    htmlFor="thirdShiftMaterialStarched"
+                                    label="Starched"
                                     type="checkbox"
-                                    id="thirdShiftMaterialStarched"
-                                    name="thirdShiftMaterialStarched"
-                                    value="true"
+                                    onChange={handleChange}
+                                    checked={
+                                        formstate.thirdShiftMaterialStarched
+                                    }
                                 />
-                            </div>
-                            <div>
-                                <label htmlFor="thirdShiftMaterialWeight">
-                                    Weight
-                                </label>
-                                <input
+                                <Input
+                                    htmlFor="thirdShiftMaterialWeight"
+                                    label="Weight"
                                     type="number"
-                                    id="thirdShiftMaterialWeight"
-                                    name="thirdShiftMaterialWeight"
+                                    onChange={handleChange}
+                                    min="0"
+                                    required
+                                    value={formstate.thirdShiftMaterialWeight}
                                 />
                             </div>
-                        </div>
-                        <div>
-                            <label htmlFor="thirdShiftMaterialProduced">
-                                Material Produced
-                            </label>
-                            <input
+                            <Input
+                                htmlFor="thirdShiftMaterialProduced"
+                                label="Material Produced"
                                 type="number"
-                                id="thirdShiftMaterialProduced"
-                                name="thirdShiftMaterialProduced"
                                 min="0"
+                                onChange={handleChange}
+                                required
+                                value={formstate.thirdShiftMaterialProduced}
+                            />
+                            <Input
+                                htmlFor="thirdShiftRawMaterialConsumed"
+                                label="Raw Material Consumed"
+                                type="number"
+                                min="0"
+                                onChange={handleChange}
+                                required
+                                value={formstate.thirdShiftRawMaterialConsumed}
                             />
                         </div>
-                        <div>
-                            <label htmlFor="thirdShiftRawMaterialConsumed">
-                                Raw Material Consumed
-                            </label>
-                            <input
-                                type="number"
-                                id="thirdShiftRawMaterialConsumed"
-                                name="thirdShiftRawMaterialConsumed"
-                                min="0"
-                            />
-                        </div>
-                    </div>
+                    ) : (
+                        ''
+                    )}
                 </div>
             </FormShiftProductionSection>
             <FormResourceConsumptionSection>
-                <div>
-                    <label htmlFor="coalUsed">Coal Used</label>
-                    <input
-                        type="number"
-                        id="coalUsed"
-                        name="coalUsed"
-                        min="0"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="electricityConsumed">
-                        Electricity Consumed
-                    </label>
-                    <input
-                        type="number"
-                        id="electricityConsumed"
-                        name="electricityConsumed"
-                        min="0"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="starchConsumed">Starch Consumed</label>
-                    <input
-                        type="number"
-                        id="starchConsumed"
-                        name="starchConsumed"
-                        min="0"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="polycationicConsumed">
-                        Polycationic Consumed
-                    </label>
-                    <input
-                        type="number"
-                        id="polycationicConsumed"
-                        name="polycationicConsumed"
-                        min="0"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="akdConsumed">AKD Consumed</label>
-                    <input
-                        type="number"
-                        id="akdConsumed"
-                        name="akdConsumed"
-                        min="0"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="dispro51Consumed">Dispro 51 Consumed</label>
-                    <input
-                        type="number"
-                        id="dispro51Consumed"
-                        name="dispro51Consumed"
-                        min="0"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="timeLost">Time Lost</label>
-                    <input
-                        type="number"
-                        id="timeLost"
-                        name="timeLost"
-                        min="0"
-                        max="24"
-                    />
-                </div>
+                <Input
+                    htmlFor="coalUsed"
+                    label="Coal Used"
+                    type="number"
+                    min="0"
+                    onChange={handleChange}
+                    required
+                    value={formstate.coalUsed}
+                />
+                <Input
+                    htmlFor="electricityConsumed"
+                    label="Electricity Consumed"
+                    type="number"
+                    min="0"
+                    onChange={handleChange}
+                    required
+                    value={formstate.electricityConsumed}
+                />
+                <Input
+                    htmlFor="starchConsumed"
+                    label="Starch Consumed"
+                    type="number"
+                    min="0"
+                    onChange={handleChange}
+                    required
+                    value={formstate.starchConsumed}
+                />
+                <Input
+                    htmlFor="polycationicConsumed"
+                    label="Polycationic Consumed"
+                    type="number"
+                    min="0"
+                    onChange={handleChange}
+                    required
+                    value={formstate.polycationicConsumed}
+                />
+                <Input
+                    htmlFor="akdConsumed"
+                    label="AKD Consumed"
+                    type="number"
+                    min="0"
+                    onChange={handleChange}
+                    required
+                    value={formstate.akdConsumed}
+                />
+                <Input
+                    htmlFor="antifoamConsumed"
+                    label="Antifoam"
+                    type="number"
+                    min="0"
+                    onChange={handleChange}
+                    required
+                    value={formstate.antifoamConsumed}
+                />
+                <Input
+                    htmlFor="dispro51Consumed"
+                    label="Dispro 51 Consumed"
+                    type="number"
+                    min="0"
+                    onChange={handleChange}
+                    required
+                    value={formstate.dispro51Consumed}
+                />
+                <Input
+                    htmlFor="timeLost"
+                    label="Time Lost"
+                    type="number"
+                    min="0"
+                    max="24"
+                    onChange={handleChange}
+                    required
+                    value={formstate.timeLost}
+                />
             </FormResourceConsumptionSection>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            <pre>{JSON.stringify(formstate, null, 4)}</pre>
         </FormProductionLogWrapper>
     )
 }

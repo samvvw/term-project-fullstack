@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const FormProductionLogWrapper = styled('form')`
     border: 1px solid ${({ theme }) => theme.pallette.primary.dark};
+    width: 30%;
+    margin: 0 auto;
 `
 
 export const FormHeadSection = styled('div')`
@@ -11,11 +13,15 @@ export const FormShiftProductionSection = styled('div')`
     border: 1px solid ${({ theme }) => theme.pallette.primary[500]};
 
     .shift-production-wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        h3 {
-            grid-column: -1/1;
+    }
+
+    .shift-production-tabs {
+        display: flex;
+        list-style: none;
+        li {
+            border: 1px solid ${({ theme }) => theme.pallette.secondary[800]};
+            cursor: pointer;
+            padding: 0.5rem 0.7rem;
         }
     }
 
@@ -25,6 +31,27 @@ export const FormShiftProductionSection = styled('div')`
 `
 export const FormResourceConsumptionSection = styled('div')`
     border: 1px solid ${({ theme }) => theme.pallette.secondary[800]};
+`
+const FormInput = (props) => {
+    return (
+        <div className={props.className}>
+            <label htmlFor={props.htmlFor}>{props.label}</label>
+            <input
+                // type={props.type}
+                id={props.htmlFor}
+                name={props.htmlFor}
+                // onChange={props.onChange}
+                {...props}
+                className="production-form-input"
+            />
+        </div>
+    )
+}
+
+export const Input = styled((props) => <FormInput {...props} />)`
+    background-color: #b7e3ed;
+    display: flex;
+    justify-content: space-between;
 `
 
 /**
