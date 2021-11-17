@@ -21,14 +21,11 @@ export function ProductionLogsTable() {
     const tableData = useMemo(() => data, [data])
     useEffect(() => {
         const fetchData = async () => {
-            // const controller = new AbortController()
-            // const { signal } = controller
             const response = await fetch('/api/production-log')
 
             const responseData = await response.json()
 
             setData(responseData)
-            // return () => controller.abort()
         }
         fetchData()
     }, [])

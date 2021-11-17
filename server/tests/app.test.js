@@ -9,24 +9,11 @@ import { theme } from '../../client/theme/theme'
 import { GlobalStyle } from '../../client/theme/globalStyles'
 import mongoose from 'mongoose'
 import ProductionLog from '../models/productionLog.model'
-import fs from 'fs'
-import path from 'path'
 import MOCK_FETCH from './utils/sample-mock-fetch.json'
-
-// const MOCK_FETCH = JSON.parse(mock_fetch)
-// console.log(mock_fetch)
-
-const SEED = JSON.parse(
-    fs.readFileSync(
-        path.resolve('server', 'tests', 'utils', 'sample-data.json')
-    )
-).seedObject
-
-const SAMPLE_DATA = JSON.parse(
-    fs.readFileSync(
-        path.resolve('server', 'tests', 'utils', 'sample-data.json')
-    )
-).requestObject
+import {
+    seedObject as SEED,
+    requestObject as SAMPLE_DATA,
+} from './utils/sample-data.json'
 
 beforeAll(async () => {
     try {
