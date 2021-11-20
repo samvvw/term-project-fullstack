@@ -6,13 +6,47 @@ export function ProductionLogsTable() {
     const [data, setData] = useState([])
     const [columns, setColumns] = useState([
         {
-            Header: 'Column 1',
-            accessor: (row) =>
-                new Date(Date.parse(row.date)).toISOString().split('T')[0],
+            Header: 'Info',
+            columns: [
+                {
+                    Header: 'Date',
+                    accessor: (row) =>
+                        new Date(Date.parse(row.date))
+                            .toISOString()
+                            .split('T')[0],
+                },
+                {
+                    Header: 'Manager',
+                    accessor: (row) => row.millManager,
+                },
+            ],
         },
         {
-            Header: 'Column 2',
-            accessor: 'shiftProduction.firstShift.shiftManager',
+            Header: 'First Shift',
+            columns: [
+                {
+                    Header: 'Material Type',
+                    accessor: (row) =>
+                        (row.shiftProduction.firstShift.materialType.starched
+                            ? 'T-'
+                            : 'W-') +
+                        row.shiftProduction.firstShift.materialType.weight,
+                },
+                {
+                    Header: 'Production',
+                    accessor: (row) =>
+                        row.shiftProduction.firstShift.materialProduced,
+                },
+                {
+                    Header: 'Raw Material',
+                    accessor: (row) =>
+                        row.shiftProduction.firstShift.rawMaterialConsumed,
+                },
+                {
+                    Header: 'Fiber Loss',
+                    accessor: (row) => row.shiftProduction.firstShift.fiberLoss,
+                },
+            ],
         },
     ])
 
