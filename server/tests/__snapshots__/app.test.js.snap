@@ -443,16 +443,56 @@ exports[`
         role="row"
       >
         <th
+          colSpan={2}
+          role="columnheader"
+        >
+          Info
+        </th>
+        <th
+          colSpan={4}
+          role="columnheader"
+        >
+          First Shift
+        </th>
+      </tr>
+      <tr
+        role="row"
+      >
+        <th
           colSpan={1}
           role="columnheader"
         >
-          Column 1
+          Date
         </th>
         <th
           colSpan={1}
           role="columnheader"
         >
-          Column 2
+          Manager
+        </th>
+        <th
+          colSpan={1}
+          role="columnheader"
+        >
+          Material Type
+        </th>
+        <th
+          colSpan={1}
+          role="columnheader"
+        >
+          Production
+        </th>
+        <th
+          colSpan={1}
+          role="columnheader"
+        >
+          Raw Material
+        </th>
+        <th
+          colSpan={1}
+          role="columnheader"
+        >
+          Fiber Loss
         </th>
       </tr>
     </thead>
@@ -470,7 +510,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -484,7 +544,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -498,7 +578,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -512,7 +612,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -526,7 +646,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -540,7 +680,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -554,7 +714,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -568,7 +748,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -582,7 +782,27 @@ exports[`
         <td
           role="cell"
         >
-          Arcila
+          Jorge
+        </td>
+        <td
+          role="cell"
+        >
+          T-180
+        </td>
+        <td
+          role="cell"
+        >
+          19900
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          5.238095238095238
         </td>
       </tr>
       <tr
@@ -596,7 +816,27 @@ exports[`
         <td
           role="cell"
         >
-          andres
+          Arcila
+        </td>
+        <td
+          role="cell"
+        >
+          T-160
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          22000
+        </td>
+        <td
+          role="cell"
+        >
+          4.545454545454546
         </td>
       </tr>
       <tr
@@ -610,7 +850,27 @@ exports[`
         <td
           role="cell"
         >
-          andres
+          Arcila
+        </td>
+        <td
+          role="cell"
+        >
+          T-160
+        </td>
+        <td
+          role="cell"
+        >
+          21000
+        </td>
+        <td
+          role="cell"
+        >
+          22000
+        </td>
+        <td
+          role="cell"
+        >
+          4.545454545454546
         </td>
       </tr>
     </tbody>
