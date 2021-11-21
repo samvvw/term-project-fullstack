@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const connectDB = async () => {
     try {
-        if (process.env.NODE_ENV === 'development') {
+        if (process.env.NODE_ENV !== 'test') {
             const connected = await mongoose.connect(process.env.MONGODB_URL)
             if (connected) {
                 console.log(`DB connected: ${process.env.MONGODB_URL}`)
