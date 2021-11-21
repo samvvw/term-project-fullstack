@@ -403,7 +403,6 @@ export function FormProductionLog() {
             <div>
                 <button type="submit">Submit</button>
             </div>
-            <pre>{JSON.stringify(formstate, null, 4)}</pre>
         </FormProductionLogWrapper>
     )
 }

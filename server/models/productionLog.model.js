@@ -112,18 +112,16 @@ const productionLogSchema = new Schema(
     { timestamps: true }
 )
 productionLogSchema.set('toJSON', { getters: true, virtuals: true })
-productionLogSchema
-    .virtual('shiftProduction.totalShiftProduction')
-    .get(function () {
-        return (
-            this.shiftProduction.firstShift.materialProduced +
-            this.shiftProduction.secondShift.materialProduced +
-            this.shiftProduction.thirdShift.materialProduced
-        )
-    })
+productionLogSchema.virtual('shiftProduction.totalProduction').get(function () {
+    return (
+        this.shiftProduction.firstShift.materialProduced +
+        this.shiftProduction.secondShift.materialProduced +
+        this.shiftProduction.thirdShift.materialProduced
+    )
+})
 
 productionLogSchema
-    .virtual('shiftProduction.totalShiftMaterialUsed')
+    .virtual('shiftProduction.totalRawMaterial')
     .get(function () {
         return (
             this.shiftProduction.firstShift.rawMaterialConsumed +
@@ -134,9 +132,9 @@ productionLogSchema
 
 productionLogSchema.virtual('shiftProduction.totalFiberLoss').get(function () {
     return (
-        ((this.shiftProduction.totalShiftMaterialUsed -
-            this.shiftProduction.totalShiftProduction) /
-            this.shiftProduction.totalShiftMaterialUsed) *
+        ((this.shiftProduction.totalRawMaterial -
+            this.shiftProduction.totalProduction) /
+            this.shiftProduction.totalRawMaterial) *
         100
     )
 })
