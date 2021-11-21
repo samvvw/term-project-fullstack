@@ -4,10 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "start": "node server/app.js",
         "dev": "nodemon server/app.js",
         "build": "webpack --mode production",
         "watch": "webpack --watch",
         "test": "jest"
+    },
+    "engines": {
+        "node": "14.x"
     },
     "author": "",
     "license": "ISC",
