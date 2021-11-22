@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const TableContainer = styled.div`
-    border: ${({ theme }) => theme.pallette.primary.dark} 2px solid;
+    border: ${({ theme }) => theme.pallette.primary.dark} 4px solid;
     border-radius: 5px;
     width: 90%;
     margin: 0 auto;
