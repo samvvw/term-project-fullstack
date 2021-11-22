@@ -26,6 +26,7 @@ module.exports = {
             },
         ],
     },
+    // test
     plugins: [
         new HtmlWebpackPlugin({
             title: 'From Webpack',
