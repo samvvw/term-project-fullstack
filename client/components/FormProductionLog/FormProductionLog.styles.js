@@ -1,13 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const FormProductionLogWrapper = styled('form')`
     border: 1px solid ${({ theme }) => theme.pallette.primary.dark};
     position: relative;
-    width: 90%;
+    height: 22rem;
+    width: 35%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    overflow: hidden;
     input[type='number'] {
         -moz-appearance: textfield;
     }
@@ -19,24 +18,49 @@ export const FormProductionLogWrapper = styled('form')`
     .first-section {
         flex-grow: 1;
     }
-    .submit-button {
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
-        width: 5rem;
-        button {
-            width: 100%;
-        }
-    }
 `
 
+const activePage = css`
+    z-index: 100;
+    opacity: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+`
+
+const hiddenPage = css`
+    z-index: -100;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+`
 export const FormHeadSection = styled('div')`
     border: 1px solid ${({ theme }) => theme.pallette.secondary.dark};
+    position: absolute;
+    ${(props) => (props.activePage ? activePage : hiddenPage)};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
 `
 export const FormShiftProductionSection = styled('div')`
     border: 1px solid ${({ theme }) => theme.pallette.primary[500]};
-    flex-grow: 1.5;
+    position: absolute;
+    ${(props) => (props.activePage ? activePage : hiddenPage)}
     .shift-production-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        h3 {
+            grid-column: 1 / 3;
+        }
+        .shift-production-tabs {
+            grid-column: 1 / 2;
+        }
     }
     .material-type {
         p {
@@ -46,48 +70,75 @@ export const FormShiftProductionSection = styled('div')`
 
     .shift-production-tabs {
         display: flex;
+        flex-direction: column;
         list-style: none;
         li {
+            cursor: pointer;
+            border-radius: 6px 0 0 6px;
             border: 1px solid ${({ theme }) => theme.pallette.secondary[800]};
             cursor: pointer;
             padding: 0.5rem 0.7rem;
         }
+        li:hover {
+            background-color: ${({ theme }) =>
+                theme.pallette.secondary.veryLight};
+        }
+        .active {
+            background-color: ${({ theme }) => theme.pallette.secondary.light};
+        }
     }
 
     .tab-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
         /* flex-grow: 1; */
         position: relative;
         /* height: 100%; */
-        height: 18rem;
+        height: 15rem;
         /* top: 0;
         left: 0;
         right: 0;
         bottom: 0; */
     }
+`
 
-    .shift-production-section {
-        width: 80%;
-        margin: 0 auto;
-        border-radius: 5px;
-        /* background-color: #fff; */
-        height: fit-content;
-        position: absolute;
-        /* top: 0; */
-        left: 0;
-        right: 0;
-        /* bottom: 0; */
-        border: 2px dashed ${({ theme }) => theme.pallette.primary[500]};
+export const ShiftProductionSection = styled.div`
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: fit-content;
+    position: absolute;
+    ${(props) => (props.activePage ? activePage : hiddenPage)}
 
-        & > * {
-            margin-top: 0.5rem;
-        }
+    border: 2px dashed ${({ theme }) => theme.pallette.primary[500]};
+
+    & > * {
+        margin-top: 0.5rem;
     }
 `
 export const FormResourceConsumptionSection = styled('div')`
     border: 1px solid ${({ theme }) => theme.pallette.secondary[800]};
+    position: absolute;
+    ${(props) => (props.activePage ? activePage : hiddenPage)}
+`
+export const PageSection = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+`
+
+export const SubmitSection = styled.div`
+    position: absolute;
+    ${(props) => (props.activePage ? activePage : hiddenPage)}
+    bottom: 1rem;
+    right: 1rem;
+    width: 5rem;
+    button {
+        width: 100%;
+    }
 `
 const FormInput = (props) => {
     return (
@@ -101,44 +152,35 @@ const FormInput = (props) => {
                 {...props}
                 className="production-form-input"
             />
-            {props.type === 'checkbox' ? (
-                <span className="checkmark"></span>
-            ) : (
-                ''
-            )}
+            {/* {props.type === 'checkbox' ? '' : ''} */}
         </div>
     )
 }
 
 export const Input = styled((props) => <FormInput {...props} />)`
-    /* background-color: #b7e3ed; */
     display: ${(props) => (props.notFlex ? 'block' : 'flex')};
-    /* flex-direction: column; */
-
+    flex-direction: ${(props) => (props.column ? 'column' : 'row')};
+    align-items: flex-start;
     justify-content: space-between;
-    /* display: block; */
     position: relative;
-    /* padding-left: 35px; */
-    /* margin-bottom: 12px; */
     cursor: pointer;
-    /* font-size: 22px; */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 
     input {
         width: ${(props) => (props.width ? props.width : '4rem')};
+        border-style: none;
+        border-bottom: 1px solid ${({ theme }) => theme.pallette.black[900]};
+        color: ${({ theme }) => theme.pallette.black[900]};
+        background-color: ${({ theme }) => theme.pallette.black[50]};
     }
+    /* label {
+        width: 100%;
+    } */
 
-    input[type='checkbox'] {
+    /* input[type='checkbox'] {
         position: absolute;
         opacity: 0;
         cursor: pointer;
-        height: 0;
-        width: 0;
-    }
-    label {
+        height: 
         width: 100%;
     }
 
@@ -179,7 +221,7 @@ export const Input = styled((props) => <FormInput {...props} />)`
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
-    }
+    } */
 `
 
 /**

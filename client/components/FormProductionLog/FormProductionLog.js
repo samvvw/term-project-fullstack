@@ -6,6 +6,9 @@ import {
     FormShiftProductionSection,
     FormResourceConsumptionSection,
     Input,
+    ShiftProductionSection,
+    SubmitSection,
+    PageSection,
 } from './FormProductionLog.styles'
 
 export function FormProductionLog({ setData }) {
@@ -37,6 +40,7 @@ export function FormProductionLog({ setData }) {
         timeLost: '',
     })
 
+    const [formPage, setFormPage] = useState(1)
     const [shiftTab, setShiftTab] = useState('firstShift')
 
     function handleChange(e) {
@@ -142,154 +146,198 @@ export function FormProductionLog({ setData }) {
             console.log(error)
         }
     }
+
+    function handleNextPage() {
+        setFormPage((prev) => (prev >= 1 ? (prev += 1) : 1))
+    }
+
+    function handlePreviousPage() {
+        setFormPage((prev) => (prev >= 1 ? (prev -= 1) : 1))
+    }
+
+    function handleGoToPage(page) {
+        if (page >= 3 || page <= 5) {
+            setFormPage(page)
+        }
+    }
+
     return (
         <FormProductionLogWrapper onSubmit={handleSubmit}>
-            <div className="first-section">
-                <FormHeadSection>
-                    <Input
-                        htmlFor="millManager"
-                        label="Mill Manager"
-                        type="text"
-                        onChange={handleChange}
-                        required
-                        value={formstate.millManager}
-                    />
-                    <Input
-                        htmlFor="logDate"
-                        label="Log Date"
-                        type="date"
-                        onChange={handleChange}
-                        required
-                        value={formstate.logDate}
-                    />
-                </FormHeadSection>
-                <FormResourceConsumptionSection>
-                    <Input
-                        htmlFor="coalUsed"
-                        label="Coal Used"
-                        type="number"
-                        min="-1"
-                        step={-1.1}
-                        onChange={handleChange}
-                        required
-                        value={formstate.coalUsed}
-                    />
-                    <Input
-                        htmlFor="electricityConsumed"
-                        label="Electricity Consumed"
-                        type="number"
-                        min="-1"
-                        step={-1.1}
-                        onChange={handleChange}
-                        required
-                        value={formstate.electricityConsumed}
-                    />
-                    <Input
-                        htmlFor="starchConsumed"
-                        label="Starch Consumed"
-                        type="number"
-                        min="-1"
-                        step={-1.1}
-                        onChange={handleChange}
-                        required
-                        value={formstate.starchConsumed}
-                    />
-                    <Input
-                        htmlFor="polycationicConsumed"
-                        label="Polycationic Consumed"
-                        type="number"
-                        min="-1"
-                        step={-1.1}
-                        onChange={handleChange}
-                        required
-                        value={formstate.polycationicConsumed}
-                    />
-                    <Input
-                        htmlFor="akdConsumed"
-                        label="AKD Consumed"
-                        type="number"
-                        min="-1"
-                        step={-1.1}
-                        onChange={handleChange}
-                        required
-                        value={formstate.akdConsumed}
-                    />
-                    <Input
-                        htmlFor="antifoamConsumed"
-                        label="Antifoam"
-                        type="number"
-                        min="-1"
-                        step={-1.1}
-                        onChange={handleChange}
-                        required
-                        value={formstate.antifoamConsumed}
-                    />
-                    <Input
-                        htmlFor="dispro50Consumed"
-                        label="Dispro 50 Consumed"
-                        type="number"
-                        min="-1"
-                        step={-1.1}
-                        onChange={handleChange}
-                        required
-                        value={formstate.dispro50Consumed}
-                    />
-                    <Input
-                        htmlFor="timeLost"
-                        label="Time Lost"
-                        type="number"
-                        min="-1"
-                        max="23"
-                        onChange={handleChange}
-                        required
-                        value={formstate.timeLost}
-                    />
-                </FormResourceConsumptionSection>
-            </div>
-            <FormShiftProductionSection>
+            <FormHeadSection activePage={formPage === 1 ? true : false}>
+                <Input
+                    htmlFor="millManager"
+                    label="Mill Manager"
+                    type="text"
+                    width={'7rem'}
+                    column
+                    onChange={handleChange}
+                    required
+                    value={formstate.millManager}
+                />
+                <Input
+                    htmlFor="logDate"
+                    label="Log Date"
+                    type="date"
+                    width={'inherit'}
+                    column
+                    onChange={handleChange}
+                    required
+                    value={formstate.logDate}
+                />
+                <button
+                    type="button"
+                    onClick={handleNextPage}
+                    disabled={formPage === 1 ? false : true}
+                >
+                    Next
+                </button>
+            </FormHeadSection>
+            <FormResourceConsumptionSection
+                activePage={formPage === 2 ? true : false}
+            >
+                <Input
+                    htmlFor="coalUsed"
+                    label="Coal Used"
+                    type="number"
+                    min="-1"
+                    step={-1.1}
+                    onChange={handleChange}
+                    required
+                    value={formstate.coalUsed}
+                />
+                <Input
+                    htmlFor="electricityConsumed"
+                    label="Electricity Consumed"
+                    type="number"
+                    min="-1"
+                    step={-1.1}
+                    onChange={handleChange}
+                    required
+                    value={formstate.electricityConsumed}
+                />
+                <Input
+                    htmlFor="starchConsumed"
+                    label="Starch Consumed"
+                    type="number"
+                    min="-1"
+                    step={-1.1}
+                    onChange={handleChange}
+                    required
+                    value={formstate.starchConsumed}
+                />
+                <Input
+                    htmlFor="polycationicConsumed"
+                    label="Polycationic Consumed"
+                    type="number"
+                    min="-1"
+                    step={-1.1}
+                    onChange={handleChange}
+                    required
+                    value={formstate.polycationicConsumed}
+                />
+                <Input
+                    htmlFor="akdConsumed"
+                    label="AKD Consumed"
+                    type="number"
+                    min="-1"
+                    step={-1.1}
+                    onChange={handleChange}
+                    required
+                    value={formstate.akdConsumed}
+                />
+                <Input
+                    htmlFor="antifoamConsumed"
+                    label="Antifoam"
+                    type="number"
+                    min="-1"
+                    step={-1.1}
+                    onChange={handleChange}
+                    required
+                    value={formstate.antifoamConsumed}
+                />
+                <Input
+                    htmlFor="dispro50Consumed"
+                    label="Dispro 50 Consumed"
+                    type="number"
+                    min="-1"
+                    step={-1.1}
+                    onChange={handleChange}
+                    required
+                    value={formstate.dispro50Consumed}
+                />
+                <Input
+                    htmlFor="timeLost"
+                    label="Time Lost"
+                    type="number"
+                    min="-1"
+                    max="23"
+                    onChange={handleChange}
+                    required
+                    value={formstate.timeLost}
+                />
+                <button
+                    type="button"
+                    onClick={handlePreviousPage}
+                    disabled={formPage === 2 ? false : true}
+                >
+                    Previous
+                </button>
+                <button
+                    type="button"
+                    onClick={handleNextPage}
+                    disabled={formPage === 2 ? false : true}
+                >
+                    Next
+                </button>
+            </FormResourceConsumptionSection>
+            <FormShiftProductionSection
+                activePage={formPage >= 3 && formPage <= 5 ? true : false}
+            >
                 <div className="shift-production-wrapper">
                     <h3>Shift Production</h3>
                     <ul className="shift-production-tabs">
                         <li
                             id="firstShift"
-                            onClick={handleTabChange}
-                            style={{
-                                backgroundColor:
-                                    shiftTab === 'firstShift' ? 'gray' : '',
+                            onClick={(e) => {
+                                handleTabChange(e)
+                                handleGoToPage(3)
                             }}
+                            className={
+                                shiftTab === 'firstShift' ? 'active' : ''
+                            }
                         >
                             First Shift
                         </li>
                         <li
                             id="secondShift"
-                            onClick={handleTabChange}
-                            style={{
-                                backgroundColor:
-                                    shiftTab === 'secondShift' ? 'gray' : '',
+                            onClick={(e) => {
+                                handleTabChange(e)
+                                handleGoToPage(4)
                             }}
+                            className={
+                                shiftTab === 'secondShift' ? 'active' : ''
+                            }
                         >
                             Second Shift
                         </li>
                         <li
                             id="thirdShift"
-                            onClick={handleTabChange}
-                            style={{
-                                backgroundColor:
-                                    shiftTab === 'thirdShift' ? 'gray' : '',
+                            onClick={(e) => {
+                                handleTabChange(e)
+                                handleGoToPage(5)
                             }}
+                            className={
+                                shiftTab === 'thirdShift' ? 'active' : ''
+                            }
                         >
                             Third Shift
                         </li>
                     </ul>
 
                     <div className="tab-wrapper">
-                        <div
+                        <ShiftProductionSection
                             className="shift-production-section"
-                            style={{
-                                zIndex:
-                                    shiftTab === 'firstShift' ? '100' : '-100',
-                                opacity: shiftTab === 'firstShift' ? '1' : '0',
-                            }}
+                            activePage={formPage === 3 ? true : false}
                         >
                             <h4>First Shift</h4>
                             <Input
@@ -341,15 +389,25 @@ export function FormProductionLog({ setData }) {
                                 required
                                 value={formstate.firstShiftRawMaterialConsumed}
                             />
-                        </div>
+                            <button
+                                type="button"
+                                onClick={handlePreviousPage}
+                                disabled={formPage === 3 ? false : true}
+                            >
+                                Previous
+                            </button>
+                            <button
+                                type="button"
+                                onClick={handleNextPage}
+                                disabled={formPage === 3 ? false : true}
+                            >
+                                Next
+                            </button>
+                        </ShiftProductionSection>
 
-                        <div
+                        <ShiftProductionSection
                             className="shift-production-section"
-                            style={{
-                                zIndex:
-                                    shiftTab === 'secondShift' ? '100' : '-100',
-                                opacity: shiftTab === 'secondShift' ? '1' : '0',
-                            }}
+                            activePage={formPage === 4 ? true : false}
                         >
                             <h4>Second Shift</h4>
                             <Input
@@ -401,14 +459,24 @@ export function FormProductionLog({ setData }) {
                                 required
                                 value={formstate.secondShiftRawMaterialConsumed}
                             />
-                        </div>
-                        <div
+                            <button
+                                type="button"
+                                onClick={handlePreviousPage}
+                                disabled={formPage === 4 ? false : true}
+                            >
+                                Previous
+                            </button>
+                            <button
+                                type="button"
+                                onClick={handleNextPage}
+                                disabled={formPage === 4 ? false : true}
+                            >
+                                Next
+                            </button>
+                        </ShiftProductionSection>
+                        <ShiftProductionSection
                             className="shift-production-section"
-                            style={{
-                                zIndex:
-                                    shiftTab === 'thirdShift' ? '100' : '-100',
-                                opacity: shiftTab === 'thirdShift' ? '1' : '0',
-                            }}
+                            activePage={formPage === 5 ? true : false}
                         >
                             <h4>Third Shift</h4>
                             <Input
@@ -460,13 +528,37 @@ export function FormProductionLog({ setData }) {
                                 required
                                 value={formstate.thirdShiftRawMaterialConsumed}
                             />
-                        </div>
+                            <button
+                                type="button"
+                                onClick={handlePreviousPage}
+                                disabled={formPage === 5 ? false : true}
+                            >
+                                Previous
+                            </button>
+                            <button
+                                type="button"
+                                onClick={handleNextPage}
+                                disabled={formPage === 5 ? false : true}
+                            >
+                                Next
+                            </button>
+                        </ShiftProductionSection>
                     </div>
                 </div>
             </FormShiftProductionSection>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
+            <SubmitSection activePage={formPage === 6 ? true : false}>
+                <button type="button" onClick={handlePreviousPage}>
+                    Previous
+                </button>
+                <button type="submit" disabled={formPage === 6 ? false : true}>
+                    Submit
+                </button>
+            </SubmitSection>
+            <PageSection>
+                <p>
+                    Page <span>{formPage}/6</span>
+                </p>
+            </PageSection>
         </FormProductionLogWrapper>
     )
 }
