@@ -17,248 +17,259 @@ exports[`
     Helloaa
   </h1>
   <form
-    className="sc-bdvvtL jWUKJp"
+    className="sc-bdvvtL fxRVsI"
     onSubmit={[Function]}
   >
     <div
-      className="first-section"
+      className="sc-gsDKAQ eeFGtY"
     >
       <div
-        className="sc-gsDKAQ jvsFNb"
+        className="sc-iCfMLu Chgkz"
       >
-        <div
-          className="sc-eCImPb igjIOb"
+        <label
+          htmlFor="millManager"
         >
-          <label
-            htmlFor="millManager"
-          >
-            Mill Manager
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="millManager"
-            id="millManager"
-            label="Mill Manager"
-            name="millManager"
-            onChange={[Function]}
-            required={true}
-            type="text"
-            value=""
-          />
-          
-        </div>
-        <div
-          className="sc-eCImPb igjIOb"
-        >
-          <label
-            htmlFor="logDate"
-          >
-            Log Date
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="logDate"
-            id="logDate"
-            label="Log Date"
-            name="logDate"
-            onChange={[Function]}
-            required={true}
-            type="date"
-            value=""
-          />
-          
-        </div>
+          Mill Manager
+        </label>
+        <input
+          className="production-form-input"
+          column={true}
+          htmlFor="millManager"
+          id="millManager"
+          label="Mill Manager"
+          name="millManager"
+          onChange={[Function]}
+          required={true}
+          type="text"
+          value=""
+          width="7rem"
+        />
       </div>
       <div
-        className="sc-hKwDye esucPI"
+        className="sc-iCfMLu mVqrv"
       >
-        <div
-          className="sc-eCImPb igjIOb"
+        <label
+          htmlFor="logDate"
         >
-          <label
-            htmlFor="coalUsed"
-          >
-            Coal Used
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="coalUsed"
-            id="coalUsed"
-            label="Coal Used"
-            min="-1"
-            name="coalUsed"
-            onChange={[Function]}
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-          
-        </div>
-        <div
-          className="sc-eCImPb igjIOb"
-        >
-          <label
-            htmlFor="electricityConsumed"
-          >
-            Electricity Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="electricityConsumed"
-            id="electricityConsumed"
-            label="Electricity Consumed"
-            min="-1"
-            name="electricityConsumed"
-            onChange={[Function]}
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-          
-        </div>
-        <div
-          className="sc-eCImPb igjIOb"
-        >
-          <label
-            htmlFor="starchConsumed"
-          >
-            Starch Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="starchConsumed"
-            id="starchConsumed"
-            label="Starch Consumed"
-            min="-1"
-            name="starchConsumed"
-            onChange={[Function]}
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-          
-        </div>
-        <div
-          className="sc-eCImPb igjIOb"
-        >
-          <label
-            htmlFor="polycationicConsumed"
-          >
-            Polycationic Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="polycationicConsumed"
-            id="polycationicConsumed"
-            label="Polycationic Consumed"
-            min="-1"
-            name="polycationicConsumed"
-            onChange={[Function]}
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-          
-        </div>
-        <div
-          className="sc-eCImPb igjIOb"
-        >
-          <label
-            htmlFor="akdConsumed"
-          >
-            AKD Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="akdConsumed"
-            id="akdConsumed"
-            label="AKD Consumed"
-            min="-1"
-            name="akdConsumed"
-            onChange={[Function]}
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-          
-        </div>
-        <div
-          className="sc-eCImPb igjIOb"
-        >
-          <label
-            htmlFor="antifoamConsumed"
-          >
-            Antifoam
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="antifoamConsumed"
-            id="antifoamConsumed"
-            label="Antifoam"
-            min="-1"
-            name="antifoamConsumed"
-            onChange={[Function]}
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-          
-        </div>
-        <div
-          className="sc-eCImPb igjIOb"
-        >
-          <label
-            htmlFor="dispro50Consumed"
-          >
-            Dispro 50 Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="dispro50Consumed"
-            id="dispro50Consumed"
-            label="Dispro 50 Consumed"
-            min="-1"
-            name="dispro50Consumed"
-            onChange={[Function]}
-            required={true}
-            step={-1.1}
-            type="number"
-          />
-          
-        </div>
-        <div
-          className="sc-eCImPb igjIOb"
-        >
-          <label
-            htmlFor="timeLost"
-          >
-            Time Lost
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="timeLost"
-            id="timeLost"
-            label="Time Lost"
-            max="23"
-            min="-1"
-            name="timeLost"
-            onChange={[Function]}
-            required={true}
-            type="number"
-            value=""
-          />
-          
-        </div>
+          Log Date
+        </label>
+        <input
+          className="production-form-input"
+          column={true}
+          htmlFor="logDate"
+          id="logDate"
+          label="Log Date"
+          name="logDate"
+          onChange={[Function]}
+          required={true}
+          type="date"
+          value=""
+          width="inherit"
+        />
       </div>
+      <button
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Next
+      </button>
     </div>
     <div
-      className="sc-dkPtRN bhTaaV"
+      className="sc-eCImPb dusQGG"
+    >
+      <div
+        className="sc-iCfMLu eWJlWU"
+      >
+        <label
+          htmlFor="coalUsed"
+        >
+          Coal Used
+        </label>
+        <input
+          className="production-form-input"
+          htmlFor="coalUsed"
+          id="coalUsed"
+          label="Coal Used"
+          min="-1"
+          name="coalUsed"
+          onChange={[Function]}
+          required={true}
+          step={-1.1}
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="sc-iCfMLu eWJlWU"
+      >
+        <label
+          htmlFor="electricityConsumed"
+        >
+          Electricity Consumed
+        </label>
+        <input
+          className="production-form-input"
+          htmlFor="electricityConsumed"
+          id="electricityConsumed"
+          label="Electricity Consumed"
+          min="-1"
+          name="electricityConsumed"
+          onChange={[Function]}
+          required={true}
+          step={-1.1}
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="sc-iCfMLu eWJlWU"
+      >
+        <label
+          htmlFor="starchConsumed"
+        >
+          Starch Consumed
+        </label>
+        <input
+          className="production-form-input"
+          htmlFor="starchConsumed"
+          id="starchConsumed"
+          label="Starch Consumed"
+          min="-1"
+          name="starchConsumed"
+          onChange={[Function]}
+          required={true}
+          step={-1.1}
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="sc-iCfMLu eWJlWU"
+      >
+        <label
+          htmlFor="polycationicConsumed"
+        >
+          Polycationic Consumed
+        </label>
+        <input
+          className="production-form-input"
+          htmlFor="polycationicConsumed"
+          id="polycationicConsumed"
+          label="Polycationic Consumed"
+          min="-1"
+          name="polycationicConsumed"
+          onChange={[Function]}
+          required={true}
+          step={-1.1}
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="sc-iCfMLu eWJlWU"
+      >
+        <label
+          htmlFor="akdConsumed"
+        >
+          AKD Consumed
+        </label>
+        <input
+          className="production-form-input"
+          htmlFor="akdConsumed"
+          id="akdConsumed"
+          label="AKD Consumed"
+          min="-1"
+          name="akdConsumed"
+          onChange={[Function]}
+          required={true}
+          step={-1.1}
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="sc-iCfMLu eWJlWU"
+      >
+        <label
+          htmlFor="antifoamConsumed"
+        >
+          Antifoam
+        </label>
+        <input
+          className="production-form-input"
+          htmlFor="antifoamConsumed"
+          id="antifoamConsumed"
+          label="Antifoam"
+          min="-1"
+          name="antifoamConsumed"
+          onChange={[Function]}
+          required={true}
+          step={-1.1}
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="sc-iCfMLu eWJlWU"
+      >
+        <label
+          htmlFor="dispro50Consumed"
+        >
+          Dispro 50 Consumed
+        </label>
+        <input
+          className="production-form-input"
+          htmlFor="dispro50Consumed"
+          id="dispro50Consumed"
+          label="Dispro 50 Consumed"
+          min="-1"
+          name="dispro50Consumed"
+          onChange={[Function]}
+          required={true}
+          step={-1.1}
+          type="number"
+        />
+      </div>
+      <div
+        className="sc-iCfMLu eWJlWU"
+      >
+        <label
+          htmlFor="timeLost"
+        >
+          Time Lost
+        </label>
+        <input
+          className="production-form-input"
+          htmlFor="timeLost"
+          id="timeLost"
+          label="Time Lost"
+          max="23"
+          min="-1"
+          name="timeLost"
+          onChange={[Function]}
+          required={true}
+          type="number"
+          value=""
+        />
+      </div>
+      <button
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        Previous
+      </button>
+      <button
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        Next
+      </button>
+    </div>
+    <div
+      className="sc-dkPtRN jXGQab"
     >
       <div
         className="shift-production-wrapper"
@@ -270,35 +281,23 @@ exports[`
           className="shift-production-tabs"
         >
           <li
+            className="active"
             id="firstShift"
             onClick={[Function]}
-            style={
-              Object {
-                "backgroundColor": "gray",
-              }
-            }
           >
             First Shift
           </li>
           <li
+            className=""
             id="secondShift"
             onClick={[Function]}
-            style={
-              Object {
-                "backgroundColor": "",
-              }
-            }
           >
             Second Shift
           </li>
           <li
+            className=""
             id="thirdShift"
             onClick={[Function]}
-            style={
-              Object {
-                "backgroundColor": "",
-              }
-            }
           >
             Third Shift
           </li>
@@ -307,19 +306,13 @@ exports[`
           className="tab-wrapper"
         >
           <div
-            className="shift-production-section"
-            style={
-              Object {
-                "opacity": "1",
-                "zIndex": "100",
-              }
-            }
+            className="sc-hKwDye haOcKZ shift-production-section"
           >
             <h4>
               First Shift
             </h4>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="firstShiftManager"
@@ -337,7 +330,6 @@ exports[`
                 type="text"
                 value=""
               />
-              
             </div>
             <div
               className="material-type"
@@ -346,7 +338,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-eCImPb igjIOb"
+                className="sc-iCfMLu eWJlWU"
               >
                 <label
                   htmlFor="firstShiftMaterialStarched"
@@ -363,12 +355,9 @@ exports[`
                   onChange={[Function]}
                   type="checkbox"
                 />
-                <span
-                  className="checkmark"
-                />
               </div>
               <div
-                className="sc-eCImPb igjIOb"
+                className="sc-iCfMLu eWJlWU"
               >
                 <label
                   htmlFor="firstShiftMaterialWeight"
@@ -387,11 +376,10 @@ exports[`
                   type="number"
                   value=""
                 />
-                
               </div>
             </div>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="firstShiftMaterialProduced"
@@ -411,10 +399,9 @@ exports[`
                 type="number"
                 value=""
               />
-              
             </div>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="firstShiftRawMaterialConsumed"
@@ -434,23 +421,30 @@ exports[`
                 type="number"
                 value=""
               />
-              
             </div>
+            <button
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Previous
+            </button>
+            <button
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Next
+            </button>
           </div>
           <div
-            className="shift-production-section"
-            style={
-              Object {
-                "opacity": "0",
-                "zIndex": "-100",
-              }
-            }
+            className="sc-hKwDye haOcKZ shift-production-section"
           >
             <h4>
               Second Shift
             </h4>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="secondShiftManager"
@@ -468,7 +462,6 @@ exports[`
                 type="text"
                 value=""
               />
-              
             </div>
             <div
               className="material-type"
@@ -477,7 +470,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-eCImPb igjIOb"
+                className="sc-iCfMLu eWJlWU"
               >
                 <label
                   htmlFor="secondShiftMaterialStarched"
@@ -494,12 +487,9 @@ exports[`
                   onChange={[Function]}
                   type="checkbox"
                 />
-                <span
-                  className="checkmark"
-                />
               </div>
               <div
-                className="sc-eCImPb igjIOb"
+                className="sc-iCfMLu eWJlWU"
               >
                 <label
                   htmlFor="secondShiftMaterialWeight"
@@ -518,11 +508,10 @@ exports[`
                   type="number"
                   value=""
                 />
-                
               </div>
             </div>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="secondShiftMaterialProduced"
@@ -542,10 +531,9 @@ exports[`
                 type="number"
                 value=""
               />
-              
             </div>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="secondShiftRawMaterialConsumed"
@@ -565,23 +553,30 @@ exports[`
                 type="number"
                 value=""
               />
-              
             </div>
+            <button
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Previous
+            </button>
+            <button
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Next
+            </button>
           </div>
           <div
-            className="shift-production-section"
-            style={
-              Object {
-                "opacity": "0",
-                "zIndex": "-100",
-              }
-            }
+            className="sc-hKwDye haOcKZ shift-production-section"
           >
             <h4>
               Third Shift
             </h4>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="thirdShiftManager"
@@ -599,7 +594,6 @@ exports[`
                 type="text"
                 value=""
               />
-              
             </div>
             <div
               className="material-type"
@@ -608,7 +602,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-eCImPb igjIOb"
+                className="sc-iCfMLu eWJlWU"
               >
                 <label
                   htmlFor="thirdShiftMaterialStarched"
@@ -625,12 +619,9 @@ exports[`
                   onChange={[Function]}
                   type="checkbox"
                 />
-                <span
-                  className="checkmark"
-                />
               </div>
               <div
-                className="sc-eCImPb igjIOb"
+                className="sc-iCfMLu eWJlWU"
               >
                 <label
                   htmlFor="thirdShiftMaterialWeight"
@@ -649,11 +640,10 @@ exports[`
                   type="number"
                   value=""
                 />
-                
               </div>
             </div>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="thirdShiftMaterialProduced"
@@ -673,10 +663,9 @@ exports[`
                 type="number"
                 value=""
               />
-              
             </div>
             <div
-              className="sc-eCImPb igjIOb"
+              className="sc-iCfMLu eWJlWU"
             >
               <label
                 htmlFor="thirdShiftRawMaterialConsumed"
@@ -696,18 +685,51 @@ exports[`
                 type="number"
                 value=""
               />
-              
             </div>
+            <button
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Previous
+            </button>
+            <button
+              disabled={true}
+              onClick={[Function]}
+              type="button"
+            >
+              Next
+            </button>
           </div>
         </div>
       </div>
     </div>
-    <div>
+    <div
+      className="sc-gKclnd kIDwSK"
+    >
       <button
+        onClick={[Function]}
+        type="button"
+      >
+        Previous
+      </button>
+      <button
+        disabled={true}
         type="submit"
       >
         Submit
       </button>
+    </div>
+    <div
+      className="sc-jRQBWg jbrOga"
+    >
+      <p>
+        Page 
+        <span>
+          1
+          /6
+        </span>
+      </p>
     </div>
   </form>
   <div
@@ -728,10 +750,10 @@ exports[`
     Add
   </button>
   <div
-    className="sc-jRQBWg jIiQRM"
+    className="sc-furwcr hgacLA"
   >
     <table
-      className="sc-gKclnd yOiLT"
+      className="sc-pVTFL ihvyvC"
       role="table"
     >
       <thead>

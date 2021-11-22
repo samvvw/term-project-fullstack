@@ -1,6 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
+const BundleAnalyzerPlugin =
+    require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
     mode: 'development',
@@ -33,5 +35,6 @@ module.exports = {
             extensions: ['.js', '.jsx'],
             exclude: ['node_modules', 'public', 'server/tests/*'],
         }),
+        new BundleAnalyzerPlugin(),
     ],
 }
