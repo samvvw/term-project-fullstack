@@ -1,9 +1,8 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import { useTable } from 'react-table'
 import { TableWrapper, TableContainer } from './ProductionLogsTable.styles'
 
-export function ProductionLogsTable() {
-    const [data, setData] = useState([])
+export function ProductionLogsTable({ tableData }) {
     const [columns, setColumns] = useState([
         {
             Header: 'Info',
@@ -48,7 +47,12 @@ export function ProductionLogsTable() {
                 {
                     Header: 'Fiber Loss',
                     id: 'first-shift-fiber-loss',
-                    accessor: (row) => row.shiftProduction.firstShift.fiberLoss,
+                    accessor: (row) =>
+                        `${
+                            Math.round(
+                                row.shiftProduction.firstShift.fiberLoss * 100
+                            ) / 100
+                        }%`,
                 },
             ],
         },
@@ -80,7 +84,11 @@ export function ProductionLogsTable() {
                     Header: 'Fiber Loss',
                     id: 'second-shift-fiber-loss',
                     accessor: (row) =>
-                        row.shiftProduction.secondShift.fiberLoss,
+                        `${
+                            Math.round(
+                                row.shiftProduction.secondShift.fiberLoss * 100
+                            ) / 100
+                        }%`,
                 },
             ],
         },
@@ -111,7 +119,12 @@ export function ProductionLogsTable() {
                 {
                     Header: 'Fiber Loss',
                     id: 'third-shift-fiber-loss',
-                    accessor: (row) => row.shiftProduction.thirdShift.fiberLoss,
+                    accessor: (row) =>
+                        `${
+                            Math.round(
+                                row.shiftProduction.thirdShift.fiberLoss * 100
+                            ) / 100
+                        }%`,
                 },
             ],
         },
@@ -131,7 +144,82 @@ export function ProductionLogsTable() {
                 {
                     Header: 'Total Fiber Loss',
                     id: 'daily-total-fiber-loss',
-                    accessor: (row) => row.shiftProduction.totalFiberLoss,
+                    accessor: (row) =>
+                        `${
+                            Math.round(
+                                row.shiftProduction.totalFiberLoss * 100
+                            ) / 100
+                        }%`,
+                },
+            ],
+        },
+        {
+            Header: 'Coal',
+            columns: [
+                {
+                    Header: 'Total',
+                    id: 'total-coal',
+                    accessor: (row) => row.coalUsed,
+                },
+                {
+                    Header: 'kg per ton',
+                    id: 'coal-kg-per-ton',
+                    accessor: (row) =>
+                        Math.round(
+                            (row.shiftProduction.totalProduction /
+                                row.coalUsed) *
+                                100
+                        ) / 100,
+                },
+            ],
+        },
+        {
+            Header: 'Electricity',
+            columns: [
+                {
+                    Header: 'Total',
+                    id: 'total-electricity',
+                    accessor: (row) => row.electricityConsumed,
+                },
+                {
+                    Header: 'Kw per ton',
+                    id: 'kw-per-ton',
+                    accessor: (row) =>
+                        Math.round(
+                            (row.shiftProduction.totalProduction /
+                                row.electricityConsumed) *
+                                1000
+                        ) / 1000,
+                },
+            ],
+        },
+        {
+            Header: 'Chemicals',
+            columns: [
+                {
+                    Header: 'Starch',
+                    id: 'total-starch',
+                    accessor: (row) => row.starchConsumed,
+                },
+                {
+                    Header: 'Polycationic',
+                    id: 'total-polycationic',
+                    accessor: (row) => row.polycationicConsumed,
+                },
+                {
+                    Header: 'AKD',
+                    id: 'total-akd',
+                    accessor: (row) => row.akdConsumed,
+                },
+                {
+                    Header: 'Antifoam',
+                    id: 'total-antifoam',
+                    accessor: (row) => row.antifoamConsumed,
+                },
+                {
+                    Header: 'Dispro 51',
+                    id: 'total-dispro51',
+                    accessor: (row) => row.dispro51Consumed,
                 },
             ],
         },
@@ -139,24 +227,13 @@ export function ProductionLogsTable() {
 
     const tableColumns = useMemo(() => columns, [columns])
 
-    const tableData = useMemo(() => data, [data])
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch('/api/production-log')
-
-            const responseData = await response.json()
-
-            setData(responseData)
-        }
-        fetchData()
-    }, [])
-
     const tableInstance = useTable({ columns: tableColumns, data: tableData })
 
     const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
         tableInstance
 
     function handleColumnChange() {
+        console.log(rows)
         setColumns((prev) => {
             const index = prev.findIndex(
                 (e) =>
@@ -228,7 +305,9 @@ export function ProductionLogsTable() {
                 )}
             </TableContainer>
             <pre>
-                <code>{JSON.stringify(tableData, null, 4)}</code>
+                <code>
+                    {rows.map((row) => JSON.stringify(row.values, null, 4))}
+                </code>
             </pre>
         </>
     )

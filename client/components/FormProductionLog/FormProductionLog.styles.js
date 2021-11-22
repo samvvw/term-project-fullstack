@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const FormProductionLogWrapper = styled('form')`
     border: 1px solid ${({ theme }) => theme.pallette.primary.dark};
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
 `
 
@@ -25,7 +25,28 @@ export const FormShiftProductionSection = styled('div')`
         }
     }
 
+    .tab-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-grow: 1; */
+        position: relative;
+        /* height: 100%; */
+        height: 10rem;
+        /* top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; */
+    }
+
     .shift-production-section {
+        background-color: #fff;
+        height: fit-content;
+        position: absolute;
+        /* top: 0; */
+        left: 0;
+        right: 0;
+        /* bottom: 0; */
         border: 2px dashed ${({ theme }) => theme.pallette.primary[500]};
     }
 `
