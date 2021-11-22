@@ -39,7 +39,7 @@ export function ProductionLogsTable({ tableData }) {
                         row.shiftProduction.firstShift.materialProduced,
                 },
                 {
-                    Header: 'Raw Material',
+                    Header: 'OCC',
                     id: 'first-shift-raw-material',
                     accessor: (row) =>
                         row.shiftProduction.firstShift.rawMaterialConsumed,
@@ -75,7 +75,7 @@ export function ProductionLogsTable({ tableData }) {
                         row.shiftProduction.secondShift.materialProduced,
                 },
                 {
-                    Header: 'Raw Material',
+                    Header: 'OCC',
                     id: 'second-shift-raw-material',
                     accessor: (row) =>
                         row.shiftProduction.secondShift.rawMaterialConsumed,
@@ -111,7 +111,7 @@ export function ProductionLogsTable({ tableData }) {
                         row.shiftProduction.thirdShift.materialProduced,
                 },
                 {
-                    Header: 'Raw Material',
+                    Header: 'OCC',
                     id: 'third-shift-raw-material',
                     accessor: (row) =>
                         row.shiftProduction.thirdShift.rawMaterialConsumed,
@@ -137,7 +137,7 @@ export function ProductionLogsTable({ tableData }) {
                     accessor: (row) => row.shiftProduction.totalProduction,
                 },
                 {
-                    Header: 'Total Raw Material',
+                    Header: 'Total OCC',
                     id: 'daily-total-raw-material',
                     accessor: (row) => row.shiftProduction.totalRawMaterial,
                 },
@@ -304,11 +304,11 @@ export function ProductionLogsTable({ tableData }) {
                     'Loading'
                 )}
             </TableContainer>
-            <pre>
+            {/* <pre>
                 <code>
                     {rows.map((row) => JSON.stringify(row.values, null, 4))}
                 </code>
-            </pre>
+            </pre> */}
         </>
     )
 }

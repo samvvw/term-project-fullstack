@@ -104,10 +104,18 @@ export default function App({ title }) {
                     />
                     <CartesianGrid stroke="#ccc" />
                     <XAxis
-                        dataKey={(e) =>
-                            new Date(Date.parse(e.date))
-                                .toISOString()
-                                .split('T')[0]
+                        dataKey={
+                            (e) =>
+                                new Date(Date.parse(e.date)).toLocaleDateString(
+                                    'en-US',
+                                    {
+                                        year: 'numeric',
+                                        month: 'short',
+                                        day: 'numeric',
+                                    }
+                                )
+                            // .toISOString()
+                            // .split('T')[0]
                         }
                     />
                     <YAxis domain={['auto', 'auto']} />

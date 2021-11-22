@@ -17,55 +17,248 @@ exports[`
     Helloaa
   </h1>
   <form
-    className="sc-bdvvtL gIQeXB"
+    className="sc-bdvvtL jWUKJp"
     onSubmit={[Function]}
   >
     <div
-      className="sc-gsDKAQ jvsFNb"
+      className="first-section"
     >
       <div
-        className="sc-eCImPb KqFGh"
+        className="sc-gsDKAQ jvsFNb"
       >
-        <label
-          htmlFor="millManager"
+        <div
+          className="sc-eCImPb igjIOb"
         >
-          Mill Manager
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="millManager"
-          id="millManager"
-          label="Mill Manager"
-          name="millManager"
-          onChange={[Function]}
-          required={true}
-          type="text"
-          value=""
-        />
+          <label
+            htmlFor="millManager"
+          >
+            Mill Manager
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="millManager"
+            id="millManager"
+            label="Mill Manager"
+            name="millManager"
+            onChange={[Function]}
+            required={true}
+            type="text"
+            value=""
+          />
+          
+        </div>
+        <div
+          className="sc-eCImPb igjIOb"
+        >
+          <label
+            htmlFor="logDate"
+          >
+            Log Date
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="logDate"
+            id="logDate"
+            label="Log Date"
+            name="logDate"
+            onChange={[Function]}
+            required={true}
+            type="date"
+            value=""
+          />
+          
+        </div>
       </div>
       <div
-        className="sc-eCImPb KqFGh"
+        className="sc-hKwDye esucPI"
       >
-        <label
-          htmlFor="logDate"
+        <div
+          className="sc-eCImPb igjIOb"
         >
-          Log Date
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="logDate"
-          id="logDate"
-          label="Log Date"
-          name="logDate"
-          onChange={[Function]}
-          required={true}
-          type="date"
-          value=""
-        />
+          <label
+            htmlFor="coalUsed"
+          >
+            Coal Used
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="coalUsed"
+            id="coalUsed"
+            label="Coal Used"
+            min="-1"
+            name="coalUsed"
+            onChange={[Function]}
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+          
+        </div>
+        <div
+          className="sc-eCImPb igjIOb"
+        >
+          <label
+            htmlFor="electricityConsumed"
+          >
+            Electricity Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="electricityConsumed"
+            id="electricityConsumed"
+            label="Electricity Consumed"
+            min="-1"
+            name="electricityConsumed"
+            onChange={[Function]}
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+          
+        </div>
+        <div
+          className="sc-eCImPb igjIOb"
+        >
+          <label
+            htmlFor="starchConsumed"
+          >
+            Starch Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="starchConsumed"
+            id="starchConsumed"
+            label="Starch Consumed"
+            min="-1"
+            name="starchConsumed"
+            onChange={[Function]}
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+          
+        </div>
+        <div
+          className="sc-eCImPb igjIOb"
+        >
+          <label
+            htmlFor="polycationicConsumed"
+          >
+            Polycationic Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="polycationicConsumed"
+            id="polycationicConsumed"
+            label="Polycationic Consumed"
+            min="-1"
+            name="polycationicConsumed"
+            onChange={[Function]}
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+          
+        </div>
+        <div
+          className="sc-eCImPb igjIOb"
+        >
+          <label
+            htmlFor="akdConsumed"
+          >
+            AKD Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="akdConsumed"
+            id="akdConsumed"
+            label="AKD Consumed"
+            min="-1"
+            name="akdConsumed"
+            onChange={[Function]}
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+          
+        </div>
+        <div
+          className="sc-eCImPb igjIOb"
+        >
+          <label
+            htmlFor="antifoamConsumed"
+          >
+            Antifoam
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="antifoamConsumed"
+            id="antifoamConsumed"
+            label="Antifoam"
+            min="-1"
+            name="antifoamConsumed"
+            onChange={[Function]}
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+          
+        </div>
+        <div
+          className="sc-eCImPb igjIOb"
+        >
+          <label
+            htmlFor="dispro50Consumed"
+          >
+            Dispro 50 Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="dispro50Consumed"
+            id="dispro50Consumed"
+            label="Dispro 50 Consumed"
+            min="-1"
+            name="dispro50Consumed"
+            onChange={[Function]}
+            required={true}
+            step={-1.1}
+            type="number"
+          />
+          
+        </div>
+        <div
+          className="sc-eCImPb igjIOb"
+        >
+          <label
+            htmlFor="timeLost"
+          >
+            Time Lost
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="timeLost"
+            id="timeLost"
+            label="Time Lost"
+            max="23"
+            min="-1"
+            name="timeLost"
+            onChange={[Function]}
+            required={true}
+            type="number"
+            value=""
+          />
+          
+        </div>
       </div>
     </div>
     <div
-      className="sc-dkPtRN ouhZg"
+      className="sc-dkPtRN bhTaaV"
     >
       <div
         className="shift-production-wrapper"
@@ -117,6 +310,7 @@ exports[`
             className="shift-production-section"
             style={
               Object {
+                "opacity": "1",
                 "zIndex": "100",
               }
             }
@@ -125,7 +319,7 @@ exports[`
               First Shift
             </h4>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="firstShiftManager"
@@ -143,13 +337,16 @@ exports[`
                 type="text"
                 value=""
               />
+              
             </div>
-            <div>
+            <div
+              className="material-type"
+            >
               <p>
                 Material Type
               </p>
               <div
-                className="sc-eCImPb KqFGh"
+                className="sc-eCImPb igjIOb"
               >
                 <label
                   htmlFor="firstShiftMaterialStarched"
@@ -166,9 +363,12 @@ exports[`
                   onChange={[Function]}
                   type="checkbox"
                 />
+                <span
+                  className="checkmark"
+                />
               </div>
               <div
-                className="sc-eCImPb KqFGh"
+                className="sc-eCImPb igjIOb"
               >
                 <label
                   htmlFor="firstShiftMaterialWeight"
@@ -187,10 +387,11 @@ exports[`
                   type="number"
                   value=""
                 />
+                
               </div>
             </div>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="firstShiftMaterialProduced"
@@ -210,9 +411,10 @@ exports[`
                 type="number"
                 value=""
               />
+              
             </div>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="firstShiftRawMaterialConsumed"
@@ -232,12 +434,14 @@ exports[`
                 type="number"
                 value=""
               />
+              
             </div>
           </div>
           <div
             className="shift-production-section"
             style={
               Object {
+                "opacity": "0",
                 "zIndex": "-100",
               }
             }
@@ -246,7 +450,7 @@ exports[`
               Second Shift
             </h4>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="secondShiftManager"
@@ -264,13 +468,16 @@ exports[`
                 type="text"
                 value=""
               />
+              
             </div>
-            <div>
+            <div
+              className="material-type"
+            >
               <p>
                 Material Type
               </p>
               <div
-                className="sc-eCImPb KqFGh"
+                className="sc-eCImPb igjIOb"
               >
                 <label
                   htmlFor="secondShiftMaterialStarched"
@@ -287,9 +494,12 @@ exports[`
                   onChange={[Function]}
                   type="checkbox"
                 />
+                <span
+                  className="checkmark"
+                />
               </div>
               <div
-                className="sc-eCImPb KqFGh"
+                className="sc-eCImPb igjIOb"
               >
                 <label
                   htmlFor="secondShiftMaterialWeight"
@@ -308,10 +518,11 @@ exports[`
                   type="number"
                   value=""
                 />
+                
               </div>
             </div>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="secondShiftMaterialProduced"
@@ -331,9 +542,10 @@ exports[`
                 type="number"
                 value=""
               />
+              
             </div>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="secondShiftRawMaterialConsumed"
@@ -353,12 +565,14 @@ exports[`
                 type="number"
                 value=""
               />
+              
             </div>
           </div>
           <div
             className="shift-production-section"
             style={
               Object {
+                "opacity": "0",
                 "zIndex": "-100",
               }
             }
@@ -367,7 +581,7 @@ exports[`
               Third Shift
             </h4>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="thirdShiftManager"
@@ -385,13 +599,16 @@ exports[`
                 type="text"
                 value=""
               />
+              
             </div>
-            <div>
+            <div
+              className="material-type"
+            >
               <p>
                 Material Type
               </p>
               <div
-                className="sc-eCImPb KqFGh"
+                className="sc-eCImPb igjIOb"
               >
                 <label
                   htmlFor="thirdShiftMaterialStarched"
@@ -408,9 +625,12 @@ exports[`
                   onChange={[Function]}
                   type="checkbox"
                 />
+                <span
+                  className="checkmark"
+                />
               </div>
               <div
-                className="sc-eCImPb KqFGh"
+                className="sc-eCImPb igjIOb"
               >
                 <label
                   htmlFor="thirdShiftMaterialWeight"
@@ -429,10 +649,11 @@ exports[`
                   type="number"
                   value=""
                 />
+                
               </div>
             </div>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="thirdShiftMaterialProduced"
@@ -452,9 +673,10 @@ exports[`
                 type="number"
                 value=""
               />
+              
             </div>
             <div
-              className="sc-eCImPb KqFGh"
+              className="sc-eCImPb igjIOb"
             >
               <label
                 htmlFor="thirdShiftRawMaterialConsumed"
@@ -474,189 +696,10 @@ exports[`
                 type="number"
                 value=""
               />
+              
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      className="sc-hKwDye esucPI"
-    >
-      <div
-        className="sc-eCImPb KqFGh"
-      >
-        <label
-          htmlFor="coalUsed"
-        >
-          Coal Used
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="coalUsed"
-          id="coalUsed"
-          label="Coal Used"
-          min="0"
-          name="coalUsed"
-          onChange={[Function]}
-          required={true}
-          step={0.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-eCImPb KqFGh"
-      >
-        <label
-          htmlFor="electricityConsumed"
-        >
-          Electricity Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="electricityConsumed"
-          id="electricityConsumed"
-          label="Electricity Consumed"
-          min="0"
-          name="electricityConsumed"
-          onChange={[Function]}
-          required={true}
-          step={0.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-eCImPb KqFGh"
-      >
-        <label
-          htmlFor="starchConsumed"
-        >
-          Starch Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="starchConsumed"
-          id="starchConsumed"
-          label="Starch Consumed"
-          min="0"
-          name="starchConsumed"
-          onChange={[Function]}
-          required={true}
-          step={0.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-eCImPb KqFGh"
-      >
-        <label
-          htmlFor="polycationicConsumed"
-        >
-          Polycationic Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="polycationicConsumed"
-          id="polycationicConsumed"
-          label="Polycationic Consumed"
-          min="0"
-          name="polycationicConsumed"
-          onChange={[Function]}
-          required={true}
-          step={0.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-eCImPb KqFGh"
-      >
-        <label
-          htmlFor="akdConsumed"
-        >
-          AKD Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="akdConsumed"
-          id="akdConsumed"
-          label="AKD Consumed"
-          min="0"
-          name="akdConsumed"
-          onChange={[Function]}
-          required={true}
-          step={0.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-eCImPb KqFGh"
-      >
-        <label
-          htmlFor="antifoamConsumed"
-        >
-          Antifoam
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="antifoamConsumed"
-          id="antifoamConsumed"
-          label="Antifoam"
-          min="0"
-          name="antifoamConsumed"
-          onChange={[Function]}
-          required={true}
-          step={0.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-eCImPb KqFGh"
-      >
-        <label
-          htmlFor="dispro51Consumed"
-        >
-          Dispro 51 Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="dispro51Consumed"
-          id="dispro51Consumed"
-          label="Dispro 51 Consumed"
-          min="0"
-          name="dispro51Consumed"
-          onChange={[Function]}
-          required={true}
-          step={0.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-eCImPb KqFGh"
-      >
-        <label
-          htmlFor="timeLost"
-        >
-          Time Lost
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="timeLost"
-          id="timeLost"
-          label="Time Lost"
-          max="24"
-          min="0"
-          name="timeLost"
-          onChange={[Function]}
-          required={true}
-          type="number"
-          value=""
-        />
       </div>
     </div>
     <div>
@@ -685,7 +728,7 @@ exports[`
     Add
   </button>
   <div
-    className="sc-jRQBWg jIiQTa"
+    className="sc-jRQBWg jIiQRM"
   >
     <table
       className="sc-gKclnd yOiLT"
@@ -775,7 +818,7 @@ exports[`
             colSpan={1}
             role="columnheader"
           >
-            Raw Material
+            OCC
           </th>
           <th
             colSpan={1}
@@ -799,7 +842,7 @@ exports[`
             colSpan={1}
             role="columnheader"
           >
-            Raw Material
+            OCC
           </th>
           <th
             colSpan={1}
@@ -823,7 +866,7 @@ exports[`
             colSpan={1}
             role="columnheader"
           >
-            Raw Material
+            OCC
           </th>
           <th
             colSpan={1}
@@ -841,7 +884,7 @@ exports[`
             colSpan={1}
             role="columnheader"
           >
-            Total Raw Material
+            Total OCC
           </th>
           <th
             colSpan={1}
@@ -2385,295 +2428,5 @@ exports[`
       </tbody>
     </table>
   </div>
-  <pre>
-    <code>
-      {
-    "Date": "2020-10-01",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "2020-10-02",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "1995-12-17",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "1995-11-17",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "1995-11-16",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "2018-12-30",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "2018-12-31",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "2018-12-01",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "2018-09-01",
-    "Manager": "Jorge",
-    "first-shift-material-type": "T-180",
-    "first-shift-production": 19900,
-    "first-shift-raw-material": 21000,
-    "first-shift-fiber-loss": "5.24%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 21900,
-    "second-shift-raw-material": 22100,
-    "second-shift-fiber-loss": "0.9%",
-    "third-shift-material-type": "T-140",
-    "third-shift-production": 20900,
-    "third-shift-raw-material": 21100,
-    "third-shift-fiber-loss": "0.95%",
-    "daily-total-fiber-loss": "2.34%",
-    "total-coal": 3000,
-    "coal-kg-per-ton": null,
-    "total-electricity": 212000,
-    "kw-per-ton": null,
-    "total-starch": 200,
-    "total-polycationic": 250,
-    "total-akd": 300,
-    "total-antifoam": 220,
-    "total-dispro51": 222
-}
-      {
-    "Date": "2021-11-04",
-    "Manager": "Arcila",
-    "first-shift-material-type": "T-160",
-    "first-shift-production": 21000,
-    "first-shift-raw-material": 22000,
-    "first-shift-fiber-loss": "4.55%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 22000,
-    "second-shift-raw-material": 22300,
-    "second-shift-fiber-loss": "1.35%",
-    "third-shift-material-type": "T-150",
-    "third-shift-production": 20500,
-    "third-shift-raw-material": 21000,
-    "third-shift-fiber-loss": "2.38%",
-    "daily-total-fiber-loss": "2.76%",
-    "total-coal": 500,
-    "coal-kg-per-ton": null,
-    "total-electricity": 2100000,
-    "kw-per-ton": null,
-    "total-starch": 300,
-    "total-polycationic": 320,
-    "total-akd": 520,
-    "total-antifoam": 410,
-    "total-dispro51": 500
-}
-      {
-    "Date": "2021-11-05",
-    "Manager": "Arcila",
-    "first-shift-material-type": "T-160",
-    "first-shift-production": 21000,
-    "first-shift-raw-material": 22000,
-    "first-shift-fiber-loss": "4.55%",
-    "second-shift-material-type": "W-160",
-    "second-shift-production": 22000,
-    "second-shift-raw-material": 22300,
-    "second-shift-fiber-loss": "1.35%",
-    "third-shift-material-type": "T-150",
-    "third-shift-production": 20500,
-    "third-shift-raw-material": 21000,
-    "third-shift-fiber-loss": "2.38%",
-    "daily-total-fiber-loss": "2.76%",
-    "total-coal": 500,
-    "coal-kg-per-ton": null,
-    "total-electricity": 2100000,
-    "kw-per-ton": null,
-    "total-starch": 300,
-    "total-polycationic": 320,
-    "total-akd": 520,
-    "total-antifoam": 410,
-    "total-dispro51": 500
-}
-    </code>
-  </pre>
 </div>
 `;
