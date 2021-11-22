@@ -35,6 +35,6 @@ module.exports = {
             extensions: ['.js', '.jsx'],
             exclude: ['node_modules', 'public', 'server/tests/*'],
         }),
-        new BundleAnalyzerPlugin(),
+        new BundleAnalyzerPlugin({ analyzerMode: 'json' }),
     ],
 }
