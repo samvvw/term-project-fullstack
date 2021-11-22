@@ -3,12 +3,21 @@
 exports[`
 
   REACT COMPONENT TESTS App component renders 1`] = `
-<div>
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "justifyContent": "center",
+    }
+  }
+>
   <h1>
     Helloaa
   </h1>
   <form
-    className="sc-bdvvtL iAJKBS"
+    className="sc-bdvvtL gIQeXB"
     onSubmit={[Function]}
   >
     <div
@@ -56,7 +65,7 @@ exports[`
       </div>
     </div>
     <div
-      className="sc-dkPtRN hqrnbL"
+      className="sc-dkPtRN ouhZg"
     >
       <div
         className="shift-production-wrapper"
@@ -102,121 +111,372 @@ exports[`
           </li>
         </ul>
         <div
-          className="shift-production-section"
+          className="tab-wrapper"
         >
-          <h4>
-            First Shift
-          </h4>
           <div
-            className="sc-eCImPb KqFGh"
+            className="shift-production-section"
+            style={
+              Object {
+                "zIndex": "100",
+              }
+            }
           >
-            <label
-              htmlFor="firstShiftManager"
-            >
-              Shift Manager
-            </label>
-            <input
-              className="production-form-input"
-              htmlFor="firstShiftManager"
-              id="firstShiftManager"
-              label="Shift Manager"
-              name="firstShiftManager"
-              onChange={[Function]}
-              required={true}
-              type="text"
-              value=""
-            />
-          </div>
-          <div>
-            <p>
-              Material Type
-            </p>
+            <h4>
+              First Shift
+            </h4>
             <div
               className="sc-eCImPb KqFGh"
             >
               <label
-                htmlFor="firstShiftMaterialStarched"
+                htmlFor="firstShiftManager"
               >
-                Starched
+                Shift Manager
               </label>
               <input
-                checked={false}
                 className="production-form-input"
-                htmlFor="firstShiftMaterialStarched"
-                id="firstShiftMaterialStarched"
-                label="Starched"
-                name="firstShiftMaterialStarched"
+                htmlFor="firstShiftManager"
+                id="firstShiftManager"
+                label="Shift Manager"
+                name="firstShiftManager"
                 onChange={[Function]}
-                type="checkbox"
+                required={true}
+                type="text"
+                value=""
+              />
+            </div>
+            <div>
+              <p>
+                Material Type
+              </p>
+              <div
+                className="sc-eCImPb KqFGh"
+              >
+                <label
+                  htmlFor="firstShiftMaterialStarched"
+                >
+                  Starched
+                </label>
+                <input
+                  checked={false}
+                  className="production-form-input"
+                  htmlFor="firstShiftMaterialStarched"
+                  id="firstShiftMaterialStarched"
+                  label="Starched"
+                  name="firstShiftMaterialStarched"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </div>
+              <div
+                className="sc-eCImPb KqFGh"
+              >
+                <label
+                  htmlFor="firstShiftMaterialWeight"
+                >
+                  Weight
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="firstShiftMaterialWeight"
+                  id="firstShiftMaterialWeight"
+                  label="Weight"
+                  min="0"
+                  name="firstShiftMaterialWeight"
+                  onChange={[Function]}
+                  required={true}
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="sc-eCImPb KqFGh"
+            >
+              <label
+                htmlFor="firstShiftMaterialProduced"
+              >
+                Material Produced
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="firstShiftMaterialProduced"
+                id="firstShiftMaterialProduced"
+                label="Material Produced"
+                min="0"
+                name="firstShiftMaterialProduced"
+                onChange={[Function]}
+                required={true}
+                step={0.1}
+                type="number"
+                value=""
               />
             </div>
             <div
               className="sc-eCImPb KqFGh"
             >
               <label
-                htmlFor="firstShiftMaterialWeight"
+                htmlFor="firstShiftRawMaterialConsumed"
               >
-                Weight
+                Raw Material Consumed
               </label>
               <input
                 className="production-form-input"
-                htmlFor="firstShiftMaterialWeight"
-                id="firstShiftMaterialWeight"
-                label="Weight"
+                htmlFor="firstShiftRawMaterialConsumed"
+                id="firstShiftRawMaterialConsumed"
+                label="Raw Material Consumed"
                 min="0"
-                name="firstShiftMaterialWeight"
+                name="firstShiftRawMaterialConsumed"
                 onChange={[Function]}
                 required={true}
+                step={0.1}
                 type="number"
                 value=""
               />
             </div>
           </div>
           <div
-            className="sc-eCImPb KqFGh"
+            className="shift-production-section"
+            style={
+              Object {
+                "zIndex": "-100",
+              }
+            }
           >
-            <label
-              htmlFor="firstShiftMaterialProduced"
+            <h4>
+              Second Shift
+            </h4>
+            <div
+              className="sc-eCImPb KqFGh"
             >
-              Material Produced
-            </label>
-            <input
-              className="production-form-input"
-              htmlFor="firstShiftMaterialProduced"
-              id="firstShiftMaterialProduced"
-              label="Material Produced"
-              min="0"
-              name="firstShiftMaterialProduced"
-              onChange={[Function]}
-              required={true}
-              type="number"
-              value=""
-            />
+              <label
+                htmlFor="secondShiftManager"
+              >
+                Shift Manager
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="secondShiftManager"
+                id="secondShiftManager"
+                label="Shift Manager"
+                name="secondShiftManager"
+                onChange={[Function]}
+                required={true}
+                type="text"
+                value=""
+              />
+            </div>
+            <div>
+              <p>
+                Material Type
+              </p>
+              <div
+                className="sc-eCImPb KqFGh"
+              >
+                <label
+                  htmlFor="secondShiftMaterialStarched"
+                >
+                  Starched
+                </label>
+                <input
+                  checked={false}
+                  className="production-form-input"
+                  htmlFor="secondShiftMaterialStarched"
+                  id="secondShiftMaterialStarched"
+                  label="Starched"
+                  name="secondShiftMaterialStarched"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </div>
+              <div
+                className="sc-eCImPb KqFGh"
+              >
+                <label
+                  htmlFor="secondShiftMaterialWeight"
+                >
+                  Weight
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="secondShiftMaterialWeight"
+                  id="secondShiftMaterialWeight"
+                  label="Weight"
+                  min="0"
+                  name="secondShiftMaterialWeight"
+                  onChange={[Function]}
+                  required={true}
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="sc-eCImPb KqFGh"
+            >
+              <label
+                htmlFor="secondShiftMaterialProduced"
+              >
+                Material Produced
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="secondShiftMaterialProduced"
+                id="secondShiftMaterialProduced"
+                label="Material Produced"
+                min="0"
+                name="secondShiftMaterialProduced"
+                onChange={[Function]}
+                required={true}
+                step={0.1}
+                type="number"
+                value=""
+              />
+            </div>
+            <div
+              className="sc-eCImPb KqFGh"
+            >
+              <label
+                htmlFor="secondShiftRawMaterialConsumed"
+              >
+                Raw Material Consumed
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="secondShiftRawMaterialConsumed"
+                id="secondShiftRawMaterialConsumed"
+                label="Raw Material Consumed"
+                min="0"
+                name="secondShiftRawMaterialConsumed"
+                onChange={[Function]}
+                required={true}
+                step={0.1}
+                type="number"
+                value=""
+              />
+            </div>
           </div>
           <div
-            className="sc-eCImPb KqFGh"
+            className="shift-production-section"
+            style={
+              Object {
+                "zIndex": "-100",
+              }
+            }
           >
-            <label
-              htmlFor="firstShiftRawMaterialConsumed"
+            <h4>
+              Third Shift
+            </h4>
+            <div
+              className="sc-eCImPb KqFGh"
             >
-              Raw Material Consumed
-            </label>
-            <input
-              className="production-form-input"
-              htmlFor="firstShiftRawMaterialConsumed"
-              id="firstShiftRawMaterialConsumed"
-              label="Raw Material Consumed"
-              min="0"
-              name="firstShiftRawMaterialConsumed"
-              onChange={[Function]}
-              required={true}
-              type="number"
-              value=""
-            />
+              <label
+                htmlFor="thirdShiftManager"
+              >
+                Shift Manager
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="thirdShiftManager"
+                id="thirdShiftManager"
+                label="Shift Manager"
+                name="thirdShiftManager"
+                onChange={[Function]}
+                required={true}
+                type="text"
+                value=""
+              />
+            </div>
+            <div>
+              <p>
+                Material Type
+              </p>
+              <div
+                className="sc-eCImPb KqFGh"
+              >
+                <label
+                  htmlFor="thirdShiftMaterialStarched"
+                >
+                  Starched
+                </label>
+                <input
+                  checked={false}
+                  className="production-form-input"
+                  htmlFor="thirdShiftMaterialStarched"
+                  id="thirdShiftMaterialStarched"
+                  label="Starched"
+                  name="thirdShiftMaterialStarched"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </div>
+              <div
+                className="sc-eCImPb KqFGh"
+              >
+                <label
+                  htmlFor="thirdShiftMaterialWeight"
+                >
+                  Weight
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="thirdShiftMaterialWeight"
+                  id="thirdShiftMaterialWeight"
+                  label="Weight"
+                  min="0"
+                  name="thirdShiftMaterialWeight"
+                  onChange={[Function]}
+                  required={true}
+                  type="number"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="sc-eCImPb KqFGh"
+            >
+              <label
+                htmlFor="thirdShiftMaterialProduced"
+              >
+                Material Produced
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="thirdShiftMaterialProduced"
+                id="thirdShiftMaterialProduced"
+                label="Material Produced"
+                min="0"
+                name="thirdShiftMaterialProduced"
+                onChange={[Function]}
+                required={true}
+                step={0.1}
+                type="number"
+                value=""
+              />
+            </div>
+            <div
+              className="sc-eCImPb KqFGh"
+            >
+              <label
+                htmlFor="thirdShiftRawMaterialConsumed"
+              >
+                Raw Material Consumed
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="thirdShiftRawMaterialConsumed"
+                id="thirdShiftRawMaterialConsumed"
+                label="Raw Material Consumed"
+                min="0"
+                name="thirdShiftRawMaterialConsumed"
+                onChange={[Function]}
+                required={true}
+                step={0.1}
+                type="number"
+                value=""
+              />
+            </div>
           </div>
         </div>
-        
-        
       </div>
     </div>
     <div
@@ -239,6 +499,7 @@ exports[`
           name="coalUsed"
           onChange={[Function]}
           required={true}
+          step={0.1}
           type="number"
           value=""
         />
@@ -260,6 +521,7 @@ exports[`
           name="electricityConsumed"
           onChange={[Function]}
           required={true}
+          step={0.1}
           type="number"
           value=""
         />
@@ -281,6 +543,7 @@ exports[`
           name="starchConsumed"
           onChange={[Function]}
           required={true}
+          step={0.1}
           type="number"
           value=""
         />
@@ -302,6 +565,7 @@ exports[`
           name="polycationicConsumed"
           onChange={[Function]}
           required={true}
+          step={0.1}
           type="number"
           value=""
         />
@@ -323,6 +587,7 @@ exports[`
           name="akdConsumed"
           onChange={[Function]}
           required={true}
+          step={0.1}
           type="number"
           value=""
         />
@@ -344,6 +609,7 @@ exports[`
           name="antifoamConsumed"
           onChange={[Function]}
           required={true}
+          step={0.1}
           type="number"
           value=""
         />
@@ -365,6 +631,7 @@ exports[`
           name="dispro51Consumed"
           onChange={[Function]}
           required={true}
+          step={0.1}
           type="number"
           value=""
         />
@@ -400,16 +667,28 @@ exports[`
       </button>
     </div>
   </form>
+  <div
+    className="recharts-responsive-container"
+    style={
+      Object {
+        "height": 350,
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "90%",
+      }
+    }
+  />
   <button
     onClick={[Function]}
   >
     Add
   </button>
   <div
-    className="sc-jRQBWg UITtB"
+    className="sc-jRQBWg jIiQTa"
   >
     <table
-      className="sc-gKclnd hewdJZ"
+      className="sc-gKclnd yOiLT"
       role="table"
     >
       <thead>
@@ -445,6 +724,24 @@ exports[`
             role="columnheader"
           >
             Daily Totals
+          </th>
+          <th
+            colSpan={2}
+            role="columnheader"
+          >
+            Coal
+          </th>
+          <th
+            colSpan={2}
+            role="columnheader"
+          >
+            Electricity
+          </th>
+          <th
+            colSpan={5}
+            role="columnheader"
+          >
+            Chemicals
           </th>
         </tr>
         <tr
@@ -552,6 +849,60 @@ exports[`
           >
             Total Fiber Loss
           </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            Total
+          </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            kg per ton
+          </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            Total
+          </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            Kw per ton
+          </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            Starch
+          </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            Polycationic
+          </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            AKD
+          </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            Antifoam
+          </th>
+          <th
+            colSpan={1}
+            role="columnheader"
+          >
+            Dispro 51
+          </th>
         </tr>
       </thead>
       <tbody
@@ -588,7 +939,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -608,7 +959,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -628,7 +979,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -643,7 +994,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -677,7 +1073,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -697,7 +1093,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -717,7 +1113,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -732,7 +1128,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -766,7 +1207,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -786,7 +1227,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -806,7 +1247,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -821,7 +1262,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -855,7 +1341,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -875,7 +1361,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -895,7 +1381,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -910,7 +1396,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -944,7 +1475,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -964,7 +1495,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -984,7 +1515,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -999,7 +1530,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -1033,7 +1609,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -1053,7 +1629,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -1073,7 +1649,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -1088,7 +1664,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -1122,7 +1743,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -1142,7 +1763,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -1162,7 +1783,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -1177,7 +1798,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -1211,7 +1877,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -1231,7 +1897,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -1251,7 +1917,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -1266,7 +1932,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -1300,7 +2011,7 @@ exports[`
           <td
             role="cell"
           >
-            5.238095238095238
+            5.24%
           </td>
           <td
             role="cell"
@@ -1320,7 +2031,7 @@ exports[`
           <td
             role="cell"
           >
-            0.904977375565611
+            0.9%
           </td>
           <td
             role="cell"
@@ -1340,7 +2051,7 @@ exports[`
           <td
             role="cell"
           >
-            0.9478672985781991
+            0.95%
           </td>
           <td
             role="cell"
@@ -1355,7 +2066,52 @@ exports[`
           <td
             role="cell"
           >
-            2.336448598130841
+            2.34%
+          </td>
+          <td
+            role="cell"
+          >
+            3000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            212000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            200
+          </td>
+          <td
+            role="cell"
+          >
+            250
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            220
+          </td>
+          <td
+            role="cell"
+          >
+            222
           </td>
         </tr>
         <tr
@@ -1389,7 +2145,7 @@ exports[`
           <td
             role="cell"
           >
-            4.545454545454546
+            4.55%
           </td>
           <td
             role="cell"
@@ -1409,7 +2165,7 @@ exports[`
           <td
             role="cell"
           >
-            1.345291479820628
+            1.35%
           </td>
           <td
             role="cell"
@@ -1429,7 +2185,7 @@ exports[`
           <td
             role="cell"
           >
-            2.380952380952381
+            2.38%
           </td>
           <td
             role="cell"
@@ -1444,7 +2200,52 @@ exports[`
           <td
             role="cell"
           >
-            2.756508422664625
+            2.76%
+          </td>
+          <td
+            role="cell"
+          >
+            500
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            2100000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            320
+          </td>
+          <td
+            role="cell"
+          >
+            520
+          </td>
+          <td
+            role="cell"
+          >
+            410
+          </td>
+          <td
+            role="cell"
+          >
+            500
           </td>
         </tr>
         <tr
@@ -1478,7 +2279,7 @@ exports[`
           <td
             role="cell"
           >
-            4.545454545454546
+            4.55%
           </td>
           <td
             role="cell"
@@ -1498,7 +2299,7 @@ exports[`
           <td
             role="cell"
           >
-            1.345291479820628
+            1.35%
           </td>
           <td
             role="cell"
@@ -1518,7 +2319,7 @@ exports[`
           <td
             role="cell"
           >
-            2.380952380952381
+            2.38%
           </td>
           <td
             role="cell"
@@ -1533,7 +2334,52 @@ exports[`
           <td
             role="cell"
           >
-            2.756508422664625
+            2.76%
+          </td>
+          <td
+            role="cell"
+          >
+            500
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            2100000
+          </td>
+          <td
+            role="cell"
+          >
+            NaN
+          </td>
+          <td
+            role="cell"
+          >
+            300
+          </td>
+          <td
+            role="cell"
+          >
+            320
+          </td>
+          <td
+            role="cell"
+          >
+            520
+          </td>
+          <td
+            role="cell"
+          >
+            410
+          </td>
+          <td
+            role="cell"
+          >
+            500
           </td>
         </tr>
       </tbody>
@@ -1541,646 +2387,292 @@ exports[`
   </div>
   <pre>
     <code>
-      [
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189afa4b0bcf7da3ecc1ceb",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189afa4b0bcf7da3ecc1ceb"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189afa4b0bcf7da3ecc1cec",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189afa4b0bcf7da3ecc1cec"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189afa4b0bcf7da3ecc1ced",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189afa4b0bcf7da3ecc1ced"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189afa4b0bcf7da3ecc1cea",
-        "date": "2020-10-01T00:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:15:48.072Z",
-        "updatedAt": "2021-11-08T23:15:48.072Z",
-        "__v": 0,
-        "id": "6189afa4b0bcf7da3ecc1cea"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189afe8b0bcf7da3ecc1cf5",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189afe8b0bcf7da3ecc1cf5"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189afe8b0bcf7da3ecc1cf6",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189afe8b0bcf7da3ecc1cf6"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189afe8b0bcf7da3ecc1cf7",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189afe8b0bcf7da3ecc1cf7"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189afe8b0bcf7da3ecc1cf4",
-        "date": "2020-10-02T00:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:16:56.820Z",
-        "updatedAt": "2021-11-08T23:16:56.820Z",
-        "__v": 0,
-        "id": "6189afe8b0bcf7da3ecc1cf4"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189b29f4ab34dfd17af0d58",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189b29f4ab34dfd17af0d58"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189b29f4ab34dfd17af0d59",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189b29f4ab34dfd17af0d59"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189b29f4ab34dfd17af0d5a",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189b29f4ab34dfd17af0d5a"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189b29f4ab34dfd17af0d57",
-        "date": "1995-12-17T08:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:28:31.328Z",
-        "updatedAt": "2021-11-08T23:28:31.328Z",
-        "__v": 0,
-        "id": "6189b29f4ab34dfd17af0d57"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189b2e3344000f84f7c7a1f",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189b2e3344000f84f7c7a1f"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189b2e3344000f84f7c7a20",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189b2e3344000f84f7c7a20"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189b2e3344000f84f7c7a21",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189b2e3344000f84f7c7a21"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189b2e3344000f84f7c7a1e",
-        "date": "1995-11-17T08:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:29:39.431Z",
-        "updatedAt": "2021-11-08T23:29:39.431Z",
-        "__v": 0,
-        "id": "6189b2e3344000f84f7c7a1e"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189b308344000f84f7c7a33",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189b308344000f84f7c7a33"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189b308344000f84f7c7a34",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189b308344000f84f7c7a34"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189b308344000f84f7c7a35",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189b308344000f84f7c7a35"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189b308344000f84f7c7a32",
-        "date": "1995-11-16T08:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:30:16.829Z",
-        "updatedAt": "2021-11-08T23:30:16.829Z",
-        "__v": 0,
-        "id": "6189b308344000f84f7c7a32"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189b399dd195f032ab24515",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189b399dd195f032ab24515"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189b399dd195f032ab24516",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189b399dd195f032ab24516"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189b399dd195f032ab24517",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189b399dd195f032ab24517"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189b399dd195f032ab24514",
-        "date": "2018-12-30T08:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:32:41.523Z",
-        "updatedAt": "2021-11-08T23:32:41.523Z",
-        "__v": 0,
-        "id": "6189b399dd195f032ab24514"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189b3d77db03c623f532dd9",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189b3d77db03c623f532dd9"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189b3d77db03c623f532dda",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189b3d77db03c623f532dda"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189b3d77db03c623f532ddb",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189b3d77db03c623f532ddb"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189b3d77db03c623f532dd8",
-        "date": "2018-12-31T00:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:33:43.119Z",
-        "updatedAt": "2021-11-08T23:33:43.119Z",
-        "__v": 0,
-        "id": "6189b3d77db03c623f532dd8"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189b4aebfcc852bf6f10d7b",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189b4aebfcc852bf6f10d7b"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189b4aebfcc852bf6f10d7c",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189b4aebfcc852bf6f10d7c"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189b4aebfcc852bf6f10d7d",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189b4aebfcc852bf6f10d7d"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189b4aebfcc852bf6f10d7a",
-        "date": "2018-12-01T08:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:37:18.899Z",
-        "updatedAt": "2021-11-08T23:37:18.899Z",
-        "__v": 0,
-        "id": "6189b4aebfcc852bf6f10d7a"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 180
-                },
-                "shiftManager": "Arcila",
-                "materialProduced": 19900,
-                "rawMaterialConsumed": 21000,
-                "_id": "6189b4b7bfcc852bf6f10d80",
-                "fiberLoss": 5.238095238095238,
-                "id": "6189b4b7bfcc852bf6f10d80"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "Pepe",
-                "materialProduced": 21900,
-                "rawMaterialConsumed": 22100,
-                "_id": "6189b4b7bfcc852bf6f10d81",
-                "fiberLoss": 0.904977375565611,
-                "id": "6189b4b7bfcc852bf6f10d81"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 140
-                },
-                "shiftManager": "Jose",
-                "materialProduced": 20900,
-                "rawMaterialConsumed": 21100,
-                "_id": "6189b4b7bfcc852bf6f10d82",
-                "fiberLoss": 0.9478672985781991,
-                "id": "6189b4b7bfcc852bf6f10d82"
-            },
-            "totalShiftProduction": 62700,
-            "totalShiftMaterialUsed": 64200,
-            "totalFiberLoss": 2.336448598130841
-        },
-        "_id": "6189b4b7bfcc852bf6f10d7f",
-        "date": "2018-09-01T07:00:00.000Z",
-        "millManager": "Jorge",
-        "coalUsed": 3000,
-        "electricityConsumed": 212000,
-        "starchConsumed": 200,
-        "polycationicConsumed": 250,
-        "akdConsumed": 300,
-        "antifoamConsumed": 220,
-        "dispro51Consumed": 222,
-        "timeLost": 4,
-        "createdAt": "2021-11-08T23:37:27.703Z",
-        "updatedAt": "2021-11-08T23:37:27.703Z",
-        "__v": 0,
-        "id": "6189b4b7bfcc852bf6f10d7f"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 160
-                },
-                "shiftManager": "andres",
-                "materialProduced": 21000,
-                "rawMaterialConsumed": 22000,
-                "_id": "618df3fb88ab402b5562139b",
-                "fiberLoss": 4.545454545454546,
-                "id": "618df3fb88ab402b5562139b"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "jose",
-                "materialProduced": 22000,
-                "rawMaterialConsumed": 22300,
-                "_id": "618df3fb88ab402b5562139c",
-                "fiberLoss": 1.345291479820628,
-                "id": "618df3fb88ab402b5562139c"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 150
-                },
-                "shiftManager": "carlos",
-                "materialProduced": 20500,
-                "rawMaterialConsumed": 21000,
-                "_id": "618df3fb88ab402b5562139d",
-                "fiberLoss": 2.380952380952381,
-                "id": "618df3fb88ab402b5562139d"
-            },
-            "totalShiftProduction": 63500,
-            "totalShiftMaterialUsed": 65300,
-            "totalFiberLoss": 2.756508422664625
-        },
-        "_id": "618df3fb88ab402b5562139a",
-        "date": "2021-11-04T00:00:00.000Z",
-        "millManager": "Arcila",
-        "coalUsed": 500,
-        "electricityConsumed": 2100000,
-        "starchConsumed": 300,
-        "polycationicConsumed": 320,
-        "akdConsumed": 520,
-        "antifoamConsumed": 410,
-        "dispro51Consumed": 500,
-        "timeLost": 5,
-        "createdAt": "2021-11-12T04:56:27.769Z",
-        "updatedAt": "2021-11-12T04:56:27.769Z",
-        "__v": 0,
-        "id": "618df3fb88ab402b5562139a"
-    },
-    {
-        "shiftProduction": {
-            "firstShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 160
-                },
-                "shiftManager": "andres",
-                "materialProduced": 21000,
-                "rawMaterialConsumed": 22000,
-                "_id": "618df40b88ab402b556213a5",
-                "fiberLoss": 4.545454545454546,
-                "id": "618df40b88ab402b556213a5"
-            },
-            "secondShift": {
-                "materialType": {
-                    "starched": false,
-                    "weight": 160
-                },
-                "shiftManager": "jose",
-                "materialProduced": 22000,
-                "rawMaterialConsumed": 22300,
-                "_id": "618df40b88ab402b556213a6",
-                "fiberLoss": 1.345291479820628,
-                "id": "618df40b88ab402b556213a6"
-            },
-            "thirdShift": {
-                "materialType": {
-                    "starched": true,
-                    "weight": 150
-                },
-                "shiftManager": "carlos",
-                "materialProduced": 20500,
-                "rawMaterialConsumed": 21000,
-                "_id": "618df40b88ab402b556213a7",
-                "fiberLoss": 2.380952380952381,
-                "id": "618df40b88ab402b556213a7"
-            },
-            "totalShiftProduction": 63500,
-            "totalShiftMaterialUsed": 65300,
-            "totalFiberLoss": 2.756508422664625
-        },
-        "_id": "618df40b88ab402b556213a4",
-        "date": "2021-11-05T00:00:00.000Z",
-        "millManager": "Arcila",
-        "coalUsed": 500,
-        "electricityConsumed": 2100000,
-        "starchConsumed": 300,
-        "polycationicConsumed": 320,
-        "akdConsumed": 520,
-        "antifoamConsumed": 410,
-        "dispro51Consumed": 500,
-        "timeLost": 5,
-        "createdAt": "2021-11-12T04:56:43.961Z",
-        "updatedAt": "2021-11-12T04:56:43.961Z",
-        "__v": 0,
-        "id": "618df40b88ab402b556213a4"
-    }
-]
+      {
+    "Date": "2020-10-01",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "2020-10-02",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "1995-12-17",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "1995-11-17",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "1995-11-16",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "2018-12-30",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "2018-12-31",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "2018-12-01",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "2018-09-01",
+    "Manager": "Jorge",
+    "first-shift-material-type": "T-180",
+    "first-shift-production": 19900,
+    "first-shift-raw-material": 21000,
+    "first-shift-fiber-loss": "5.24%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 21900,
+    "second-shift-raw-material": 22100,
+    "second-shift-fiber-loss": "0.9%",
+    "third-shift-material-type": "T-140",
+    "third-shift-production": 20900,
+    "third-shift-raw-material": 21100,
+    "third-shift-fiber-loss": "0.95%",
+    "daily-total-fiber-loss": "2.34%",
+    "total-coal": 3000,
+    "coal-kg-per-ton": null,
+    "total-electricity": 212000,
+    "kw-per-ton": null,
+    "total-starch": 200,
+    "total-polycationic": 250,
+    "total-akd": 300,
+    "total-antifoam": 220,
+    "total-dispro51": 222
+}
+      {
+    "Date": "2021-11-04",
+    "Manager": "Arcila",
+    "first-shift-material-type": "T-160",
+    "first-shift-production": 21000,
+    "first-shift-raw-material": 22000,
+    "first-shift-fiber-loss": "4.55%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 22000,
+    "second-shift-raw-material": 22300,
+    "second-shift-fiber-loss": "1.35%",
+    "third-shift-material-type": "T-150",
+    "third-shift-production": 20500,
+    "third-shift-raw-material": 21000,
+    "third-shift-fiber-loss": "2.38%",
+    "daily-total-fiber-loss": "2.76%",
+    "total-coal": 500,
+    "coal-kg-per-ton": null,
+    "total-electricity": 2100000,
+    "kw-per-ton": null,
+    "total-starch": 300,
+    "total-polycationic": 320,
+    "total-akd": 520,
+    "total-antifoam": 410,
+    "total-dispro51": 500
+}
+      {
+    "Date": "2021-11-05",
+    "Manager": "Arcila",
+    "first-shift-material-type": "T-160",
+    "first-shift-production": 21000,
+    "first-shift-raw-material": 22000,
+    "first-shift-fiber-loss": "4.55%",
+    "second-shift-material-type": "W-160",
+    "second-shift-production": 22000,
+    "second-shift-raw-material": 22300,
+    "second-shift-fiber-loss": "1.35%",
+    "third-shift-material-type": "T-150",
+    "third-shift-production": 20500,
+    "third-shift-raw-material": 21000,
+    "third-shift-fiber-loss": "2.38%",
+    "daily-total-fiber-loss": "2.76%",
+    "total-coal": 500,
+    "coal-kg-per-ton": null,
+    "total-electricity": 2100000,
+    "kw-per-ton": null,
+    "total-starch": 300,
+    "total-polycationic": 320,
+    "total-akd": 520,
+    "total-antifoam": 410,
+    "total-dispro51": 500
+}
     </code>
   </pre>
 </div>

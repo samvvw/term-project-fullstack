@@ -52,7 +52,9 @@ exports.createProductionLog = async (req, res) => {
 
 exports.getAllProductionLogs = async (req, res) => {
     try {
-        const allProductionLogsDB = await ProductionLog.find({})
+        const allProductionLogsDB = await ProductionLog.find({}).sort({
+            date: 'asc',
+        })
 
         res.json(allProductionLogsDB)
     } catch (error) {

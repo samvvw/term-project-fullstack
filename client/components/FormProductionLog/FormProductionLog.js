@@ -8,7 +8,7 @@ import {
     Input,
 } from './FormProductionLog.styles'
 
-export function FormProductionLog() {
+export function FormProductionLog({ setData }) {
     const [formstate, setFormstate] = useState({
         millManager: '',
         logDate: '',
@@ -56,7 +56,7 @@ export function FormProductionLog() {
         setShiftTab(e.target.id)
     }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault()
 
         const data = {
@@ -99,12 +99,48 @@ export function FormProductionLog() {
             timeLost: formstate.timeLost,
         }
 
-        axios
-            .post('/api/production-log', data)
-            .then((result) => {
-                console.log(result.data)
-            })
-            .catch((error) => console.error(error))
+        try {
+            const response = await axios.post('/api/production-log', data)
+
+            if (response) {
+                const responseget = await axios.get('/api/production-log')
+
+                const responseData = await responseget.data
+
+                setData(responseData)
+                setFormstate({
+                    millManager: '',
+                    logDate: '',
+                    firstShiftManager: '',
+                    firstShiftMaterialStarched: false,
+                    firstShiftMaterialWeight: '',
+                    firstShiftMaterialProduced: '',
+                    firstShiftRawMaterialConsumed: '',
+                    secondShiftManager: '',
+                    secondShiftMaterialStarched: false,
+                    secondShiftMaterialWeight: '',
+                    secondShiftMaterialProduced: '',
+                    secondShiftRawMaterialConsumed: '',
+                    thirdShiftManager: '',
+                    thirdShiftMaterialStarched: false,
+                    thirdShiftMaterialWeight: '',
+                    thirdShiftMaterialProduced: '',
+                    thirdShiftRawMaterialConsumed: '',
+                    coalUsed: '',
+                    electricityConsumed: '',
+                    starchConsumed: '',
+                    polycationicConsumed: '',
+                    akdConsumed: '',
+                    antifoamConsumed: '',
+                    dispro51Consumed: '',
+                    timeLost: '',
+                })
+
+                e.target.elements.millManager.focus()
+            }
+        } catch (error) {
+            console.log(error)
+        }
     }
     return (
         <FormProductionLogWrapper onSubmit={handleSubmit}>
@@ -161,8 +197,15 @@ export function FormProductionLog() {
                             Third Shift
                         </li>
                     </ul>
-                    {shiftTab === 'firstShift' ? (
-                        <div className="shift-production-section">
+
+                    <div className="tab-wrapper">
+                        <div
+                            className="shift-production-section"
+                            style={{
+                                zIndex:
+                                    shiftTab === 'firstShift' ? '100' : '-100',
+                            }}
+                        >
                             <h4>First Shift</h4>
                             <Input
                                 htmlFor="firstShiftManager"
@@ -198,6 +241,7 @@ export function FormProductionLog() {
                                 label="Material Produced"
                                 type="number"
                                 min="0"
+                                step={0.1}
                                 onChange={handleChange}
                                 required
                                 value={formstate.firstShiftMaterialProduced}
@@ -207,16 +251,20 @@ export function FormProductionLog() {
                                 label="Raw Material Consumed"
                                 type="number"
                                 min="0"
+                                step={0.1}
                                 onChange={handleChange}
                                 required
                                 value={formstate.firstShiftRawMaterialConsumed}
                             />
                         </div>
-                    ) : (
-                        ''
-                    )}
-                    {shiftTab === 'secondShift' ? (
-                        <div className="shift-production-section">
+
+                        <div
+                            className="shift-production-section"
+                            style={{
+                                zIndex:
+                                    shiftTab === 'secondShift' ? '100' : '-100',
+                            }}
+                        >
                             <h4>Second Shift</h4>
                             <Input
                                 htmlFor="secondShiftManager"
@@ -252,6 +300,7 @@ export function FormProductionLog() {
                                 label="Material Produced"
                                 type="number"
                                 min="0"
+                                step={0.1}
                                 onChange={handleChange}
                                 required
                                 value={formstate.secondShiftMaterialProduced}
@@ -261,16 +310,19 @@ export function FormProductionLog() {
                                 label="Raw Material Consumed"
                                 type="number"
                                 min="0"
+                                step={0.1}
                                 onChange={handleChange}
                                 required
                                 value={formstate.secondShiftRawMaterialConsumed}
                             />
                         </div>
-                    ) : (
-                        ''
-                    )}
-                    {shiftTab === 'thirdShift' ? (
-                        <div className="shift-production-section">
+                        <div
+                            className="shift-production-section"
+                            style={{
+                                zIndex:
+                                    shiftTab === 'thirdShift' ? '100' : '-100',
+                            }}
+                        >
                             <h4>Third Shift</h4>
                             <Input
                                 htmlFor="thirdShiftManager"
@@ -306,6 +358,7 @@ export function FormProductionLog() {
                                 label="Material Produced"
                                 type="number"
                                 min="0"
+                                step={0.1}
                                 onChange={handleChange}
                                 required
                                 value={formstate.thirdShiftMaterialProduced}
@@ -315,14 +368,13 @@ export function FormProductionLog() {
                                 label="Raw Material Consumed"
                                 type="number"
                                 min="0"
+                                step={0.1}
                                 onChange={handleChange}
                                 required
                                 value={formstate.thirdShiftRawMaterialConsumed}
                             />
                         </div>
-                    ) : (
-                        ''
-                    )}
+                    </div>
                 </div>
             </FormShiftProductionSection>
             <FormResourceConsumptionSection>
@@ -331,6 +383,7 @@ export function FormProductionLog() {
                     label="Coal Used"
                     type="number"
                     min="0"
+                    step={0.1}
                     onChange={handleChange}
                     required
                     value={formstate.coalUsed}
@@ -340,6 +393,7 @@ export function FormProductionLog() {
                     label="Electricity Consumed"
                     type="number"
                     min="0"
+                    step={0.1}
                     onChange={handleChange}
                     required
                     value={formstate.electricityConsumed}
@@ -349,6 +403,7 @@ export function FormProductionLog() {
                     label="Starch Consumed"
                     type="number"
                     min="0"
+                    step={0.1}
                     onChange={handleChange}
                     required
                     value={formstate.starchConsumed}
@@ -358,6 +413,7 @@ export function FormProductionLog() {
                     label="Polycationic Consumed"
                     type="number"
                     min="0"
+                    step={0.1}
                     onChange={handleChange}
                     required
                     value={formstate.polycationicConsumed}
@@ -367,6 +423,7 @@ export function FormProductionLog() {
                     label="AKD Consumed"
                     type="number"
                     min="0"
+                    step={0.1}
                     onChange={handleChange}
                     required
                     value={formstate.akdConsumed}
@@ -376,6 +433,7 @@ export function FormProductionLog() {
                     label="Antifoam"
                     type="number"
                     min="0"
+                    step={0.1}
                     onChange={handleChange}
                     required
                     value={formstate.antifoamConsumed}
@@ -385,6 +443,7 @@ export function FormProductionLog() {
                     label="Dispro 51 Consumed"
                     type="number"
                     min="0"
+                    step={0.1}
                     onChange={handleChange}
                     required
                     value={formstate.dispro51Consumed}
