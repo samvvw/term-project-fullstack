@@ -41,7 +41,7 @@ export function FormProductionLog({ setData }) {
     })
 
     const [formPage, setFormPage] = useState(1)
-    const [shiftTab, setShiftTab] = useState('firstShift')
+    // const [shiftTab, setShiftTab] = useState('firstShift')
 
     function handleChange(e) {
         if (e.target.type === 'checkbox') {
@@ -56,9 +56,9 @@ export function FormProductionLog({ setData }) {
         }
     }
 
-    function handleTabChange(e) {
-        setShiftTab(e.target.id)
-    }
+    // function handleTabChange(e) {
+    //     setShiftTab(e.target.id)
+    // }
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -192,94 +192,96 @@ export function FormProductionLog({ setData }) {
                 activePage={formPage === 2 ? true : false}
             >
                 <h3>Resource Consumption</h3>
-                <Input
-                    htmlFor="coalUsed"
-                    label="Coal Used"
-                    type="number"
-                    min="-1"
-                    step={-1.1}
-                    onChange={handleChange}
-                    required
-                    value={formstate.coalUsed}
-                    placeholder="kg"
-                />
-                <Input
-                    htmlFor="electricityConsumed"
-                    label="Electricity Consumed"
-                    type="number"
-                    min="-1"
-                    step={-1.1}
-                    onChange={handleChange}
-                    required
-                    value={formstate.electricityConsumed}
-                    placeholder="kw"
-                />
-                <Input
-                    htmlFor="starchConsumed"
-                    label="Starch Consumed"
-                    type="number"
-                    min="-1"
-                    step={-1.1}
-                    onChange={handleChange}
-                    required
-                    value={formstate.starchConsumed}
-                    placeholder="kg"
-                />
-                <Input
-                    htmlFor="polycationicConsumed"
-                    label="Polycationic Consumed"
-                    type="number"
-                    min="-1"
-                    step={-1.1}
-                    onChange={handleChange}
-                    required
-                    value={formstate.polycationicConsumed}
-                    placeholder="kg"
-                />
-                <Input
-                    htmlFor="akdConsumed"
-                    label="AKD Consumed"
-                    type="number"
-                    min="-1"
-                    step={-1.1}
-                    onChange={handleChange}
-                    required
-                    value={formstate.akdConsumed}
-                    placeholder="kg"
-                />
-                <Input
-                    htmlFor="antifoamConsumed"
-                    label="Antifoam"
-                    type="number"
-                    min="-1"
-                    step={-1.1}
-                    onChange={handleChange}
-                    required
-                    value={formstate.antifoamConsumed}
-                    placeholder="kg"
-                />
-                <Input
-                    htmlFor="dispro51Consumed"
-                    label="Dispro 51 Consumed"
-                    type="number"
-                    min="-1"
-                    step={-1.1}
-                    onChange={handleChange}
-                    required
-                    value={formstate.dispro51Consumed}
-                    placeholder="kg"
-                />
-                <Input
-                    htmlFor="timeLost"
-                    label="Time Lost"
-                    type="number"
-                    min="-1"
-                    max="23"
-                    onChange={handleChange}
-                    required
-                    value={formstate.timeLost}
-                    placeholder="Hours"
-                />
+                <div className="resource-consumption">
+                    <Input
+                        htmlFor="coalUsed"
+                        label="Coal Used"
+                        type="number"
+                        min="-1"
+                        step={-1.1}
+                        onChange={handleChange}
+                        required
+                        value={formstate.coalUsed}
+                        placeholder="kg"
+                    />
+                    <Input
+                        htmlFor="electricityConsumed"
+                        label="Electricity Consumed"
+                        type="number"
+                        min="-1"
+                        step={-1.1}
+                        onChange={handleChange}
+                        required
+                        value={formstate.electricityConsumed}
+                        placeholder="kw"
+                    />
+                    <Input
+                        htmlFor="starchConsumed"
+                        label="Starch Consumed"
+                        type="number"
+                        min="-1"
+                        step={-1.1}
+                        onChange={handleChange}
+                        required
+                        value={formstate.starchConsumed}
+                        placeholder="kg"
+                    />
+                    <Input
+                        htmlFor="polycationicConsumed"
+                        label="Polycationic Consumed"
+                        type="number"
+                        min="-1"
+                        step={-1.1}
+                        onChange={handleChange}
+                        required
+                        value={formstate.polycationicConsumed}
+                        placeholder="kg"
+                    />
+                    <Input
+                        htmlFor="akdConsumed"
+                        label="AKD Consumed"
+                        type="number"
+                        min="-1"
+                        step={-1.1}
+                        onChange={handleChange}
+                        required
+                        value={formstate.akdConsumed}
+                        placeholder="kg"
+                    />
+                    <Input
+                        htmlFor="antifoamConsumed"
+                        label="Antifoam"
+                        type="number"
+                        min="-1"
+                        step={-1.1}
+                        onChange={handleChange}
+                        required
+                        value={formstate.antifoamConsumed}
+                        placeholder="kg"
+                    />
+                    <Input
+                        htmlFor="dispro51Consumed"
+                        label="Dispro 51 Consumed"
+                        type="number"
+                        min="-1"
+                        step={-1.1}
+                        onChange={handleChange}
+                        required
+                        value={formstate.dispro51Consumed}
+                        placeholder="kg"
+                    />
+                    <Input
+                        htmlFor="timeLost"
+                        label="Time Lost"
+                        type="number"
+                        min="-1"
+                        max="23"
+                        onChange={handleChange}
+                        required
+                        value={formstate.timeLost}
+                        placeholder="Hours"
+                    />
+                </div>
             </FormResourceConsumptionSection>
             <FormShiftProductionSection
                 activePage={formPage >= 3 && formPage <= 5 ? true : false}

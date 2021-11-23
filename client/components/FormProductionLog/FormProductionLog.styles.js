@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
 
 export const FormProductionLogWrapper = styled('form')`
-    border: 1px solid ${({ theme }) => theme.pallette.primary.dark};
+    border: 2px solid ${({ theme }) => theme.pallette.primary.dark};
+    border-radius: 6px;
     position: relative;
     height: 22rem;
     /* width: 35%; */
@@ -122,9 +123,30 @@ export const ShiftProductionSection = styled.div`
     }
 `
 export const FormResourceConsumptionSection = styled('div')`
-    border: 1px solid ${({ theme }) => theme.pallette.secondary[800]};
     position: absolute;
     ${(props) => (props.activePage ? activePage : hiddenPage)}
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    h3 {
+        padding: 0.8rem;
+        text-align: center;
+        background-color: ${({ theme }) => theme.pallette.primary.dark};
+        color: ${({ theme }) => theme.pallette.black[50]};
+    }
+    .resource-consumption {
+        display: flex;
+        gap: 0.4rem;
+        flex-direction: column;
+        align-items: stretch;
+        .input-container {
+            /* width: 100%; */
+            label {
+                width: 11rem;
+            }
+        }
+    }
 `
 export const PageSection = styled.div`
     position: absolute;
@@ -165,15 +187,17 @@ const FormInput = (props) => {
     )
 }
 
-export const Input = styled((props) => <FormInput {...props} />)`
+export const Input = styled((props) => <FormInput {...props} />).attrs({
+    className: 'input-container',
+})`
     display: ${(props) => (props.notFlex ? 'block' : 'flex')};
     flex-direction: ${(props) => (props.column ? 'column' : 'row')};
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     position: relative;
     cursor: pointer;
     /* border: 1px solid black; */
-    max-width: 80%;
+    /* max-width: 90%; */
     margin: 0 auto;
 
     input {
