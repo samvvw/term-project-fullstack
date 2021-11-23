@@ -17,7 +17,7 @@ exports[`
     Helloaa
   </h1>
   <form
-    className="sc-bdvvtL jTXHep"
+    className="sc-bdvvtL ePJoEO"
     onSubmit={[Function]}
   >
     <div
@@ -30,7 +30,7 @@ exports[`
         Paper Mill 4
       </h4>
       <div
-        className="sc-iCfMLu bSNtEb"
+        className="sc-iCfMLu cDHJhm input-container"
       >
         <label
           htmlFor="millManager"
@@ -53,7 +53,7 @@ exports[`
         />
       </div>
       <div
-        className="sc-iCfMLu bSNtEb"
+        className="sc-iCfMLu cDHJhm input-container"
       >
         <label
           htmlFor="logDate"
@@ -76,194 +76,198 @@ exports[`
       </div>
     </div>
     <div
-      className="sc-eCImPb dusQGG"
+      className="sc-eCImPb xliTM"
     >
       <h3>
         Resource Consumption
       </h3>
       <div
-        className="sc-iCfMLu ALffg"
+        className="resource-consumption"
       >
-        <label
-          htmlFor="coalUsed"
+        <div
+          className="sc-iCfMLu fGhyxp input-container"
         >
-          Coal Used
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="coalUsed"
-          id="coalUsed"
-          label="Coal Used"
-          min="-1"
-          name="coalUsed"
-          onChange={[Function]}
-          placeholder="kg"
-          required={true}
-          step={-1.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-iCfMLu ALffg"
-      >
-        <label
-          htmlFor="electricityConsumed"
+          <label
+            htmlFor="coalUsed"
+          >
+            Coal Used
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="coalUsed"
+            id="coalUsed"
+            label="Coal Used"
+            min="-1"
+            name="coalUsed"
+            onChange={[Function]}
+            placeholder="kg"
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+        </div>
+        <div
+          className="sc-iCfMLu fGhyxp input-container"
         >
-          Electricity Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="electricityConsumed"
-          id="electricityConsumed"
-          label="Electricity Consumed"
-          min="-1"
-          name="electricityConsumed"
-          onChange={[Function]}
-          placeholder="kw"
-          required={true}
-          step={-1.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-iCfMLu ALffg"
-      >
-        <label
-          htmlFor="starchConsumed"
+          <label
+            htmlFor="electricityConsumed"
+          >
+            Electricity Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="electricityConsumed"
+            id="electricityConsumed"
+            label="Electricity Consumed"
+            min="-1"
+            name="electricityConsumed"
+            onChange={[Function]}
+            placeholder="kw"
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+        </div>
+        <div
+          className="sc-iCfMLu fGhyxp input-container"
         >
-          Starch Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="starchConsumed"
-          id="starchConsumed"
-          label="Starch Consumed"
-          min="-1"
-          name="starchConsumed"
-          onChange={[Function]}
-          placeholder="kg"
-          required={true}
-          step={-1.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-iCfMLu ALffg"
-      >
-        <label
-          htmlFor="polycationicConsumed"
+          <label
+            htmlFor="starchConsumed"
+          >
+            Starch Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="starchConsumed"
+            id="starchConsumed"
+            label="Starch Consumed"
+            min="-1"
+            name="starchConsumed"
+            onChange={[Function]}
+            placeholder="kg"
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+        </div>
+        <div
+          className="sc-iCfMLu fGhyxp input-container"
         >
-          Polycationic Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="polycationicConsumed"
-          id="polycationicConsumed"
-          label="Polycationic Consumed"
-          min="-1"
-          name="polycationicConsumed"
-          onChange={[Function]}
-          placeholder="kg"
-          required={true}
-          step={-1.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-iCfMLu ALffg"
-      >
-        <label
-          htmlFor="akdConsumed"
+          <label
+            htmlFor="polycationicConsumed"
+          >
+            Polycationic Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="polycationicConsumed"
+            id="polycationicConsumed"
+            label="Polycationic Consumed"
+            min="-1"
+            name="polycationicConsumed"
+            onChange={[Function]}
+            placeholder="kg"
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+        </div>
+        <div
+          className="sc-iCfMLu fGhyxp input-container"
         >
-          AKD Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="akdConsumed"
-          id="akdConsumed"
-          label="AKD Consumed"
-          min="-1"
-          name="akdConsumed"
-          onChange={[Function]}
-          placeholder="kg"
-          required={true}
-          step={-1.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-iCfMLu ALffg"
-      >
-        <label
-          htmlFor="antifoamConsumed"
+          <label
+            htmlFor="akdConsumed"
+          >
+            AKD Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="akdConsumed"
+            id="akdConsumed"
+            label="AKD Consumed"
+            min="-1"
+            name="akdConsumed"
+            onChange={[Function]}
+            placeholder="kg"
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+        </div>
+        <div
+          className="sc-iCfMLu fGhyxp input-container"
         >
-          Antifoam
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="antifoamConsumed"
-          id="antifoamConsumed"
-          label="Antifoam"
-          min="-1"
-          name="antifoamConsumed"
-          onChange={[Function]}
-          placeholder="kg"
-          required={true}
-          step={-1.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-iCfMLu ALffg"
-      >
-        <label
-          htmlFor="dispro51Consumed"
+          <label
+            htmlFor="antifoamConsumed"
+          >
+            Antifoam
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="antifoamConsumed"
+            id="antifoamConsumed"
+            label="Antifoam"
+            min="-1"
+            name="antifoamConsumed"
+            onChange={[Function]}
+            placeholder="kg"
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+        </div>
+        <div
+          className="sc-iCfMLu fGhyxp input-container"
         >
-          Dispro 51 Consumed
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="dispro51Consumed"
-          id="dispro51Consumed"
-          label="Dispro 51 Consumed"
-          min="-1"
-          name="dispro51Consumed"
-          onChange={[Function]}
-          placeholder="kg"
-          required={true}
-          step={-1.1}
-          type="number"
-          value=""
-        />
-      </div>
-      <div
-        className="sc-iCfMLu ALffg"
-      >
-        <label
-          htmlFor="timeLost"
+          <label
+            htmlFor="dispro51Consumed"
+          >
+            Dispro 51 Consumed
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="dispro51Consumed"
+            id="dispro51Consumed"
+            label="Dispro 51 Consumed"
+            min="-1"
+            name="dispro51Consumed"
+            onChange={[Function]}
+            placeholder="kg"
+            required={true}
+            step={-1.1}
+            type="number"
+            value=""
+          />
+        </div>
+        <div
+          className="sc-iCfMLu fGhyxp input-container"
         >
-          Time Lost
-        </label>
-        <input
-          className="production-form-input"
-          htmlFor="timeLost"
-          id="timeLost"
-          label="Time Lost"
-          max="23"
-          min="-1"
-          name="timeLost"
-          onChange={[Function]}
-          placeholder="Hours"
-          required={true}
-          type="number"
-          value=""
-        />
+          <label
+            htmlFor="timeLost"
+          >
+            Time Lost
+          </label>
+          <input
+            className="production-form-input"
+            htmlFor="timeLost"
+            id="timeLost"
+            label="Time Lost"
+            max="23"
+            min="-1"
+            name="timeLost"
+            onChange={[Function]}
+            placeholder="Hours"
+            required={true}
+            type="number"
+            value=""
+          />
+        </div>
       </div>
     </div>
     <div
@@ -285,7 +289,7 @@ exports[`
               First Shift
             </h4>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="firstShiftManager"
@@ -312,7 +316,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-iCfMLu ALffg"
+                className="sc-iCfMLu fGhyxp input-container"
               >
                 <label
                   htmlFor="firstShiftMaterialStarched"
@@ -331,7 +335,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-iCfMLu ALffg"
+                className="sc-iCfMLu fGhyxp input-container"
               >
                 <label
                   htmlFor="firstShiftMaterialWeight"
@@ -354,7 +358,7 @@ exports[`
               </div>
             </div>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="firstShiftMaterialProduced"
@@ -377,7 +381,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="firstShiftRawMaterialConsumed"
@@ -407,7 +411,7 @@ exports[`
               Second Shift
             </h4>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="secondShiftManager"
@@ -434,7 +438,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-iCfMLu ALffg"
+                className="sc-iCfMLu fGhyxp input-container"
               >
                 <label
                   htmlFor="secondShiftMaterialStarched"
@@ -453,7 +457,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-iCfMLu ALffg"
+                className="sc-iCfMLu fGhyxp input-container"
               >
                 <label
                   htmlFor="secondShiftMaterialWeight"
@@ -476,7 +480,7 @@ exports[`
               </div>
             </div>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="secondShiftMaterialProduced"
@@ -499,7 +503,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="secondShiftRawMaterialConsumed"
@@ -529,7 +533,7 @@ exports[`
               Third Shift
             </h4>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="thirdShiftManager"
@@ -556,7 +560,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-iCfMLu ALffg"
+                className="sc-iCfMLu fGhyxp input-container"
               >
                 <label
                   htmlFor="thirdShiftMaterialStarched"
@@ -575,7 +579,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-iCfMLu ALffg"
+                className="sc-iCfMLu fGhyxp input-container"
               >
                 <label
                   htmlFor="thirdShiftMaterialWeight"
@@ -598,7 +602,7 @@ exports[`
               </div>
             </div>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="thirdShiftMaterialProduced"
@@ -621,7 +625,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu ALffg"
+              className="sc-iCfMLu fGhyxp input-container"
             >
               <label
                 htmlFor="thirdShiftRawMaterialConsumed"
