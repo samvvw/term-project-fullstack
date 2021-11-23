@@ -17,14 +17,20 @@ exports[`
     Helloaa
   </h1>
   <form
-    className="sc-bdvvtL fxRVsI"
+    className="sc-bdvvtL jTXHep"
     onSubmit={[Function]}
   >
     <div
-      className="sc-gsDKAQ eeFGtY"
+      className="sc-gsDKAQ jGvObR"
     >
+      <h3>
+        Daily Production Log
+      </h3>
+      <h4>
+        Paper Mill 4
+      </h4>
       <div
-        className="sc-iCfMLu Chgkz"
+        className="sc-iCfMLu bSNtEb"
       >
         <label
           htmlFor="millManager"
@@ -33,20 +39,21 @@ exports[`
         </label>
         <input
           className="production-form-input"
-          column={true}
+          column="true"
           htmlFor="millManager"
           id="millManager"
           label="Mill Manager"
           name="millManager"
           onChange={[Function]}
+          placeholder="John Doe..."
           required={true}
           type="text"
           value=""
-          width="7rem"
+          width="9rem"
         />
       </div>
       <div
-        className="sc-iCfMLu mVqrv"
+        className="sc-iCfMLu bSNtEb"
       >
         <label
           htmlFor="logDate"
@@ -55,7 +62,7 @@ exports[`
         </label>
         <input
           className="production-form-input"
-          column={true}
+          column="true"
           htmlFor="logDate"
           id="logDate"
           label="Log Date"
@@ -64,22 +71,18 @@ exports[`
           required={true}
           type="date"
           value=""
-          width="inherit"
+          width="9rem"
         />
       </div>
-      <button
-        disabled={false}
-        onClick={[Function]}
-        type="button"
-      >
-        Next
-      </button>
     </div>
     <div
       className="sc-eCImPb dusQGG"
     >
+      <h3>
+        Resource Consumption
+      </h3>
       <div
-        className="sc-iCfMLu eWJlWU"
+        className="sc-iCfMLu ALffg"
       >
         <label
           htmlFor="coalUsed"
@@ -94,6 +97,7 @@ exports[`
           min="-1"
           name="coalUsed"
           onChange={[Function]}
+          placeholder="kg"
           required={true}
           step={-1.1}
           type="number"
@@ -101,7 +105,7 @@ exports[`
         />
       </div>
       <div
-        className="sc-iCfMLu eWJlWU"
+        className="sc-iCfMLu ALffg"
       >
         <label
           htmlFor="electricityConsumed"
@@ -116,6 +120,7 @@ exports[`
           min="-1"
           name="electricityConsumed"
           onChange={[Function]}
+          placeholder="kw"
           required={true}
           step={-1.1}
           type="number"
@@ -123,7 +128,7 @@ exports[`
         />
       </div>
       <div
-        className="sc-iCfMLu eWJlWU"
+        className="sc-iCfMLu ALffg"
       >
         <label
           htmlFor="starchConsumed"
@@ -138,6 +143,7 @@ exports[`
           min="-1"
           name="starchConsumed"
           onChange={[Function]}
+          placeholder="kg"
           required={true}
           step={-1.1}
           type="number"
@@ -145,7 +151,7 @@ exports[`
         />
       </div>
       <div
-        className="sc-iCfMLu eWJlWU"
+        className="sc-iCfMLu ALffg"
       >
         <label
           htmlFor="polycationicConsumed"
@@ -160,6 +166,7 @@ exports[`
           min="-1"
           name="polycationicConsumed"
           onChange={[Function]}
+          placeholder="kg"
           required={true}
           step={-1.1}
           type="number"
@@ -167,7 +174,7 @@ exports[`
         />
       </div>
       <div
-        className="sc-iCfMLu eWJlWU"
+        className="sc-iCfMLu ALffg"
       >
         <label
           htmlFor="akdConsumed"
@@ -182,6 +189,7 @@ exports[`
           min="-1"
           name="akdConsumed"
           onChange={[Function]}
+          placeholder="kg"
           required={true}
           step={-1.1}
           type="number"
@@ -189,7 +197,7 @@ exports[`
         />
       </div>
       <div
-        className="sc-iCfMLu eWJlWU"
+        className="sc-iCfMLu ALffg"
       >
         <label
           htmlFor="antifoamConsumed"
@@ -204,6 +212,7 @@ exports[`
           min="-1"
           name="antifoamConsumed"
           onChange={[Function]}
+          placeholder="kg"
           required={true}
           step={-1.1}
           type="number"
@@ -211,28 +220,30 @@ exports[`
         />
       </div>
       <div
-        className="sc-iCfMLu eWJlWU"
+        className="sc-iCfMLu ALffg"
       >
         <label
-          htmlFor="dispro50Consumed"
+          htmlFor="dispro51Consumed"
         >
-          Dispro 50 Consumed
+          Dispro 51 Consumed
         </label>
         <input
           className="production-form-input"
-          htmlFor="dispro50Consumed"
-          id="dispro50Consumed"
-          label="Dispro 50 Consumed"
+          htmlFor="dispro51Consumed"
+          id="dispro51Consumed"
+          label="Dispro 51 Consumed"
           min="-1"
-          name="dispro50Consumed"
+          name="dispro51Consumed"
           onChange={[Function]}
+          placeholder="kg"
           required={true}
           step={-1.1}
           type="number"
+          value=""
         />
       </div>
       <div
-        className="sc-iCfMLu eWJlWU"
+        className="sc-iCfMLu ALffg"
       >
         <label
           htmlFor="timeLost"
@@ -248,28 +259,15 @@ exports[`
           min="-1"
           name="timeLost"
           onChange={[Function]}
+          placeholder="Hours"
           required={true}
           type="number"
           value=""
         />
       </div>
-      <button
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        Previous
-      </button>
-      <button
-        disabled={true}
-        onClick={[Function]}
-        type="button"
-      >
-        Next
-      </button>
     </div>
     <div
-      className="sc-dkPtRN jXGQab"
+      className="sc-dkPtRN fccUFy"
     >
       <div
         className="shift-production-wrapper"
@@ -277,42 +275,17 @@ exports[`
         <h3>
           Shift Production
         </h3>
-        <ul
-          className="shift-production-tabs"
-        >
-          <li
-            className="active"
-            id="firstShift"
-            onClick={[Function]}
-          >
-            First Shift
-          </li>
-          <li
-            className=""
-            id="secondShift"
-            onClick={[Function]}
-          >
-            Second Shift
-          </li>
-          <li
-            className=""
-            id="thirdShift"
-            onClick={[Function]}
-          >
-            Third Shift
-          </li>
-        </ul>
         <div
           className="tab-wrapper"
         >
           <div
-            className="sc-hKwDye haOcKZ shift-production-section"
+            className="sc-hKwDye edyMeZ shift-production-section"
           >
             <h4>
               First Shift
             </h4>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="firstShiftManager"
@@ -326,6 +299,7 @@ exports[`
                 label="Shift Manager"
                 name="firstShiftManager"
                 onChange={[Function]}
+                placeholder="Jane Doe"
                 required={true}
                 type="text"
                 value=""
@@ -338,7 +312,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-iCfMLu eWJlWU"
+                className="sc-iCfMLu ALffg"
               >
                 <label
                   htmlFor="firstShiftMaterialStarched"
@@ -357,7 +331,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-iCfMLu eWJlWU"
+                className="sc-iCfMLu ALffg"
               >
                 <label
                   htmlFor="firstShiftMaterialWeight"
@@ -372,6 +346,7 @@ exports[`
                   min="0"
                   name="firstShiftMaterialWeight"
                   onChange={[Function]}
+                  placeholder="gr"
                   required={true}
                   type="number"
                   value=""
@@ -379,7 +354,7 @@ exports[`
               </div>
             </div>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="firstShiftMaterialProduced"
@@ -394,6 +369,7 @@ exports[`
                 min="0"
                 name="firstShiftMaterialProduced"
                 onChange={[Function]}
+                placeholder="kg"
                 required={true}
                 step={0.1}
                 type="number"
@@ -401,7 +377,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="firstShiftRawMaterialConsumed"
@@ -416,35 +392,22 @@ exports[`
                 min="0"
                 name="firstShiftRawMaterialConsumed"
                 onChange={[Function]}
+                placeholder="kg"
                 required={true}
                 step={0.1}
                 type="number"
                 value=""
               />
             </div>
-            <button
-              disabled={true}
-              onClick={[Function]}
-              type="button"
-            >
-              Previous
-            </button>
-            <button
-              disabled={true}
-              onClick={[Function]}
-              type="button"
-            >
-              Next
-            </button>
           </div>
           <div
-            className="sc-hKwDye haOcKZ shift-production-section"
+            className="sc-hKwDye edyMeZ shift-production-section"
           >
             <h4>
               Second Shift
             </h4>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="secondShiftManager"
@@ -458,6 +421,7 @@ exports[`
                 label="Shift Manager"
                 name="secondShiftManager"
                 onChange={[Function]}
+                placeholder="Jane Doe"
                 required={true}
                 type="text"
                 value=""
@@ -470,7 +434,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-iCfMLu eWJlWU"
+                className="sc-iCfMLu ALffg"
               >
                 <label
                   htmlFor="secondShiftMaterialStarched"
@@ -489,7 +453,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-iCfMLu eWJlWU"
+                className="sc-iCfMLu ALffg"
               >
                 <label
                   htmlFor="secondShiftMaterialWeight"
@@ -504,6 +468,7 @@ exports[`
                   min="0"
                   name="secondShiftMaterialWeight"
                   onChange={[Function]}
+                  placeholder="gr"
                   required={true}
                   type="number"
                   value=""
@@ -511,7 +476,7 @@ exports[`
               </div>
             </div>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="secondShiftMaterialProduced"
@@ -526,6 +491,7 @@ exports[`
                 min="0"
                 name="secondShiftMaterialProduced"
                 onChange={[Function]}
+                placeholder="kg"
                 required={true}
                 step={0.1}
                 type="number"
@@ -533,7 +499,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="secondShiftRawMaterialConsumed"
@@ -548,35 +514,22 @@ exports[`
                 min="0"
                 name="secondShiftRawMaterialConsumed"
                 onChange={[Function]}
+                placeholder="kg"
                 required={true}
                 step={0.1}
                 type="number"
                 value=""
               />
             </div>
-            <button
-              disabled={true}
-              onClick={[Function]}
-              type="button"
-            >
-              Previous
-            </button>
-            <button
-              disabled={true}
-              onClick={[Function]}
-              type="button"
-            >
-              Next
-            </button>
           </div>
           <div
-            className="sc-hKwDye haOcKZ shift-production-section"
+            className="sc-hKwDye edyMeZ shift-production-section"
           >
             <h4>
               Third Shift
             </h4>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="thirdShiftManager"
@@ -590,6 +543,7 @@ exports[`
                 label="Shift Manager"
                 name="thirdShiftManager"
                 onChange={[Function]}
+                placeholder="Jane Doe"
                 required={true}
                 type="text"
                 value=""
@@ -602,7 +556,7 @@ exports[`
                 Material Type
               </p>
               <div
-                className="sc-iCfMLu eWJlWU"
+                className="sc-iCfMLu ALffg"
               >
                 <label
                   htmlFor="thirdShiftMaterialStarched"
@@ -621,7 +575,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-iCfMLu eWJlWU"
+                className="sc-iCfMLu ALffg"
               >
                 <label
                   htmlFor="thirdShiftMaterialWeight"
@@ -636,6 +590,7 @@ exports[`
                   min="0"
                   name="thirdShiftMaterialWeight"
                   onChange={[Function]}
+                  placeholder="gr"
                   required={true}
                   type="number"
                   value=""
@@ -643,7 +598,7 @@ exports[`
               </div>
             </div>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="thirdShiftMaterialProduced"
@@ -658,6 +613,7 @@ exports[`
                 min="0"
                 name="thirdShiftMaterialProduced"
                 onChange={[Function]}
+                placeholder="kg"
                 required={true}
                 step={0.1}
                 type="number"
@@ -665,7 +621,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu eWJlWU"
+              className="sc-iCfMLu ALffg"
             >
               <label
                 htmlFor="thirdShiftRawMaterialConsumed"
@@ -680,26 +636,13 @@ exports[`
                 min="0"
                 name="thirdShiftRawMaterialConsumed"
                 onChange={[Function]}
+                placeholder="kg"
                 required={true}
                 step={0.1}
                 type="number"
                 value=""
               />
             </div>
-            <button
-              disabled={true}
-              onClick={[Function]}
-              type="button"
-            >
-              Previous
-            </button>
-            <button
-              disabled={true}
-              onClick={[Function]}
-              type="button"
-            >
-              Next
-            </button>
           </div>
         </div>
       </div>
@@ -721,8 +664,14 @@ exports[`
       </button>
     </div>
     <div
-      className="sc-jRQBWg jbrOga"
+      className="sc-jRQBWg zXxHd"
     >
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Previous
+      </button>
       <p>
         Page 
         <span>
@@ -730,6 +679,13 @@ exports[`
           /6
         </span>
       </p>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Next
+      </button>
+      0% Completed
     </div>
   </form>
   <div

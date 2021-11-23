@@ -4,7 +4,8 @@ export const FormProductionLogWrapper = styled('form')`
     border: 1px solid ${({ theme }) => theme.pallette.primary.dark};
     position: relative;
     height: 22rem;
-    width: 35%;
+    /* width: 35%; */
+    width: 20rem;
     margin: 0 auto;
     overflow: hidden;
     input[type='number'] {
@@ -39,13 +40,14 @@ const hiddenPage = css`
     overflow: hidden;
 `
 export const FormHeadSection = styled('div')`
-    border: 1px solid ${({ theme }) => theme.pallette.secondary.dark};
+    padding-top: 1rem;
     position: absolute;
     ${(props) => (props.activePage ? activePage : hiddenPage)};
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
+    justify-content: flex-start;
+
+    gap: 2rem;
     align-items: center;
 `
 export const FormShiftProductionSection = styled('div')`
@@ -100,12 +102,13 @@ export const FormShiftProductionSection = styled('div')`
         left: 0;
         right: 0;
         bottom: 0; */
+        grid-column: 1/3;
     }
 `
 
 export const ShiftProductionSection = styled.div`
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 0 auto;
     border-radius: 5px;
     height: fit-content;
@@ -128,6 +131,11 @@ export const PageSection = styled.div`
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    width: max-content;
 `
 
 export const SubmitSection = styled.div`
@@ -160,13 +168,16 @@ const FormInput = (props) => {
 export const Input = styled((props) => <FormInput {...props} />)`
     display: ${(props) => (props.notFlex ? 'block' : 'flex')};
     flex-direction: ${(props) => (props.column ? 'column' : 'row')};
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     position: relative;
     cursor: pointer;
+    /* border: 1px solid black; */
+    max-width: 80%;
+    margin: 0 auto;
 
     input {
-        width: ${(props) => (props.width ? props.width : '4rem')};
+        width: ${(props) => (props.width ? props.width : '6rem')};
         border-style: none;
         border-bottom: 1px solid ${({ theme }) => theme.pallette.black[900]};
         color: ${({ theme }) => theme.pallette.black[900]};

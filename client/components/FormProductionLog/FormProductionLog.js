@@ -148,11 +148,11 @@ export function FormProductionLog({ setData }) {
     }
 
     function handleNextPage() {
-        setFormPage((prev) => (prev >= 1 ? (prev += 1) : 1))
+        setFormPage((prev) => (prev < 6 ? (prev += 1) : 6))
     }
 
     function handlePreviousPage() {
-        setFormPage((prev) => (prev >= 1 ? (prev -= 1) : 1))
+        setFormPage((prev) => (prev > 1 ? (prev -= 1) : 1))
     }
 
     function handleGoToPage(page) {
@@ -164,37 +164,34 @@ export function FormProductionLog({ setData }) {
     return (
         <FormProductionLogWrapper onSubmit={handleSubmit}>
             <FormHeadSection activePage={formPage === 1 ? true : false}>
+                <h3>Daily Production Log</h3>
+                <h4>Paper Mill 4</h4>
                 <Input
                     htmlFor="millManager"
                     label="Mill Manager"
                     type="text"
-                    width={'7rem'}
-                    column
+                    width={'9rem'}
+                    column="true"
                     onChange={handleChange}
                     required
                     value={formstate.millManager}
+                    placeholder="John Doe..."
                 />
                 <Input
                     htmlFor="logDate"
                     label="Log Date"
                     type="date"
-                    width={'inherit'}
-                    column
+                    width={'9rem'}
+                    column="true"
                     onChange={handleChange}
                     required
                     value={formstate.logDate}
                 />
-                <button
-                    type="button"
-                    onClick={handleNextPage}
-                    disabled={formPage === 1 ? false : true}
-                >
-                    Next
-                </button>
             </FormHeadSection>
             <FormResourceConsumptionSection
                 activePage={formPage === 2 ? true : false}
             >
+                <h3>Resource Consumption</h3>
                 <Input
                     htmlFor="coalUsed"
                     label="Coal Used"
@@ -204,6 +201,7 @@ export function FormProductionLog({ setData }) {
                     onChange={handleChange}
                     required
                     value={formstate.coalUsed}
+                    placeholder="kg"
                 />
                 <Input
                     htmlFor="electricityConsumed"
@@ -214,6 +212,7 @@ export function FormProductionLog({ setData }) {
                     onChange={handleChange}
                     required
                     value={formstate.electricityConsumed}
+                    placeholder="kw"
                 />
                 <Input
                     htmlFor="starchConsumed"
@@ -224,6 +223,7 @@ export function FormProductionLog({ setData }) {
                     onChange={handleChange}
                     required
                     value={formstate.starchConsumed}
+                    placeholder="kg"
                 />
                 <Input
                     htmlFor="polycationicConsumed"
@@ -234,6 +234,7 @@ export function FormProductionLog({ setData }) {
                     onChange={handleChange}
                     required
                     value={formstate.polycationicConsumed}
+                    placeholder="kg"
                 />
                 <Input
                     htmlFor="akdConsumed"
@@ -244,6 +245,7 @@ export function FormProductionLog({ setData }) {
                     onChange={handleChange}
                     required
                     value={formstate.akdConsumed}
+                    placeholder="kg"
                 />
                 <Input
                     htmlFor="antifoamConsumed"
@@ -254,16 +256,18 @@ export function FormProductionLog({ setData }) {
                     onChange={handleChange}
                     required
                     value={formstate.antifoamConsumed}
+                    placeholder="kg"
                 />
                 <Input
-                    htmlFor="dispro50Consumed"
-                    label="Dispro 50 Consumed"
+                    htmlFor="dispro51Consumed"
+                    label="Dispro 51 Consumed"
                     type="number"
                     min="-1"
                     step={-1.1}
                     onChange={handleChange}
                     required
-                    value={formstate.dispro50Consumed}
+                    value={formstate.dispro51Consumed}
+                    placeholder="kg"
                 />
                 <Input
                     htmlFor="timeLost"
@@ -274,28 +278,15 @@ export function FormProductionLog({ setData }) {
                     onChange={handleChange}
                     required
                     value={formstate.timeLost}
+                    placeholder="Hours"
                 />
-                <button
-                    type="button"
-                    onClick={handlePreviousPage}
-                    disabled={formPage === 2 ? false : true}
-                >
-                    Previous
-                </button>
-                <button
-                    type="button"
-                    onClick={handleNextPage}
-                    disabled={formPage === 2 ? false : true}
-                >
-                    Next
-                </button>
             </FormResourceConsumptionSection>
             <FormShiftProductionSection
                 activePage={formPage >= 3 && formPage <= 5 ? true : false}
             >
                 <div className="shift-production-wrapper">
                     <h3>Shift Production</h3>
-                    <ul className="shift-production-tabs">
+                    {/* <ul className="shift-production-tabs">
                         <li
                             id="firstShift"
                             onClick={(e) => {
@@ -332,7 +323,7 @@ export function FormProductionLog({ setData }) {
                         >
                             Third Shift
                         </li>
-                    </ul>
+                    </ul> */}
 
                     <div className="tab-wrapper">
                         <ShiftProductionSection
@@ -347,6 +338,7 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.firstShiftManager}
+                                placeholder="Jane Doe"
                             />
                             <div className="material-type">
                                 <p>Material Type</p>
@@ -367,6 +359,7 @@ export function FormProductionLog({ setData }) {
                                     min="0"
                                     required
                                     value={formstate.firstShiftMaterialWeight}
+                                    placeholder="gr"
                                 />
                             </div>
                             <Input
@@ -378,6 +371,7 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.firstShiftMaterialProduced}
+                                placeholder="kg"
                             />
                             <Input
                                 htmlFor="firstShiftRawMaterialConsumed"
@@ -388,21 +382,8 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.firstShiftRawMaterialConsumed}
+                                placeholder="kg"
                             />
-                            <button
-                                type="button"
-                                onClick={handlePreviousPage}
-                                disabled={formPage === 3 ? false : true}
-                            >
-                                Previous
-                            </button>
-                            <button
-                                type="button"
-                                onClick={handleNextPage}
-                                disabled={formPage === 3 ? false : true}
-                            >
-                                Next
-                            </button>
                         </ShiftProductionSection>
 
                         <ShiftProductionSection
@@ -417,6 +398,7 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.secondShiftManager}
+                                placeholder="Jane Doe"
                             />
                             <div className="material-type">
                                 <p>Material Type</p>
@@ -437,6 +419,7 @@ export function FormProductionLog({ setData }) {
                                     min="0"
                                     required
                                     value={formstate.secondShiftMaterialWeight}
+                                    placeholder="gr"
                                 />
                             </div>
                             <Input
@@ -448,6 +431,7 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.secondShiftMaterialProduced}
+                                placeholder="kg"
                             />
                             <Input
                                 htmlFor="secondShiftRawMaterialConsumed"
@@ -458,21 +442,8 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.secondShiftRawMaterialConsumed}
+                                placeholder="kg"
                             />
-                            <button
-                                type="button"
-                                onClick={handlePreviousPage}
-                                disabled={formPage === 4 ? false : true}
-                            >
-                                Previous
-                            </button>
-                            <button
-                                type="button"
-                                onClick={handleNextPage}
-                                disabled={formPage === 4 ? false : true}
-                            >
-                                Next
-                            </button>
                         </ShiftProductionSection>
                         <ShiftProductionSection
                             className="shift-production-section"
@@ -486,6 +457,7 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.thirdShiftManager}
+                                placeholder="Jane Doe"
                             />
                             <div className="material-type">
                                 <p>Material Type</p>
@@ -506,6 +478,7 @@ export function FormProductionLog({ setData }) {
                                     min="0"
                                     required
                                     value={formstate.thirdShiftMaterialWeight}
+                                    placeholder="gr"
                                 />
                             </div>
                             <Input
@@ -517,6 +490,7 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.thirdShiftMaterialProduced}
+                                placeholder="kg"
                             />
                             <Input
                                 htmlFor="thirdShiftRawMaterialConsumed"
@@ -527,21 +501,8 @@ export function FormProductionLog({ setData }) {
                                 onChange={handleChange}
                                 required
                                 value={formstate.thirdShiftRawMaterialConsumed}
+                                placeholder="kg"
                             />
-                            <button
-                                type="button"
-                                onClick={handlePreviousPage}
-                                disabled={formPage === 5 ? false : true}
-                            >
-                                Previous
-                            </button>
-                            <button
-                                type="button"
-                                onClick={handleNextPage}
-                                disabled={formPage === 5 ? false : true}
-                            >
-                                Next
-                            </button>
                         </ShiftProductionSection>
                     </div>
                 </div>
@@ -555,9 +516,26 @@ export function FormProductionLog({ setData }) {
                 </button>
             </SubmitSection>
             <PageSection>
+                <button type="button" onClick={handlePreviousPage}>
+                    Previous
+                </button>
                 <p>
                     Page <span>{formPage}/6</span>
                 </p>
+                <button type="button" onClick={handleNextPage}>
+                    Next
+                </button>
+                {`${Math.round(
+                    (Object.values(formstate).reduce((acc, curr) => {
+                        if (typeof curr !== 'boolean') {
+                            return curr ? acc + 1 : acc
+                        } else {
+                            return acc
+                        }
+                    }, 0) /
+                        22) *
+                        100
+                )}% Completed`}
             </PageSection>
         </FormProductionLogWrapper>
     )
