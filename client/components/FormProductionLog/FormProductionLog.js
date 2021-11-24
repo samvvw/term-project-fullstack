@@ -155,11 +155,11 @@ export function FormProductionLog({ setData }) {
         setFormPage((prev) => (prev > 1 ? (prev -= 1) : 1))
     }
 
-    function handleGoToPage(page) {
-        if (page >= 3 || page <= 5) {
-            setFormPage(page)
-        }
-    }
+    // function handleGoToPage(page) {
+    //     if (page >= 3 || page <= 5) {
+    //         setFormPage(page)
+    //     }
+    // }
 
     return (
         <FormProductionLogWrapper onSubmit={handleSubmit}>
