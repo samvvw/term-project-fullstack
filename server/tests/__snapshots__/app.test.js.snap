@@ -709,6 +709,96 @@ exports[`
   >
     Add
   </button>
+  <div>
+    <button
+      disabled={true}
+      onClick={[Function]}
+    >
+      &lt;&lt;
+    </button>
+     
+    <button
+      disabled={true}
+      onClick={[Function]}
+    >
+      &lt;
+    </button>
+     
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      &gt;
+    </button>
+     
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      &gt;&gt;
+    </button>
+     
+    <span>
+      Page
+       
+      <strong>
+        1
+         of 
+        2
+      </strong>
+       
+    </span>
+    <span>
+      | Go to page:
+       
+      <input
+        defaultValue={1}
+        onChange={[Function]}
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+        type="number"
+      />
+    </span>
+     
+    <select
+      onChange={[Function]}
+      value={10}
+    >
+      <option
+        value={5}
+      >
+        Show 
+        5
+      </option>
+      <option
+        value={10}
+      >
+        Show 
+        10
+      </option>
+      <option
+        value={15}
+      >
+        Show 
+        15
+      </option>
+      <option
+        value={20}
+      >
+        Show 
+        20
+      </option>
+      <option
+        value={25}
+      >
+        Show 
+        25
+      </option>
+    </select>
+  </div>
   <div
     className="sc-furwcr hgacLA"
   >
@@ -723,50 +813,114 @@ exports[`
           <th
             colSpan={2}
             role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
           >
             Info
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={4}
             role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
           >
             First Shift
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={4}
             role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
           >
             Second Shift
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={4}
             role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
           >
             Third Shift
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={3}
             role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
           >
             Daily Totals
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={2}
             role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
           >
             Coal
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={2}
             role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
           >
             Electricity
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={5}
             role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
           >
             Chemicals
+            <span>
+              
+            </span>
           </th>
         </tr>
         <tr
@@ -774,159 +928,419 @@ exports[`
         >
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Date
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Manager
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Material Type
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Production
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             OCC
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Fiber Loss
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Material Type
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Production
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             OCC
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Fiber Loss
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Material Type
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Production
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             OCC
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Fiber Loss
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Total Production
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Total OCC
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Total Fiber Loss
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Total
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             kg per ton
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Total
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Kw per ton
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Starch
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Polycationic
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             AKD
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Antifoam
+            <span>
+              
+            </span>
           </th>
           <th
             colSpan={1}
+            onClick={[Function]}
             role="columnheader"
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle SortBy"
           >
             Dispro 51
+            <span>
+              
+            </span>
           </th>
         </tr>
       </thead>
@@ -2146,140 +2560,6 @@ exports[`
             role="cell"
           >
             2021-11-04
-          </td>
-          <td
-            role="cell"
-          >
-            Arcila
-          </td>
-          <td
-            role="cell"
-          >
-            T-160
-          </td>
-          <td
-            role="cell"
-          >
-            21000
-          </td>
-          <td
-            role="cell"
-          >
-            22000
-          </td>
-          <td
-            role="cell"
-          >
-            4.55%
-          </td>
-          <td
-            role="cell"
-          >
-            W-160
-          </td>
-          <td
-            role="cell"
-          >
-            22000
-          </td>
-          <td
-            role="cell"
-          >
-            22300
-          </td>
-          <td
-            role="cell"
-          >
-            1.35%
-          </td>
-          <td
-            role="cell"
-          >
-            T-150
-          </td>
-          <td
-            role="cell"
-          >
-            20500
-          </td>
-          <td
-            role="cell"
-          >
-            21000
-          </td>
-          <td
-            role="cell"
-          >
-            2.38%
-          </td>
-          <td
-            role="cell"
-          >
-            
-          </td>
-          <td
-            role="cell"
-          >
-            
-          </td>
-          <td
-            role="cell"
-          >
-            2.76%
-          </td>
-          <td
-            role="cell"
-          >
-            500
-          </td>
-          <td
-            role="cell"
-          >
-            NaN
-          </td>
-          <td
-            role="cell"
-          >
-            2100000
-          </td>
-          <td
-            role="cell"
-          >
-            NaN
-          </td>
-          <td
-            role="cell"
-          >
-            300
-          </td>
-          <td
-            role="cell"
-          >
-            320
-          </td>
-          <td
-            role="cell"
-          >
-            520
-          </td>
-          <td
-            role="cell"
-          >
-            410
-          </td>
-          <td
-            role="cell"
-          >
-            500
-          </td>
-        </tr>
-        <tr
-          role="row"
-        >
-          <td
-            role="cell"
-          >
-            2021-11-05
           </td>
           <td
             role="cell"
