@@ -9,6 +9,7 @@ import {
     ShiftProductionSection,
     SubmitSection,
     PageSection,
+    Progress,
 } from './FormProductionLog.styles'
 
 export function FormProductionLog({ setData }) {
@@ -104,10 +105,10 @@ export function FormProductionLog({ setData }) {
         }
 
         try {
-            const response = await axios.post('/api/production-log', data)
+            const response = await axios.post('/api/v1/production-log', data)
 
             if (response) {
-                const responseget = await axios.get('/api/production-log')
+                const responseget = await axios.get('/api/v1/production-log')
 
                 const responseData = await responseget.data
 
@@ -342,28 +343,24 @@ export function FormProductionLog({ setData }) {
                                 value={formstate.firstShiftManager}
                                 placeholder="Jane Doe"
                             />
-                            <div className="material-type">
-                                <p>Material Type</p>
-                                <Input
-                                    htmlFor="firstShiftMaterialStarched"
-                                    label="Starched"
-                                    type="checkbox"
-                                    onChange={handleChange}
-                                    checked={
-                                        formstate.firstShiftMaterialStarched
-                                    }
-                                />
-                                <Input
-                                    htmlFor="firstShiftMaterialWeight"
-                                    label="Weight"
-                                    type="number"
-                                    onChange={handleChange}
-                                    min="0"
-                                    required
-                                    value={formstate.firstShiftMaterialWeight}
-                                    placeholder="gr"
-                                />
-                            </div>
+                            <h5>Material Type</h5>
+                            <Input
+                                htmlFor="firstShiftMaterialStarched"
+                                label="Starched"
+                                type="checkbox"
+                                onChange={handleChange}
+                                checked={formstate.firstShiftMaterialStarched}
+                            />
+                            <Input
+                                htmlFor="firstShiftMaterialWeight"
+                                label="Weight"
+                                type="number"
+                                onChange={handleChange}
+                                min="0"
+                                required
+                                value={formstate.firstShiftMaterialWeight}
+                                placeholder="gr"
+                            />
                             <Input
                                 htmlFor="firstShiftMaterialProduced"
                                 label="Material Produced"
@@ -402,28 +399,24 @@ export function FormProductionLog({ setData }) {
                                 value={formstate.secondShiftManager}
                                 placeholder="Jane Doe"
                             />
-                            <div className="material-type">
-                                <p>Material Type</p>
-                                <Input
-                                    htmlFor="secondShiftMaterialStarched"
-                                    label="Starched"
-                                    type="checkbox"
-                                    onChange={handleChange}
-                                    checked={
-                                        formstate.secondShiftMaterialStarched
-                                    }
-                                />
-                                <Input
-                                    htmlFor="secondShiftMaterialWeight"
-                                    label="Weight"
-                                    type="number"
-                                    onChange={handleChange}
-                                    min="0"
-                                    required
-                                    value={formstate.secondShiftMaterialWeight}
-                                    placeholder="gr"
-                                />
-                            </div>
+                            <h5>Material Type</h5>
+                            <Input
+                                htmlFor="secondShiftMaterialStarched"
+                                label="Starched"
+                                type="checkbox"
+                                onChange={handleChange}
+                                checked={formstate.secondShiftMaterialStarched}
+                            />
+                            <Input
+                                htmlFor="secondShiftMaterialWeight"
+                                label="Weight"
+                                type="number"
+                                onChange={handleChange}
+                                min="0"
+                                required
+                                value={formstate.secondShiftMaterialWeight}
+                                placeholder="gr"
+                            />
                             <Input
                                 htmlFor="secondShiftMaterialProduced"
                                 label="Material Produced"
@@ -461,28 +454,24 @@ export function FormProductionLog({ setData }) {
                                 value={formstate.thirdShiftManager}
                                 placeholder="Jane Doe"
                             />
-                            <div className="material-type">
-                                <p>Material Type</p>
-                                <Input
-                                    htmlFor="thirdShiftMaterialStarched"
-                                    label="Starched"
-                                    type="checkbox"
-                                    onChange={handleChange}
-                                    checked={
-                                        formstate.thirdShiftMaterialStarched
-                                    }
-                                />
-                                <Input
-                                    htmlFor="thirdShiftMaterialWeight"
-                                    label="Weight"
-                                    type="number"
-                                    onChange={handleChange}
-                                    min="0"
-                                    required
-                                    value={formstate.thirdShiftMaterialWeight}
-                                    placeholder="gr"
-                                />
-                            </div>
+                            <h5>Material Type</h5>
+                            <Input
+                                htmlFor="thirdShiftMaterialStarched"
+                                label="Starched"
+                                type="checkbox"
+                                onChange={handleChange}
+                                checked={formstate.thirdShiftMaterialStarched}
+                            />
+                            <Input
+                                htmlFor="thirdShiftMaterialWeight"
+                                label="Weight"
+                                type="number"
+                                onChange={handleChange}
+                                min="0"
+                                required
+                                value={formstate.thirdShiftMaterialWeight}
+                                placeholder="gr"
+                            />
                             <Input
                                 htmlFor="thirdShiftMaterialProduced"
                                 label="Material Produced"
@@ -510,9 +499,6 @@ export function FormProductionLog({ setData }) {
                 </div>
             </FormShiftProductionSection>
             <SubmitSection activePage={formPage === 6 ? true : false}>
-                <button type="button" onClick={handlePreviousPage}>
-                    Previous
-                </button>
                 <button type="submit" disabled={formPage === 6 ? false : true}>
                     Submit
                 </button>
@@ -527,7 +513,9 @@ export function FormProductionLog({ setData }) {
                 <button type="button" onClick={handleNextPage}>
                     Next
                 </button>
-                {`${Math.round(
+            </PageSection>
+            <Progress
+                progress={Math.round(
                     (Object.values(formstate).reduce((acc, curr) => {
                         if (typeof curr !== 'boolean') {
                             return curr ? acc + 1 : acc
@@ -537,8 +525,8 @@ export function FormProductionLog({ setData }) {
                     }, 0) /
                         22) *
                         100
-                )}% Completed`}
-            </PageSection>
+                )}
+            />
         </FormProductionLogWrapper>
     )
 }

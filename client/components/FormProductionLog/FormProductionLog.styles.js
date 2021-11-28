@@ -117,7 +117,16 @@ export const ShiftProductionSection = styled.div`
     ${(props) => (props.activePage ? activePage : hiddenPage)}
 
     border: 2px dashed ${({ theme }) => theme.pallette.primary[500]};
-
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+    align-items: stretch;
+    .input-container {
+        /* width: 100%; */
+        label {
+            width: 11rem;
+        }
+    }
     & > * {
         margin-top: 0.5rem;
     }
@@ -150,7 +159,7 @@ export const FormResourceConsumptionSection = styled('div')`
 `
 export const PageSection = styled.div`
     position: absolute;
-    bottom: 0;
+    bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
@@ -159,15 +168,52 @@ export const PageSection = styled.div`
     column-gap: 1rem;
     width: max-content;
 `
+const ProgressBar = (props) => {
+    return (
+        <div className={props.className}>
+            <div className="bar">
+                <p>{props.progress}%</p>
+            </div>
+        </div>
+    )
+}
+export const Progress = styled((props) => <ProgressBar {...props} />)`
+    width: 100%;
+    height: 18px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .bar {
+        overflow: hidden;
+        p {
+            text-align: center;
+        }
+        width: ${(props) => props.progress}%;
+        height: 100%;
+        background-color: ${(props) =>
+            props.progress < 50
+                ? 'red'
+                : props.progress < 100
+                ? 'orange'
+                : 'green'};
+    }
+`
 
 export const SubmitSection = styled.div`
     position: absolute;
-    ${(props) => (props.activePage ? activePage : hiddenPage)}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    ${(props) => (props.activePage ? activePage : hiddenPage)};
     bottom: 1rem;
     right: 1rem;
-    width: 5rem;
+
     button {
-        width: 100%;
+        width: 5rem;
     }
 `
 const FormInput = (props) => {
@@ -203,7 +249,8 @@ export const Input = styled((props) => <FormInput {...props} />).attrs({
     input {
         width: ${(props) => (props.width ? props.width : '6rem')};
         border-style: none;
-        border-bottom: 1px solid ${({ theme }) => theme.pallette.black[900]};
+        border-radius: 6px;
+        border: 1px solid ${({ theme }) => theme.pallette.black[900]};
         color: ${({ theme }) => theme.pallette.black[900]};
         background-color: ${({ theme }) => theme.pallette.black[50]};
     }

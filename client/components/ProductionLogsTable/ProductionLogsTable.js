@@ -6,7 +6,6 @@ export function ProductionLogsTable({ tableData, setColumns, tableInstance }) {
         getTableProps,
         getTableBodyProps,
         headerGroups,
-        rows,
         prepareRow,
         page,
         canPreviousPage,
