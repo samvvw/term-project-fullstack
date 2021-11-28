@@ -26,7 +26,7 @@ export default function App({ title }) {
     const chartData = useMemo(() => rows.map((e) => e.values), [rows])
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('/api/production-log')
+            const response = await fetch('/api/v1/production-log')
 
             const responseData = await response.json()
 

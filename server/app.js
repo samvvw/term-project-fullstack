@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.send('Server running')
 })
 
-app.use('/api', apiRouter)
+app.use('/api/v1', apiRouter)
 
 const server = app.listen(PORT, () => {
     if (process.env.NODE_ENV !== 'test')

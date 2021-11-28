@@ -30,7 +30,7 @@ exports[`
         Paper Mill 4
       </h4>
       <div
-        className="sc-iCfMLu cDHJhm input-container"
+        className="sc-furwcr fysigb input-container"
       >
         <label
           htmlFor="millManager"
@@ -53,7 +53,7 @@ exports[`
         />
       </div>
       <div
-        className="sc-iCfMLu cDHJhm input-container"
+        className="sc-furwcr fysigb input-container"
       >
         <label
           htmlFor="logDate"
@@ -85,7 +85,7 @@ exports[`
         className="resource-consumption"
       >
         <div
-          className="sc-iCfMLu fGhyxp input-container"
+          className="sc-furwcr kmTaRU input-container"
         >
           <label
             htmlFor="coalUsed"
@@ -108,7 +108,7 @@ exports[`
           />
         </div>
         <div
-          className="sc-iCfMLu fGhyxp input-container"
+          className="sc-furwcr kmTaRU input-container"
         >
           <label
             htmlFor="electricityConsumed"
@@ -131,7 +131,7 @@ exports[`
           />
         </div>
         <div
-          className="sc-iCfMLu fGhyxp input-container"
+          className="sc-furwcr kmTaRU input-container"
         >
           <label
             htmlFor="starchConsumed"
@@ -154,7 +154,7 @@ exports[`
           />
         </div>
         <div
-          className="sc-iCfMLu fGhyxp input-container"
+          className="sc-furwcr kmTaRU input-container"
         >
           <label
             htmlFor="polycationicConsumed"
@@ -177,7 +177,7 @@ exports[`
           />
         </div>
         <div
-          className="sc-iCfMLu fGhyxp input-container"
+          className="sc-furwcr kmTaRU input-container"
         >
           <label
             htmlFor="akdConsumed"
@@ -200,7 +200,7 @@ exports[`
           />
         </div>
         <div
-          className="sc-iCfMLu fGhyxp input-container"
+          className="sc-furwcr kmTaRU input-container"
         >
           <label
             htmlFor="antifoamConsumed"
@@ -223,7 +223,7 @@ exports[`
           />
         </div>
         <div
-          className="sc-iCfMLu fGhyxp input-container"
+          className="sc-furwcr kmTaRU input-container"
         >
           <label
             htmlFor="dispro51Consumed"
@@ -246,7 +246,7 @@ exports[`
           />
         </div>
         <div
-          className="sc-iCfMLu fGhyxp input-container"
+          className="sc-furwcr kmTaRU input-container"
         >
           <label
             htmlFor="timeLost"
@@ -283,13 +283,13 @@ exports[`
           className="tab-wrapper"
         >
           <div
-            className="sc-hKwDye edyMeZ shift-production-section"
+            className="sc-hKwDye clgeWy shift-production-section"
           >
             <h4>
               First Shift
             </h4>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="firstShiftManager"
@@ -309,56 +309,52 @@ exports[`
                 value=""
               />
             </div>
+            <h5>
+              Material Type
+            </h5>
             <div
-              className="material-type"
+              className="sc-furwcr kmTaRU input-container"
             >
-              <p>
-                Material Type
-              </p>
-              <div
-                className="sc-iCfMLu fGhyxp input-container"
+              <label
+                htmlFor="firstShiftMaterialStarched"
               >
-                <label
-                  htmlFor="firstShiftMaterialStarched"
-                >
-                  Starched
-                </label>
-                <input
-                  checked={false}
-                  className="production-form-input"
-                  htmlFor="firstShiftMaterialStarched"
-                  id="firstShiftMaterialStarched"
-                  label="Starched"
-                  name="firstShiftMaterialStarched"
-                  onChange={[Function]}
-                  type="checkbox"
-                />
-              </div>
-              <div
-                className="sc-iCfMLu fGhyxp input-container"
-              >
-                <label
-                  htmlFor="firstShiftMaterialWeight"
-                >
-                  Weight
-                </label>
-                <input
-                  className="production-form-input"
-                  htmlFor="firstShiftMaterialWeight"
-                  id="firstShiftMaterialWeight"
-                  label="Weight"
-                  min="0"
-                  name="firstShiftMaterialWeight"
-                  onChange={[Function]}
-                  placeholder="gr"
-                  required={true}
-                  type="number"
-                  value=""
-                />
-              </div>
+                Starched
+              </label>
+              <input
+                checked={false}
+                className="production-form-input"
+                htmlFor="firstShiftMaterialStarched"
+                id="firstShiftMaterialStarched"
+                label="Starched"
+                name="firstShiftMaterialStarched"
+                onChange={[Function]}
+                type="checkbox"
+              />
             </div>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
+            >
+              <label
+                htmlFor="firstShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="firstShiftMaterialWeight"
+                id="firstShiftMaterialWeight"
+                label="Weight"
+                min="0"
+                name="firstShiftMaterialWeight"
+                onChange={[Function]}
+                placeholder="gr"
+                required={true}
+                type="number"
+                value=""
+              />
+            </div>
+            <div
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="firstShiftMaterialProduced"
@@ -381,7 +377,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="firstShiftRawMaterialConsumed"
@@ -405,13 +401,13 @@ exports[`
             </div>
           </div>
           <div
-            className="sc-hKwDye edyMeZ shift-production-section"
+            className="sc-hKwDye clgeWy shift-production-section"
           >
             <h4>
               Second Shift
             </h4>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="secondShiftManager"
@@ -431,56 +427,52 @@ exports[`
                 value=""
               />
             </div>
+            <h5>
+              Material Type
+            </h5>
             <div
-              className="material-type"
+              className="sc-furwcr kmTaRU input-container"
             >
-              <p>
-                Material Type
-              </p>
-              <div
-                className="sc-iCfMLu fGhyxp input-container"
+              <label
+                htmlFor="secondShiftMaterialStarched"
               >
-                <label
-                  htmlFor="secondShiftMaterialStarched"
-                >
-                  Starched
-                </label>
-                <input
-                  checked={false}
-                  className="production-form-input"
-                  htmlFor="secondShiftMaterialStarched"
-                  id="secondShiftMaterialStarched"
-                  label="Starched"
-                  name="secondShiftMaterialStarched"
-                  onChange={[Function]}
-                  type="checkbox"
-                />
-              </div>
-              <div
-                className="sc-iCfMLu fGhyxp input-container"
-              >
-                <label
-                  htmlFor="secondShiftMaterialWeight"
-                >
-                  Weight
-                </label>
-                <input
-                  className="production-form-input"
-                  htmlFor="secondShiftMaterialWeight"
-                  id="secondShiftMaterialWeight"
-                  label="Weight"
-                  min="0"
-                  name="secondShiftMaterialWeight"
-                  onChange={[Function]}
-                  placeholder="gr"
-                  required={true}
-                  type="number"
-                  value=""
-                />
-              </div>
+                Starched
+              </label>
+              <input
+                checked={false}
+                className="production-form-input"
+                htmlFor="secondShiftMaterialStarched"
+                id="secondShiftMaterialStarched"
+                label="Starched"
+                name="secondShiftMaterialStarched"
+                onChange={[Function]}
+                type="checkbox"
+              />
             </div>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
+            >
+              <label
+                htmlFor="secondShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="secondShiftMaterialWeight"
+                id="secondShiftMaterialWeight"
+                label="Weight"
+                min="0"
+                name="secondShiftMaterialWeight"
+                onChange={[Function]}
+                placeholder="gr"
+                required={true}
+                type="number"
+                value=""
+              />
+            </div>
+            <div
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="secondShiftMaterialProduced"
@@ -503,7 +495,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="secondShiftRawMaterialConsumed"
@@ -527,13 +519,13 @@ exports[`
             </div>
           </div>
           <div
-            className="sc-hKwDye edyMeZ shift-production-section"
+            className="sc-hKwDye clgeWy shift-production-section"
           >
             <h4>
               Third Shift
             </h4>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="thirdShiftManager"
@@ -553,56 +545,52 @@ exports[`
                 value=""
               />
             </div>
+            <h5>
+              Material Type
+            </h5>
             <div
-              className="material-type"
+              className="sc-furwcr kmTaRU input-container"
             >
-              <p>
-                Material Type
-              </p>
-              <div
-                className="sc-iCfMLu fGhyxp input-container"
+              <label
+                htmlFor="thirdShiftMaterialStarched"
               >
-                <label
-                  htmlFor="thirdShiftMaterialStarched"
-                >
-                  Starched
-                </label>
-                <input
-                  checked={false}
-                  className="production-form-input"
-                  htmlFor="thirdShiftMaterialStarched"
-                  id="thirdShiftMaterialStarched"
-                  label="Starched"
-                  name="thirdShiftMaterialStarched"
-                  onChange={[Function]}
-                  type="checkbox"
-                />
-              </div>
-              <div
-                className="sc-iCfMLu fGhyxp input-container"
-              >
-                <label
-                  htmlFor="thirdShiftMaterialWeight"
-                >
-                  Weight
-                </label>
-                <input
-                  className="production-form-input"
-                  htmlFor="thirdShiftMaterialWeight"
-                  id="thirdShiftMaterialWeight"
-                  label="Weight"
-                  min="0"
-                  name="thirdShiftMaterialWeight"
-                  onChange={[Function]}
-                  placeholder="gr"
-                  required={true}
-                  type="number"
-                  value=""
-                />
-              </div>
+                Starched
+              </label>
+              <input
+                checked={false}
+                className="production-form-input"
+                htmlFor="thirdShiftMaterialStarched"
+                id="thirdShiftMaterialStarched"
+                label="Starched"
+                name="thirdShiftMaterialStarched"
+                onChange={[Function]}
+                type="checkbox"
+              />
             </div>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
+            >
+              <label
+                htmlFor="thirdShiftMaterialWeight"
+              >
+                Weight
+              </label>
+              <input
+                className="production-form-input"
+                htmlFor="thirdShiftMaterialWeight"
+                id="thirdShiftMaterialWeight"
+                label="Weight"
+                min="0"
+                name="thirdShiftMaterialWeight"
+                onChange={[Function]}
+                placeholder="gr"
+                required={true}
+                type="number"
+                value=""
+              />
+            </div>
+            <div
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="thirdShiftMaterialProduced"
@@ -625,7 +613,7 @@ exports[`
               />
             </div>
             <div
-              className="sc-iCfMLu fGhyxp input-container"
+              className="sc-furwcr kmTaRU input-container"
             >
               <label
                 htmlFor="thirdShiftRawMaterialConsumed"
@@ -652,14 +640,8 @@ exports[`
       </div>
     </div>
     <div
-      className="sc-gKclnd kIDwSK"
+      className="sc-iCfMLu kXobMw"
     >
-      <button
-        onClick={[Function]}
-        type="button"
-      >
-        Previous
-      </button>
       <button
         disabled={true}
         type="submit"
@@ -668,7 +650,7 @@ exports[`
       </button>
     </div>
     <div
-      className="sc-jRQBWg zXxHd"
+      className="sc-jRQBWg eNyDyM"
     >
       <button
         onClick={[Function]}
@@ -689,7 +671,18 @@ exports[`
       >
         Next
       </button>
-      0% Completed
+    </div>
+    <div
+      className="sc-gKclnd hAmPqD"
+    >
+      <div
+        className="bar"
+      >
+        <p>
+          0
+          %
+        </p>
+      </div>
     </div>
   </form>
   <div
@@ -800,10 +793,10 @@ exports[`
     </select>
   </div>
   <div
-    className="sc-furwcr hgacLA"
+    className="sc-pVTFL bLOujT"
   >
     <table
-      className="sc-pVTFL ihvyvC"
+      className="sc-jrQzAO bbOhbb"
       role="table"
     >
       <thead>
