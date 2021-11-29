@@ -13,678 +13,696 @@ exports[`
     }
   }
 >
+  <header>
+    <h1>
+      Production log
+    </h1>
+    <button
+      onClick={[Function]}
+    >
+      Add Entry
+    </button>
+  </header>
   <h1>
     Helloaa
   </h1>
-  <form
-    className="sc-bdvvtL ePJoEO"
-    onSubmit={[Function]}
+  <div
+    className="sc-bdvvtL gIoHTd"
   >
     <div
-      className="sc-gsDKAQ jGvObR"
-    >
-      <h3>
-        Daily Production Log
-      </h3>
-      <h4>
-        Paper Mill 4
-      </h4>
-      <div
-        className="sc-furwcr fysigb input-container"
-      >
-        <label
-          htmlFor="millManager"
-        >
-          Mill Manager
-        </label>
-        <input
-          className="production-form-input"
-          column="true"
-          htmlFor="millManager"
-          id="millManager"
-          label="Mill Manager"
-          name="millManager"
-          onChange={[Function]}
-          placeholder="John Doe..."
-          required={true}
-          type="text"
-          value=""
-          width="9rem"
-        />
-      </div>
-      <div
-        className="sc-furwcr fysigb input-container"
-      >
-        <label
-          htmlFor="logDate"
-        >
-          Log Date
-        </label>
-        <input
-          className="production-form-input"
-          column="true"
-          htmlFor="logDate"
-          id="logDate"
-          label="Log Date"
-          name="logDate"
-          onChange={[Function]}
-          required={true}
-          type="date"
-          value=""
-          width="9rem"
-        />
-      </div>
-    </div>
-    <div
-      className="sc-eCImPb xliTM"
-    >
-      <h3>
-        Resource Consumption
-      </h3>
-      <div
-        className="resource-consumption"
-      >
-        <div
-          className="sc-furwcr kmTaRU input-container"
-        >
-          <label
-            htmlFor="coalUsed"
-          >
-            Coal Used
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="coalUsed"
-            id="coalUsed"
-            label="Coal Used"
-            min="-1"
-            name="coalUsed"
-            onChange={[Function]}
-            placeholder="kg"
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-        </div>
-        <div
-          className="sc-furwcr kmTaRU input-container"
-        >
-          <label
-            htmlFor="electricityConsumed"
-          >
-            Electricity Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="electricityConsumed"
-            id="electricityConsumed"
-            label="Electricity Consumed"
-            min="-1"
-            name="electricityConsumed"
-            onChange={[Function]}
-            placeholder="kw"
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-        </div>
-        <div
-          className="sc-furwcr kmTaRU input-container"
-        >
-          <label
-            htmlFor="starchConsumed"
-          >
-            Starch Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="starchConsumed"
-            id="starchConsumed"
-            label="Starch Consumed"
-            min="-1"
-            name="starchConsumed"
-            onChange={[Function]}
-            placeholder="kg"
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-        </div>
-        <div
-          className="sc-furwcr kmTaRU input-container"
-        >
-          <label
-            htmlFor="polycationicConsumed"
-          >
-            Polycationic Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="polycationicConsumed"
-            id="polycationicConsumed"
-            label="Polycationic Consumed"
-            min="-1"
-            name="polycationicConsumed"
-            onChange={[Function]}
-            placeholder="kg"
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-        </div>
-        <div
-          className="sc-furwcr kmTaRU input-container"
-        >
-          <label
-            htmlFor="akdConsumed"
-          >
-            AKD Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="akdConsumed"
-            id="akdConsumed"
-            label="AKD Consumed"
-            min="-1"
-            name="akdConsumed"
-            onChange={[Function]}
-            placeholder="kg"
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-        </div>
-        <div
-          className="sc-furwcr kmTaRU input-container"
-        >
-          <label
-            htmlFor="antifoamConsumed"
-          >
-            Antifoam
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="antifoamConsumed"
-            id="antifoamConsumed"
-            label="Antifoam"
-            min="-1"
-            name="antifoamConsumed"
-            onChange={[Function]}
-            placeholder="kg"
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-        </div>
-        <div
-          className="sc-furwcr kmTaRU input-container"
-        >
-          <label
-            htmlFor="dispro51Consumed"
-          >
-            Dispro 51 Consumed
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="dispro51Consumed"
-            id="dispro51Consumed"
-            label="Dispro 51 Consumed"
-            min="-1"
-            name="dispro51Consumed"
-            onChange={[Function]}
-            placeholder="kg"
-            required={true}
-            step={-1.1}
-            type="number"
-            value=""
-          />
-        </div>
-        <div
-          className="sc-furwcr kmTaRU input-container"
-        >
-          <label
-            htmlFor="timeLost"
-          >
-            Time Lost
-          </label>
-          <input
-            className="production-form-input"
-            htmlFor="timeLost"
-            id="timeLost"
-            label="Time Lost"
-            max="23"
-            min="-1"
-            name="timeLost"
-            onChange={[Function]}
-            placeholder="Hours"
-            required={true}
-            type="number"
-            value=""
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-dkPtRN fccUFy"
+      className="backdrop-close"
+      onClick={[Function]}
+    />
+    <form
+      className="sc-gsDKAQ jQrGLY"
+      onSubmit={[Function]}
     >
       <div
-        className="shift-production-wrapper"
+        className="sc-dkPtRN jvxCqJ"
       >
         <h3>
-          Shift Production
+          Daily Production Log
+        </h3>
+        <h4>
+          Paper Mill 4
+        </h4>
+        <div
+          className="sc-pVTFL bpOXpk input-container"
+        >
+          <label
+            htmlFor="millManager"
+          >
+            Mill Manager
+          </label>
+          <input
+            className="production-form-input"
+            column="true"
+            htmlFor="millManager"
+            id="millManager"
+            label="Mill Manager"
+            name="millManager"
+            onChange={[Function]}
+            placeholder="John Doe..."
+            required={true}
+            type="text"
+            value=""
+            width="9rem"
+          />
+        </div>
+        <div
+          className="sc-pVTFL bpOXpk input-container"
+        >
+          <label
+            htmlFor="logDate"
+          >
+            Log Date
+          </label>
+          <input
+            className="production-form-input"
+            column="true"
+            htmlFor="logDate"
+            id="logDate"
+            label="Log Date"
+            name="logDate"
+            onChange={[Function]}
+            required={true}
+            type="date"
+            value=""
+            width="9rem"
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jRQBWg esugQz"
+      >
+        <h3>
+          Resource Consumption
         </h3>
         <div
-          className="tab-wrapper"
+          className="resource-consumption"
         >
           <div
-            className="sc-hKwDye clgeWy shift-production-section"
+            className="sc-pVTFL jrDID input-container"
           >
-            <h4>
-              First Shift
-            </h4>
-            <div
-              className="sc-furwcr kmTaRU input-container"
+            <label
+              htmlFor="coalUsed"
             >
-              <label
-                htmlFor="firstShiftManager"
-              >
-                Shift Manager
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="firstShiftManager"
-                id="firstShiftManager"
-                label="Shift Manager"
-                name="firstShiftManager"
-                onChange={[Function]}
-                placeholder="Jane Doe"
-                required={true}
-                type="text"
-                value=""
-              />
-            </div>
-            <h5>
-              Material Type
-            </h5>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="firstShiftMaterialStarched"
-              >
-                Starched
-              </label>
-              <input
-                checked={false}
-                className="production-form-input"
-                htmlFor="firstShiftMaterialStarched"
-                id="firstShiftMaterialStarched"
-                label="Starched"
-                name="firstShiftMaterialStarched"
-                onChange={[Function]}
-                type="checkbox"
-              />
-            </div>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="firstShiftMaterialWeight"
-              >
-                Weight
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="firstShiftMaterialWeight"
-                id="firstShiftMaterialWeight"
-                label="Weight"
-                min="0"
-                name="firstShiftMaterialWeight"
-                onChange={[Function]}
-                placeholder="gr"
-                required={true}
-                type="number"
-                value=""
-              />
-            </div>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="firstShiftMaterialProduced"
-              >
-                Material Produced
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="firstShiftMaterialProduced"
-                id="firstShiftMaterialProduced"
-                label="Material Produced"
-                min="0"
-                name="firstShiftMaterialProduced"
-                onChange={[Function]}
-                placeholder="kg"
-                required={true}
-                step={0.1}
-                type="number"
-                value=""
-              />
-            </div>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="firstShiftRawMaterialConsumed"
-              >
-                Raw Material Consumed
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="firstShiftRawMaterialConsumed"
-                id="firstShiftRawMaterialConsumed"
-                label="Raw Material Consumed"
-                min="0"
-                name="firstShiftRawMaterialConsumed"
-                onChange={[Function]}
-                placeholder="kg"
-                required={true}
-                step={0.1}
-                type="number"
-                value=""
-              />
-            </div>
+              Coal Used
+            </label>
+            <input
+              className="production-form-input"
+              htmlFor="coalUsed"
+              id="coalUsed"
+              label="Coal Used"
+              min="-1"
+              name="coalUsed"
+              onChange={[Function]}
+              placeholder="kg"
+              required={true}
+              step={-1.1}
+              type="number"
+              value=""
+            />
           </div>
           <div
-            className="sc-hKwDye clgeWy shift-production-section"
+            className="sc-pVTFL jrDID input-container"
           >
-            <h4>
-              Second Shift
-            </h4>
-            <div
-              className="sc-furwcr kmTaRU input-container"
+            <label
+              htmlFor="electricityConsumed"
             >
-              <label
-                htmlFor="secondShiftManager"
-              >
-                Shift Manager
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="secondShiftManager"
-                id="secondShiftManager"
-                label="Shift Manager"
-                name="secondShiftManager"
-                onChange={[Function]}
-                placeholder="Jane Doe"
-                required={true}
-                type="text"
-                value=""
-              />
-            </div>
-            <h5>
-              Material Type
-            </h5>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="secondShiftMaterialStarched"
-              >
-                Starched
-              </label>
-              <input
-                checked={false}
-                className="production-form-input"
-                htmlFor="secondShiftMaterialStarched"
-                id="secondShiftMaterialStarched"
-                label="Starched"
-                name="secondShiftMaterialStarched"
-                onChange={[Function]}
-                type="checkbox"
-              />
-            </div>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="secondShiftMaterialWeight"
-              >
-                Weight
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="secondShiftMaterialWeight"
-                id="secondShiftMaterialWeight"
-                label="Weight"
-                min="0"
-                name="secondShiftMaterialWeight"
-                onChange={[Function]}
-                placeholder="gr"
-                required={true}
-                type="number"
-                value=""
-              />
-            </div>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="secondShiftMaterialProduced"
-              >
-                Material Produced
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="secondShiftMaterialProduced"
-                id="secondShiftMaterialProduced"
-                label="Material Produced"
-                min="0"
-                name="secondShiftMaterialProduced"
-                onChange={[Function]}
-                placeholder="kg"
-                required={true}
-                step={0.1}
-                type="number"
-                value=""
-              />
-            </div>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="secondShiftRawMaterialConsumed"
-              >
-                Raw Material Consumed
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="secondShiftRawMaterialConsumed"
-                id="secondShiftRawMaterialConsumed"
-                label="Raw Material Consumed"
-                min="0"
-                name="secondShiftRawMaterialConsumed"
-                onChange={[Function]}
-                placeholder="kg"
-                required={true}
-                step={0.1}
-                type="number"
-                value=""
-              />
-            </div>
+              Electricity Consumed
+            </label>
+            <input
+              className="production-form-input"
+              htmlFor="electricityConsumed"
+              id="electricityConsumed"
+              label="Electricity Consumed"
+              min="-1"
+              name="electricityConsumed"
+              onChange={[Function]}
+              placeholder="kw"
+              required={true}
+              step={-1.1}
+              type="number"
+              value=""
+            />
           </div>
           <div
-            className="sc-hKwDye clgeWy shift-production-section"
+            className="sc-pVTFL jrDID input-container"
           >
-            <h4>
-              Third Shift
-            </h4>
-            <div
-              className="sc-furwcr kmTaRU input-container"
+            <label
+              htmlFor="starchConsumed"
             >
-              <label
-                htmlFor="thirdShiftManager"
+              Starch Consumed
+            </label>
+            <input
+              className="production-form-input"
+              htmlFor="starchConsumed"
+              id="starchConsumed"
+              label="Starch Consumed"
+              min="-1"
+              name="starchConsumed"
+              onChange={[Function]}
+              placeholder="kg"
+              required={true}
+              step={-1.1}
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            className="sc-pVTFL jrDID input-container"
+          >
+            <label
+              htmlFor="polycationicConsumed"
+            >
+              Polycationic Consumed
+            </label>
+            <input
+              className="production-form-input"
+              htmlFor="polycationicConsumed"
+              id="polycationicConsumed"
+              label="Polycationic Consumed"
+              min="-1"
+              name="polycationicConsumed"
+              onChange={[Function]}
+              placeholder="kg"
+              required={true}
+              step={-1.1}
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            className="sc-pVTFL jrDID input-container"
+          >
+            <label
+              htmlFor="akdConsumed"
+            >
+              AKD Consumed
+            </label>
+            <input
+              className="production-form-input"
+              htmlFor="akdConsumed"
+              id="akdConsumed"
+              label="AKD Consumed"
+              min="-1"
+              name="akdConsumed"
+              onChange={[Function]}
+              placeholder="kg"
+              required={true}
+              step={-1.1}
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            className="sc-pVTFL jrDID input-container"
+          >
+            <label
+              htmlFor="antifoamConsumed"
+            >
+              Antifoam
+            </label>
+            <input
+              className="production-form-input"
+              htmlFor="antifoamConsumed"
+              id="antifoamConsumed"
+              label="Antifoam"
+              min="-1"
+              name="antifoamConsumed"
+              onChange={[Function]}
+              placeholder="kg"
+              required={true}
+              step={-1.1}
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            className="sc-pVTFL jrDID input-container"
+          >
+            <label
+              htmlFor="dispro51Consumed"
+            >
+              Dispro 51 Consumed
+            </label>
+            <input
+              className="production-form-input"
+              htmlFor="dispro51Consumed"
+              id="dispro51Consumed"
+              label="Dispro 51 Consumed"
+              min="-1"
+              name="dispro51Consumed"
+              onChange={[Function]}
+              placeholder="kg"
+              required={true}
+              step={-1.1}
+              type="number"
+              value=""
+            />
+          </div>
+          <div
+            className="sc-pVTFL jrDID input-container"
+          >
+            <label
+              htmlFor="timeLost"
+            >
+              Time Lost
+            </label>
+            <input
+              className="production-form-input"
+              htmlFor="timeLost"
+              id="timeLost"
+              label="Time Lost"
+              max="23"
+              min="-1"
+              name="timeLost"
+              onChange={[Function]}
+              placeholder="Hours"
+              required={true}
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-hKwDye lojlaV"
+      >
+        <div
+          className="shift-production-wrapper"
+        >
+          <h3>
+            Shift Production
+          </h3>
+          <div
+            className="tab-wrapper"
+          >
+            <div
+              className="sc-eCImPb ivYA-DG shift-production-section"
+            >
+              <h4>
+                First Shift
+              </h4>
+              <div
+                className="sc-pVTFL jrDID input-container"
               >
-                Shift Manager
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="thirdShiftManager"
-                id="thirdShiftManager"
-                label="Shift Manager"
-                name="thirdShiftManager"
-                onChange={[Function]}
-                placeholder="Jane Doe"
-                required={true}
-                type="text"
-                value=""
-              />
+                <label
+                  htmlFor="firstShiftManager"
+                >
+                  Shift Manager
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="firstShiftManager"
+                  id="firstShiftManager"
+                  label="Shift Manager"
+                  name="firstShiftManager"
+                  onChange={[Function]}
+                  placeholder="Jane Doe"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>
+              <h5>
+                Material Type
+              </h5>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="firstShiftMaterialStarched"
+                >
+                  Starched
+                </label>
+                <input
+                  checked={false}
+                  className="production-form-input"
+                  htmlFor="firstShiftMaterialStarched"
+                  id="firstShiftMaterialStarched"
+                  label="Starched"
+                  name="firstShiftMaterialStarched"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="firstShiftMaterialWeight"
+                >
+                  Weight
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="firstShiftMaterialWeight"
+                  id="firstShiftMaterialWeight"
+                  label="Weight"
+                  min="0"
+                  name="firstShiftMaterialWeight"
+                  onChange={[Function]}
+                  placeholder="gr"
+                  required={true}
+                  type="number"
+                  value=""
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="firstShiftMaterialProduced"
+                >
+                  Material Produced
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="firstShiftMaterialProduced"
+                  id="firstShiftMaterialProduced"
+                  label="Material Produced"
+                  min="0"
+                  name="firstShiftMaterialProduced"
+                  onChange={[Function]}
+                  placeholder="kg"
+                  required={true}
+                  step={0.1}
+                  type="number"
+                  value=""
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="firstShiftRawMaterialConsumed"
+                >
+                  Raw Material Consumed
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="firstShiftRawMaterialConsumed"
+                  id="firstShiftRawMaterialConsumed"
+                  label="Raw Material Consumed"
+                  min="0"
+                  name="firstShiftRawMaterialConsumed"
+                  onChange={[Function]}
+                  placeholder="kg"
+                  required={true}
+                  step={0.1}
+                  type="number"
+                  value=""
+                />
+              </div>
             </div>
-            <h5>
-              Material Type
-            </h5>
             <div
-              className="sc-furwcr kmTaRU input-container"
+              className="sc-eCImPb ivYA-DG shift-production-section"
             >
-              <label
-                htmlFor="thirdShiftMaterialStarched"
+              <h4>
+                Second Shift
+              </h4>
+              <div
+                className="sc-pVTFL jrDID input-container"
               >
-                Starched
-              </label>
-              <input
-                checked={false}
-                className="production-form-input"
-                htmlFor="thirdShiftMaterialStarched"
-                id="thirdShiftMaterialStarched"
-                label="Starched"
-                name="thirdShiftMaterialStarched"
-                onChange={[Function]}
-                type="checkbox"
-              />
+                <label
+                  htmlFor="secondShiftManager"
+                >
+                  Shift Manager
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="secondShiftManager"
+                  id="secondShiftManager"
+                  label="Shift Manager"
+                  name="secondShiftManager"
+                  onChange={[Function]}
+                  placeholder="Jane Doe"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>
+              <h5>
+                Material Type
+              </h5>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="secondShiftMaterialStarched"
+                >
+                  Starched
+                </label>
+                <input
+                  checked={false}
+                  className="production-form-input"
+                  htmlFor="secondShiftMaterialStarched"
+                  id="secondShiftMaterialStarched"
+                  label="Starched"
+                  name="secondShiftMaterialStarched"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="secondShiftMaterialWeight"
+                >
+                  Weight
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="secondShiftMaterialWeight"
+                  id="secondShiftMaterialWeight"
+                  label="Weight"
+                  min="0"
+                  name="secondShiftMaterialWeight"
+                  onChange={[Function]}
+                  placeholder="gr"
+                  required={true}
+                  type="number"
+                  value=""
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="secondShiftMaterialProduced"
+                >
+                  Material Produced
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="secondShiftMaterialProduced"
+                  id="secondShiftMaterialProduced"
+                  label="Material Produced"
+                  min="0"
+                  name="secondShiftMaterialProduced"
+                  onChange={[Function]}
+                  placeholder="kg"
+                  required={true}
+                  step={0.1}
+                  type="number"
+                  value=""
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="secondShiftRawMaterialConsumed"
+                >
+                  Raw Material Consumed
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="secondShiftRawMaterialConsumed"
+                  id="secondShiftRawMaterialConsumed"
+                  label="Raw Material Consumed"
+                  min="0"
+                  name="secondShiftRawMaterialConsumed"
+                  onChange={[Function]}
+                  placeholder="kg"
+                  required={true}
+                  step={0.1}
+                  type="number"
+                  value=""
+                />
+              </div>
             </div>
             <div
-              className="sc-furwcr kmTaRU input-container"
+              className="sc-eCImPb ivYA-DG shift-production-section"
             >
-              <label
-                htmlFor="thirdShiftMaterialWeight"
+              <h4>
+                Third Shift
+              </h4>
+              <div
+                className="sc-pVTFL jrDID input-container"
               >
-                Weight
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="thirdShiftMaterialWeight"
-                id="thirdShiftMaterialWeight"
-                label="Weight"
-                min="0"
-                name="thirdShiftMaterialWeight"
-                onChange={[Function]}
-                placeholder="gr"
-                required={true}
-                type="number"
-                value=""
-              />
-            </div>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="thirdShiftMaterialProduced"
+                <label
+                  htmlFor="thirdShiftManager"
+                >
+                  Shift Manager
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="thirdShiftManager"
+                  id="thirdShiftManager"
+                  label="Shift Manager"
+                  name="thirdShiftManager"
+                  onChange={[Function]}
+                  placeholder="Jane Doe"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>
+              <h5>
+                Material Type
+              </h5>
+              <div
+                className="sc-pVTFL jrDID input-container"
               >
-                Material Produced
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="thirdShiftMaterialProduced"
-                id="thirdShiftMaterialProduced"
-                label="Material Produced"
-                min="0"
-                name="thirdShiftMaterialProduced"
-                onChange={[Function]}
-                placeholder="kg"
-                required={true}
-                step={0.1}
-                type="number"
-                value=""
-              />
-            </div>
-            <div
-              className="sc-furwcr kmTaRU input-container"
-            >
-              <label
-                htmlFor="thirdShiftRawMaterialConsumed"
+                <label
+                  htmlFor="thirdShiftMaterialStarched"
+                >
+                  Starched
+                </label>
+                <input
+                  checked={false}
+                  className="production-form-input"
+                  htmlFor="thirdShiftMaterialStarched"
+                  id="thirdShiftMaterialStarched"
+                  label="Starched"
+                  name="thirdShiftMaterialStarched"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
               >
-                Raw Material Consumed
-              </label>
-              <input
-                className="production-form-input"
-                htmlFor="thirdShiftRawMaterialConsumed"
-                id="thirdShiftRawMaterialConsumed"
-                label="Raw Material Consumed"
-                min="0"
-                name="thirdShiftRawMaterialConsumed"
-                onChange={[Function]}
-                placeholder="kg"
-                required={true}
-                step={0.1}
-                type="number"
-                value=""
-              />
+                <label
+                  htmlFor="thirdShiftMaterialWeight"
+                >
+                  Weight
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="thirdShiftMaterialWeight"
+                  id="thirdShiftMaterialWeight"
+                  label="Weight"
+                  min="0"
+                  name="thirdShiftMaterialWeight"
+                  onChange={[Function]}
+                  placeholder="gr"
+                  required={true}
+                  type="number"
+                  value=""
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="thirdShiftMaterialProduced"
+                >
+                  Material Produced
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="thirdShiftMaterialProduced"
+                  id="thirdShiftMaterialProduced"
+                  label="Material Produced"
+                  min="0"
+                  name="thirdShiftMaterialProduced"
+                  onChange={[Function]}
+                  placeholder="kg"
+                  required={true}
+                  step={0.1}
+                  type="number"
+                  value=""
+                />
+              </div>
+              <div
+                className="sc-pVTFL jrDID input-container"
+              >
+                <label
+                  htmlFor="thirdShiftRawMaterialConsumed"
+                >
+                  Raw Material Consumed
+                </label>
+                <input
+                  className="production-form-input"
+                  htmlFor="thirdShiftRawMaterialConsumed"
+                  id="thirdShiftRawMaterialConsumed"
+                  label="Raw Material Consumed"
+                  min="0"
+                  name="thirdShiftRawMaterialConsumed"
+                  onChange={[Function]}
+                  placeholder="kg"
+                  required={true}
+                  step={0.1}
+                  type="number"
+                  value=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="sc-iCfMLu kXobMw"
-    >
-      <button
-        disabled={true}
-        type="submit"
-      >
-        Submit
-      </button>
-    </div>
-    <div
-      className="sc-jRQBWg eNyDyM"
-    >
-      <button
-        onClick={[Function]}
-        type="button"
-      >
-        Previous
-      </button>
-      <p>
-        Page 
-        <span>
-          1
-          /6
-        </span>
-      </p>
-      <button
-        onClick={[Function]}
-        type="button"
-      >
-        Next
-      </button>
-    </div>
-    <div
-      className="sc-gKclnd hAmPqD"
-    >
       <div
-        className="bar"
+        className="sc-furwcr cpIwbn"
       >
-        <p>
-          0
-          %
-        </p>
+        <button
+          disabled={true}
+          type="submit"
+        >
+          Submit
+        </button>
       </div>
-    </div>
-  </form>
+      <div
+        className="sc-gKclnd kRZAae"
+      >
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Previous
+        </button>
+        <p>
+          Page 
+          <span>
+            1
+            /6
+          </span>
+        </p>
+        <button
+          onClick={[Function]}
+          type="button"
+        >
+          Next
+        </button>
+      </div>
+      <div
+        className="sc-iCfMLu eaNCNW"
+      >
+        <div
+          className="bar"
+        >
+          <p>
+            0
+            %
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
   <div
     className="recharts-responsive-container"
     style={
@@ -793,10 +811,10 @@ exports[`
     </select>
   </div>
   <div
-    className="sc-pVTFL bLOujT"
+    className="sc-jrQzAO dhwlpO"
   >
     <table
-      className="sc-jrQzAO bbOhbb"
+      className="sc-kDTinF dFUPLU"
       role="table"
     >
       <thead>
