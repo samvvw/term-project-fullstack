@@ -1,6 +1,43 @@
 import styled, { css } from 'styled-components'
+const activeForm = css`
+    background-color: rgba(0, 0, 0, 0.4);
+
+    transform: translateY(0%);
+`
+const inactiveForm = css`
+    background-color: rgba(0, 0, 0, 0);
+    transform: translateY(-100%);
+`
+const Backdrop = (props) => (
+    <div className={props.className}>
+        <div className="backdrop-close" onClick={props.closeBackdrop}></div>
+        {props.children}
+    </div>
+)
+export const FormBackdrop = styled((props) => <Backdrop {...props} />)`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .backdrop-close {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    transition: transform 250ms ease-in-out, background-color 200ms ease-in-out;
+    ${(props) => (props.formActive ? activeForm : inactiveForm)};
+`
 
 export const FormProductionLogWrapper = styled('form')`
+    background-color: ${({ theme }) => theme.pallette.black[50]};
     border: 2px solid ${({ theme }) => theme.pallette.primary.dark};
     border-radius: 6px;
     position: relative;

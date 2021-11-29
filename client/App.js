@@ -9,6 +9,7 @@ import ColumnConfig from './utils/tableColumns'
 
 export default function App({ title }) {
     const [data, setData] = useState([])
+    const [formActive, setFormActive] = useState(false)
 
     const [columns, setColumns] = useState(ColumnConfig)
 
@@ -49,8 +50,16 @@ export default function App({ title }) {
                     return row.values
                 })
             )} */}
+            <header>
+                <h1>Production log</h1>
+                <button onClick={() => setFormActive(true)}>Add Entry</button>
+            </header>
             {title && <h1>{title}</h1>}
-            <FormProductionLog setData={setData} />
+            <FormProductionLog
+                setData={setData}
+                formActive={formActive}
+                setFormActive={setFormActive}
+            />
             <ProductionChart tableData={chartData} />
             <ProductionLogsTable
                 tableData={tableData}
