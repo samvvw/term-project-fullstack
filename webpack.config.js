@@ -29,7 +29,7 @@ module.exports = {
     // test
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'From Webpack',
+            title: 'Fullstack Term Project',
             template: 'client/index.html',
         }),
         new ESLintPlugin({
@@ -38,4 +38,22 @@ module.exports = {
         }),
         new BundleAnalyzerPlugin({ analyzerMode: 'json' }),
     ],
+    devServer: {
+        compress: true,
+        historyApiFallback: true,
+        open: true,
+        client: {
+            overlay: {
+                errors: true,
+                warnings: false,
+            },
+        },
+        port: 3000,
+        proxy: {
+            '/api': 'http://localhost:8080',
+        },
+        watchFiles: {
+            paths: 'client/**/*',
+        },
+    },
 }

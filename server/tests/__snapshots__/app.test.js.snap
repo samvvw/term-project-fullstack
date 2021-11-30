@@ -13,14 +13,16 @@ exports[`
     }
   }
 >
-  <header>
+  <header
+    className="sc-egiyK kTkmpg"
+  >
     <h1>
-      Production log
+      Production Log
     </h1>
     <button
       onClick={[Function]}
     >
-      Add Entry
+      Add New Entry
     </button>
   </header>
   <h1>
@@ -704,17 +706,21 @@ exports[`
     </form>
   </div>
   <div
-    className="recharts-responsive-container"
-    style={
-      Object {
-        "height": 350,
-        "maxHeight": undefined,
-        "minHeight": undefined,
-        "minWidth": undefined,
-        "width": "90%",
+    className="sc-crHmcD foNyYb"
+  >
+    <div
+      className="recharts-responsive-container"
+      style={
+        Object {
+          "height": 350,
+          "maxHeight": undefined,
+          "minHeight": undefined,
+          "minWidth": undefined,
+          "width": "90%",
+        }
       }
-    }
-  />
+    />
+  </div>
   <button
     onClick={[Function]}
   >
@@ -797,16 +803,10 @@ exports[`
         15
       </option>
       <option
-        value={20}
+        value={30}
       >
         Show 
-        20
-      </option>
-      <option
-        value={25}
-      >
-        Show 
-        25
+        30
       </option>
     </select>
   </div>

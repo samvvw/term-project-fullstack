@@ -9,10 +9,11 @@ import {
     Tooltip,
     Legend,
 } from 'recharts'
+import { ChartWrapper } from './ProductionChart.styles'
 
 export function ProductionChart({ tableData }) {
     return (
-        <>
+        <ChartWrapper>
             <ResponsiveContainer width="90%" height={350}>
                 <ComposedChart
                     data={tableData}
@@ -80,23 +81,20 @@ export function ProductionChart({ tableData }) {
                     />
                     <CartesianGrid stroke="#ccc" />
                     <XAxis
-                        dataKey={
-                            (e) =>
-                                new Date(Date.parse(e.Date)).toLocaleDateString(
-                                    'en-US',
-                                    {
-                                        year: 'numeric',
-                                        month: 'short',
-                                        day: 'numeric',
-                                    }
-                                )
-                            // .toISOString()
-                            // .split('T')[0]
+                        dataKey={(e) =>
+                            new Date(Date.parse(e.Date)).toLocaleDateString(
+                                'en-US',
+                                {
+                                    year: 'numeric',
+                                    month: 'short',
+                                    day: 'numeric',
+                                }
+                            )
                         }
                     />
                     <YAxis domain={['auto', 'auto']} />
                 </ComposedChart>
             </ResponsiveContainer>
-        </>
+        </ChartWrapper>
     )
 }

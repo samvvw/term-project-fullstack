@@ -88,7 +88,7 @@ export function ProductionLogsTable({ tableData, setColumns, tableInstance }) {
                         setPageSize(Number(e.target.value))
                     }}
                 >
-                    {[5, 10, 15, 20, 25].map((pageSize) => (
+                    {[5, 10, 15, 30].map((pageSize) => (
                         <option key={pageSize} value={pageSize}>
                             Show {pageSize}
                         </option>
@@ -153,11 +153,6 @@ export function ProductionLogsTable({ tableData, setColumns, tableInstance }) {
                     'Loading'
                 )}
             </TableContainer>
-            {/* <pre>
-                <code>
-                    {rows.map((row) => JSON.stringify(row.values, null, 4))}
-                </code>
-            </pre> */}
         </>
     )
 }
