@@ -4,6 +4,7 @@ import {
     FormProductionLog,
     ProductionLogsTable,
     ProductionChart,
+    Header,
 } from './components'
 import ColumnConfig from './utils/tableColumns'
 
@@ -44,16 +45,7 @@ export default function App({ title }) {
                 alignItems: 'center',
             }}
         >
-            {/* {JSON.stringify(
-                rows.map((row) => {
-                    console.log(row)
-                    return row.values
-                })
-            )} */}
-            <header>
-                <h1>Production log</h1>
-                <button onClick={() => setFormActive(true)}>Add Entry</button>
-            </header>
+            <Header displayFormHandler={() => setFormActive(true)} />
             {title && <h1>{title}</h1>}
             <FormProductionLog
                 setData={setData}

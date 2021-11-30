@@ -43,7 +43,6 @@ export function FormProductionLog({ setData, formActive, setFormActive }) {
     })
 
     const [formPage, setFormPage] = useState(1)
-    // const [shiftTab, setShiftTab] = useState('firstShift')
 
     function handleChange(e) {
         if (e.target.type === 'checkbox') {
@@ -57,10 +56,6 @@ export function FormProductionLog({ setData, formActive, setFormActive }) {
             })
         }
     }
-
-    // function handleTabChange(e) {
-    //     setShiftTab(e.target.id)
-    // }
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -156,12 +151,6 @@ export function FormProductionLog({ setData, formActive, setFormActive }) {
     function handlePreviousPage() {
         setFormPage((prev) => (prev > 1 ? (prev -= 1) : 1))
     }
-
-    // function handleGoToPage(page) {
-    //     if (page >= 3 || page <= 5) {
-    //         setFormPage(page)
-    //     }
-    // }
 
     return (
         <FormBackdrop
@@ -296,44 +285,6 @@ export function FormProductionLog({ setData, formActive, setFormActive }) {
                 >
                     <div className="shift-production-wrapper">
                         <h3>Shift Production</h3>
-                        {/* <ul className="shift-production-tabs">
-                        <li
-                            id="firstShift"
-                            onClick={(e) => {
-                                handleTabChange(e)
-                                handleGoToPage(3)
-                            }}
-                            className={
-                                shiftTab === 'firstShift' ? 'active' : ''
-                            }
-                        >
-                            First Shift
-                        </li>
-                        <li
-                            id="secondShift"
-                            onClick={(e) => {
-                                handleTabChange(e)
-                                handleGoToPage(4)
-                            }}
-                            className={
-                                shiftTab === 'secondShift' ? 'active' : ''
-                            }
-                        >
-                            Second Shift
-                        </li>
-                        <li
-                            id="thirdShift"
-                            onClick={(e) => {
-                                handleTabChange(e)
-                                handleGoToPage(5)
-                            }}
-                            className={
-                                shiftTab === 'thirdShift' ? 'active' : ''
-                            }
-                        >
-                            Third Shift
-                        </li>
-                    </ul> */}
 
                         <div className="tab-wrapper">
                             <ShiftProductionSection
