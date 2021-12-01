@@ -1,7 +1,7 @@
 // import { useState, useMemo } from 'react'
 import { TableWrapper, TableContainer } from './ProductionLogsTable.styles'
 
-export function ProductionLogsTable({ tableData, setColumns, tableInstance }) {
+export function ProductionLogsTable({ tableData, tableInstance }) {
     const {
         getTableProps,
         getTableBodyProps,
@@ -19,29 +19,8 @@ export function ProductionLogsTable({ tableData, setColumns, tableInstance }) {
         state: { pageIndex, pageSize },
     } = tableInstance
 
-    function handleColumnChange() {
-        console.log(headerGroups)
-        setColumns((prev) => {
-            const index = prev.findIndex(
-                (e) =>
-                    e.accessor === 'shiftProduction.firstShift.materialProduced'
-            )
-            if (index == -1) {
-                return [
-                    ...prev,
-                    {
-                        Header: `Column ${prev.length + 1}`,
-                        accessor: 'shiftProduction.firstShift.materialProduced',
-                    },
-                ]
-            } else {
-                return [...prev.slice(0, index), ...prev.slice(index + 1)]
-            }
-        })
-    }
     return (
         <>
-            <button onClick={handleColumnChange}>Add</button>
             <div>
                 {/* <p>{page}</p> */}
                 <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>

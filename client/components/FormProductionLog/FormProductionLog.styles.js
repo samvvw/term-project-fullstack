@@ -37,13 +37,14 @@ export const FormBackdrop = styled((props) => <Backdrop {...props} />)`
 `
 
 export const FormProductionLogWrapper = styled('form')`
+    color: ${({ theme }) => theme.pallette.black[900]};
     background-color: ${({ theme }) => theme.pallette.black[50]};
     border: 2px solid ${({ theme }) => theme.pallette.primary.dark};
     border-radius: 6px;
     position: relative;
-    height: 22rem;
+    height: 23rem;
     /* width: 35%; */
-    width: 20rem;
+    width: 22rem;
     margin: 0 auto;
     overflow: hidden;
     input[type='number'] {
@@ -78,15 +79,35 @@ const hiddenPage = css`
     overflow: hidden;
 `
 export const FormHeadSection = styled('div')`
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     position: absolute;
     ${(props) => (props.activePage ? activePage : hiddenPage)};
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
-    gap: 2rem;
+    /* gap: rem; */
     align-items: center;
+
+    h3,
+    h4 {
+        text-align: center;
+        color: ${({ theme }) => theme.pallette.black[50]};
+        padding: 1rem;
+    }
+    h3 {
+        background-color: ${({ theme }) => theme.pallette.primary.dark};
+        width: 100%;
+    }
+
+    h4 {
+        background-color: ${({ theme }) => theme.pallette.primary[500]};
+        width: 100%;
+    }
+
+    .input-container {
+        margin-top: 1rem;
+    }
 `
 export const FormShiftProductionSection = styled('div')`
     border: 1px solid ${({ theme }) => theme.pallette.primary[500]};
@@ -97,6 +118,16 @@ export const FormShiftProductionSection = styled('div')`
         grid-template-columns: 1fr 3fr;
         h3 {
             grid-column: 1 / 3;
+            background-color: ${({ theme }) => theme.pallette.primary.dark};
+            color: ${({ theme }) => theme.pallette.black[50]};
+            padding: 0.5rem;
+        }
+        h4,
+        h5 {
+            background-color: ${({ theme }) => theme.pallette.primary[500]};
+            color: ${({ theme }) => theme.pallette.black[50]};
+            padding: 0.3rem;
+            margin-top: 0;
         }
         .shift-production-tabs {
             grid-column: 1 / 2;
@@ -153,7 +184,6 @@ export const ShiftProductionSection = styled.div`
     position: absolute;
     ${(props) => (props.activePage ? activePage : hiddenPage)}
 
-    border: 2px dashed ${({ theme }) => theme.pallette.primary[500]};
     display: flex;
     gap: 0.4rem;
     flex-direction: column;
@@ -161,7 +191,7 @@ export const ShiftProductionSection = styled.div`
     .input-container {
         /* width: 100%; */
         label {
-            width: 11rem;
+            width: 12rem;
         }
     }
     & > * {
@@ -189,7 +219,7 @@ export const FormResourceConsumptionSection = styled('div')`
         .input-container {
             /* width: 100%; */
             label {
-                width: 11rem;
+                width: 12rem;
             }
         }
     }
@@ -204,6 +234,20 @@ export const PageSection = styled.div`
     justify-content: center;
     column-gap: 1rem;
     width: max-content;
+    button {
+        cursor: pointer;
+        border-style: none;
+        /* background-color: ${({ theme }) => theme.pallette.primary[500]}; */
+        /* color: ${({ theme }) => theme.pallette.black[50]}; */
+        padding: 0rem;
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+    button:hover {
+        border-style: none;
+        background-color: ${({ theme }) => theme.pallette.secondary.light};
+        padding: 0rem;
+    }
 `
 const ProgressBar = (props) => {
     return (
@@ -250,7 +294,21 @@ export const SubmitSection = styled.div`
     right: 1rem;
 
     button {
-        width: 5rem;
+        border-radius: 2px;
+        border-style: none;
+        font-size: 1.2rem;
+        border: 2px solid ${({ theme }) => theme.pallette.secondary.c800};
+        background-color: ${({ theme }) => theme.pallette.primary[500]};
+        /* font-weight: bold; */
+        color: ${({ theme }) => theme.pallette.black[50]};
+        padding: 0.3rem 0.7rem;
+        cursor: pointer;
+    }
+    button:hover {
+        border: 2px solid ${({ theme }) => theme.pallette.secondary[800]};
+        background-color: ${({ theme }) => theme.pallette.primary.dark};
+
+        color: ${({ theme }) => theme.pallette.black[100]};
     }
 `
 const FormInput = (props) => {
@@ -282,12 +340,15 @@ export const Input = styled((props) => <FormInput {...props} />).attrs({
     /* border: 1px solid black; */
     /* max-width: 90%; */
     margin: 0 auto;
-
+    border-bottom: 1px solid ${({ theme }) => theme.pallette.secondary.c800};
     input {
         width: ${(props) => (props.width ? props.width : '6rem')};
         border-style: none;
-        border-radius: 6px;
-        border: 1px solid ${({ theme }) => theme.pallette.black[900]};
+        border-bottom: 2px solid ${({ theme }) => theme.pallette.secondary.c800};
+        ${'' /* border-radius: 6px; */}
+        ${
+            '' /* border: 1px solid ${({ theme }) => theme.pallette.black[900]}; */
+        }
         color: ${({ theme }) => theme.pallette.black[900]};
         background-color: ${({ theme }) => theme.pallette.black[50]};
     }

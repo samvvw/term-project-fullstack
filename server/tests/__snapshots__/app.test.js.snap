@@ -14,7 +14,7 @@ exports[`
   }
 >
   <header
-    className="sc-egiyK kTkmpg"
+    className="sc-egiyK hdMqNl"
   >
     <h1>
       Production Log
@@ -36,11 +36,11 @@ exports[`
       onClick={[Function]}
     />
     <form
-      className="sc-gsDKAQ jQrGLY"
+      className="sc-gsDKAQ RceOT"
       onSubmit={[Function]}
     >
       <div
-        className="sc-dkPtRN jvxCqJ"
+        className="sc-dkPtRN jAnKcm"
       >
         <h3>
           Daily Production Log
@@ -49,7 +49,7 @@ exports[`
           Paper Mill 4
         </h4>
         <div
-          className="sc-pVTFL bpOXpk input-container"
+          className="sc-pVTFL htaOmz input-container"
         >
           <label
             htmlFor="millManager"
@@ -72,7 +72,7 @@ exports[`
           />
         </div>
         <div
-          className="sc-pVTFL bpOXpk input-container"
+          className="sc-pVTFL htaOmz input-container"
         >
           <label
             htmlFor="logDate"
@@ -95,7 +95,7 @@ exports[`
         </div>
       </div>
       <div
-        className="sc-jRQBWg esugQz"
+        className="sc-jRQBWg kvFcQA"
       >
         <h3>
           Resource Consumption
@@ -104,7 +104,7 @@ exports[`
           className="resource-consumption"
         >
           <div
-            className="sc-pVTFL jrDID input-container"
+            className="sc-pVTFL eTWlOk input-container"
           >
             <label
               htmlFor="coalUsed"
@@ -127,7 +127,7 @@ exports[`
             />
           </div>
           <div
-            className="sc-pVTFL jrDID input-container"
+            className="sc-pVTFL eTWlOk input-container"
           >
             <label
               htmlFor="electricityConsumed"
@@ -150,7 +150,7 @@ exports[`
             />
           </div>
           <div
-            className="sc-pVTFL jrDID input-container"
+            className="sc-pVTFL eTWlOk input-container"
           >
             <label
               htmlFor="starchConsumed"
@@ -173,7 +173,7 @@ exports[`
             />
           </div>
           <div
-            className="sc-pVTFL jrDID input-container"
+            className="sc-pVTFL eTWlOk input-container"
           >
             <label
               htmlFor="polycationicConsumed"
@@ -196,7 +196,7 @@ exports[`
             />
           </div>
           <div
-            className="sc-pVTFL jrDID input-container"
+            className="sc-pVTFL eTWlOk input-container"
           >
             <label
               htmlFor="akdConsumed"
@@ -219,7 +219,7 @@ exports[`
             />
           </div>
           <div
-            className="sc-pVTFL jrDID input-container"
+            className="sc-pVTFL eTWlOk input-container"
           >
             <label
               htmlFor="antifoamConsumed"
@@ -242,7 +242,7 @@ exports[`
             />
           </div>
           <div
-            className="sc-pVTFL jrDID input-container"
+            className="sc-pVTFL eTWlOk input-container"
           >
             <label
               htmlFor="dispro51Consumed"
@@ -265,7 +265,7 @@ exports[`
             />
           </div>
           <div
-            className="sc-pVTFL jrDID input-container"
+            className="sc-pVTFL eTWlOk input-container"
           >
             <label
               htmlFor="timeLost"
@@ -290,7 +290,7 @@ exports[`
         </div>
       </div>
       <div
-        className="sc-hKwDye lojlaV"
+        className="sc-hKwDye gCCwDm"
       >
         <div
           className="shift-production-wrapper"
@@ -302,13 +302,13 @@ exports[`
             className="tab-wrapper"
           >
             <div
-              className="sc-eCImPb ivYA-DG shift-production-section"
+              className="sc-eCImPb fgoUpv shift-production-section"
             >
               <h4>
                 First Shift
               </h4>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="firstShiftManager"
@@ -332,7 +332,7 @@ exports[`
                 Material Type
               </h5>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="firstShiftMaterialStarched"
@@ -351,7 +351,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="firstShiftMaterialWeight"
@@ -373,7 +373,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="firstShiftMaterialProduced"
@@ -396,7 +396,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="firstShiftRawMaterialConsumed"
@@ -420,13 +420,13 @@ exports[`
               </div>
             </div>
             <div
-              className="sc-eCImPb ivYA-DG shift-production-section"
+              className="sc-eCImPb fgoUpv shift-production-section"
             >
               <h4>
                 Second Shift
               </h4>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="secondShiftManager"
@@ -450,7 +450,7 @@ exports[`
                 Material Type
               </h5>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="secondShiftMaterialStarched"
@@ -469,7 +469,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="secondShiftMaterialWeight"
@@ -491,7 +491,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="secondShiftMaterialProduced"
@@ -514,7 +514,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="secondShiftRawMaterialConsumed"
@@ -538,13 +538,13 @@ exports[`
               </div>
             </div>
             <div
-              className="sc-eCImPb ivYA-DG shift-production-section"
+              className="sc-eCImPb fgoUpv shift-production-section"
             >
               <h4>
                 Third Shift
               </h4>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="thirdShiftManager"
@@ -568,7 +568,7 @@ exports[`
                 Material Type
               </h5>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="thirdShiftMaterialStarched"
@@ -587,7 +587,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="thirdShiftMaterialWeight"
@@ -609,7 +609,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="thirdShiftMaterialProduced"
@@ -632,7 +632,7 @@ exports[`
                 />
               </div>
               <div
-                className="sc-pVTFL jrDID input-container"
+                className="sc-pVTFL eTWlOk input-container"
               >
                 <label
                   htmlFor="thirdShiftRawMaterialConsumed"
@@ -659,7 +659,7 @@ exports[`
         </div>
       </div>
       <div
-        className="sc-furwcr cpIwbn"
+        className="sc-furwcr dQERwx"
       >
         <button
           disabled={true}
@@ -669,13 +669,13 @@ exports[`
         </button>
       </div>
       <div
-        className="sc-gKclnd kRZAae"
+        className="sc-gKclnd iqbKZd"
       >
         <button
           onClick={[Function]}
           type="button"
         >
-          Previous
+          ◀️
         </button>
         <p>
           Page 
@@ -688,7 +688,7 @@ exports[`
           onClick={[Function]}
           type="button"
         >
-          Next
+          ▶️
         </button>
       </div>
       <div
@@ -721,11 +721,6 @@ exports[`
       }
     />
   </div>
-  <button
-    onClick={[Function]}
-  >
-    Add
-  </button>
   <div>
     <button
       disabled={true}

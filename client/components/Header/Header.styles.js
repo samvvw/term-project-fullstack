@@ -22,6 +22,7 @@ export const HeaderComponent = styled((props) => <HeaderElement {...props} />)`
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    box-shadow: 2px 2px 2px ${({ theme }) => theme.pallette.black[900]};
     button {
         padding: 0.2rem 0.6rem;
         font-size: 1.2rem;
