@@ -480,13 +480,13 @@ export function FormProductionLog({ setData, formActive, setFormActive }) {
                 </SubmitSection>
                 <PageSection>
                     <button type="button" onClick={handlePreviousPage}>
-                        Previous
+                        ◀️
                     </button>
                     <p>
                         Page <span>{formPage}/6</span>
                     </p>
                     <button type="button" onClick={handleNextPage}>
-                        Next
+                        ▶️
                     </button>
                 </PageSection>
                 <Progress

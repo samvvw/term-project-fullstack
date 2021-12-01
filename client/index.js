@@ -3,6 +3,7 @@ import App from './App'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './theme/theme'
 import { GlobalStyle } from './theme/globalStyles'
+import './font.css'
 
 ReactDOM.render(
     <ThemeProvider theme={theme}>
