@@ -47,7 +47,7 @@ npm run dev
 
 - To run the project we need to create a .env file with the following variable definition
 
-```
+```env
     PORT=port_number
     NODE_ENV=development
     MONGODB_URL=mongodb-uri
@@ -89,6 +89,58 @@ The fields to fill are:
 ## API documentation, including
 
 - Endpoints and methods with a brief description of each
+
+  - **POST**
+
+    - **Endpoint**
+
+    - '/api/v1/production-log'
+
+    - **Request Body Example**
+
+          ```json
+
+            {
+            "date": "2021-10-15",
+            "millManager": "John Doe",
+            "firstShift": {
+            "shiftManager": "Jane Doe",
+            "materialType": {
+            "starched": "true",
+            "weight": "160"
+            },
+            "materialProduced": "21000",
+            "rawMaterialConsumed": "22000"
+            },
+            "secondShift": {
+            "shiftManager": "Mary Doe",
+            "materialType": {
+            "starched": "false",
+            "weight": "180"
+            },
+            "materialProduced": "21600",
+            "rawMaterialConsumed": "22500"
+            },
+            "thirdShift": {
+            "shiftManager": "Tom Doe",
+            "materialType": {
+            "starched": "false",
+            "weight": "140"
+            },
+            "materialProduced": "22000",
+            "rawMaterialConsumed": "22600"
+            },
+            "coalUsed": "500",
+            "electricityConsumed": "23000",
+            "starchConsumed": "200",
+            "polycationicConsumed": "250",
+            "akdConsumed": "500",
+            "antifoamConsumed": "200",
+            "dispro51Consumed": "233",
+            "timeLost": "2"
+            }
+            ```
+
 - Response format
 - Expected POST body format
 - Examples on how to use each endpoint
