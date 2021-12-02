@@ -67,7 +67,18 @@ Once the application is running in the browser, the user can start creating Prod
 
 The user must fill all the required fields on every page of the form in order to be able to submit.
 
-The fields to fill are: - Mill manager - String - Log date - Date - Coal Used - Number - Electricity consumed - Number - Starch Consumed - Number - Polycationic Consumed - Number - AKD Consumed - Number - Antifoam - Number - Dispro 51 Consumed - Number - Time Lost
+The fields to fill are:
+
+- Mill manager - String
+- Log date - Date
+- Coal Used - Number
+- Electricity consumed - Number
+- Starch Consumed - Number
+- Polycationic Consumed - Number
+- AKD Consumed - Number
+- Antifoam - Number
+- Dispro 51 Consumed - Number
+- Time Lost - Number
 
 - For Each shift (3 shift in total):
   - Shift Manager - String
