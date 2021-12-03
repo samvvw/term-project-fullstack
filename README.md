@@ -2,7 +2,7 @@
 
 ![example workflow](https://github.com/samvvw/term-project-fullstack/actions/workflows/push_workflow.yml/badge.svg)
 
-- Link to project
+![WMDD4936-svillegaswarre00](https://wmdd4936-svillegaswarre00.herokuapp.com/)
 
 ## Brief description of the app
 
