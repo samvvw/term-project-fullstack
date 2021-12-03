@@ -98,48 +98,47 @@ The fields to fill are:
 
     - **Request Body Example**
 
-          ```json
-
-            {
-            "date": "2021-10-15",
-            "millManager": "John Doe",
-            "firstShift": {
-            "shiftManager": "Jane Doe",
-            "materialType": {
+      ```json
+      {
+        "date": "2021-10-15",
+        "millManager": "John Doe",
+        "firstShift": {
+          "shiftManager": "Jane Doe",
+          "materialType": {
             "starched": "true",
             "weight": "160"
-            },
-            "materialProduced": "21000",
-            "rawMaterialConsumed": "22000"
-            },
-            "secondShift": {
-            "shiftManager": "Mary Doe",
-            "materialType": {
+          },
+          "materialProduced": "21000",
+          "rawMaterialConsumed": "22000"
+        },
+        "secondShift": {
+          "shiftManager": "Mary Doe",
+          "materialType": {
             "starched": "false",
             "weight": "180"
-            },
-            "materialProduced": "21600",
-            "rawMaterialConsumed": "22500"
-            },
-            "thirdShift": {
-            "shiftManager": "Tom Doe",
-            "materialType": {
+          },
+          "materialProduced": "21600",
+          "rawMaterialConsumed": "22500"
+        },
+        "thirdShift": {
+          "shiftManager": "Tom Doe",
+          "materialType": {
             "starched": "false",
             "weight": "140"
-            },
-            "materialProduced": "22000",
-            "rawMaterialConsumed": "22600"
-            },
-            "coalUsed": "500",
-            "electricityConsumed": "23000",
-            "starchConsumed": "200",
-            "polycationicConsumed": "250",
-            "akdConsumed": "500",
-            "antifoamConsumed": "200",
-            "dispro51Consumed": "233",
-            "timeLost": "2"
-            }
-            ```
+          },
+          "materialProduced": "22000",
+          "rawMaterialConsumed": "22600"
+        },
+        "coalUsed": "500",
+        "electricityConsumed": "23000",
+        "starchConsumed": "200",
+        "polycationicConsumed": "250",
+        "akdConsumed": "500",
+        "antifoamConsumed": "200",
+        "dispro51Consumed": "233",
+        "timeLost": "2"
+      }
+      ```
 
 - Response format
 - Expected POST body format
