@@ -2,7 +2,7 @@
 
 ![example workflow](https://github.com/samvvw/term-project-fullstack/actions/workflows/push_workflow.yml/badge.svg)
 
-- Link to project
+Live-site: [WMDD4936-svillegaswarre00](https://wmdd4936-svillegaswarre00.herokuapp.com/)
 
 ## Brief description of the app
 
@@ -23,6 +23,9 @@ This app was built using:
 - Eslint - Code lint
 - Prettier - Code format
 - GitHub Actions - Continuous Integration
+
+Besides from the project requirements and what we have learned in class, I focused also on implementing some features a real project would have.
+Like server route testing, react component and snapshot testing, keeping a clean code using Eslint, using a bundle analyzer plugin for webpack, creating dynamically the index.html and injecting automatically the necessary scripts for the project.
 
 ## Instructions on how to install the application
 
@@ -140,6 +143,142 @@ The fields to fill are:
       }
       ```
 
-- Response format
-- Expected POST body format
-- Examples on how to use each endpoint
+    - **Response format**
+
+    ```json
+    {
+      "shiftProduction": {
+        "firstShift": {
+          "materialType": {
+            "starched": true,
+            "weight": 180
+          },
+          "shiftManager": "Arcila",
+          "materialProduced": 19900,
+          "rawMaterialConsumed": 21000,
+          "_id": "6189b4b7bfcc852bf6f10d80",
+          "fiberLoss": 5.238095238095238,
+          "id": "6189b4b7bfcc852bf6f10d80"
+        },
+        "secondShift": {
+          "materialType": {
+            "starched": false,
+            "weight": 160
+          },
+          "shiftManager": "Pepe",
+          "materialProduced": 21900,
+          "rawMaterialConsumed": 22100,
+          "_id": "6189b4b7bfcc852bf6f10d81",
+          "fiberLoss": 0.904977375565611,
+          "id": "6189b4b7bfcc852bf6f10d81"
+        },
+        "thirdShift": {
+          "materialType": {
+            "starched": true,
+            "weight": 140
+          },
+          "shiftManager": "Jose",
+          "materialProduced": 20900,
+          "rawMaterialConsumed": 21100,
+          "_id": "6189b4b7bfcc852bf6f10d82",
+          "fiberLoss": 0.9478672985781991,
+          "id": "6189b4b7bfcc852bf6f10d82"
+        },
+        "totalProduction": 62700,
+        "totalRawMaterial": 64200,
+        "totalFiberLoss": 2.336448598130841
+      },
+      "_id": "6189b4b7bfcc852bf6f10d7f",
+      "date": "2020-09-01T07:00:00.000Z",
+      "millManager": "Jorge",
+      "coalUsed": 3000,
+      "electricityConsumed": 212000,
+      "starchConsumed": 200,
+      "polycationicConsumed": 250,
+      "akdConsumed": 300,
+      "antifoamConsumed": 220,
+      "dispro51Consumed": 222,
+      "timeLost": 4,
+      "createdAt": "2021-11-08T23:37:27.703Z",
+      "updatedAt": "2021-11-08T23:37:27.703Z",
+      "__v": 0,
+      "id": "6189b4b7bfcc852bf6f10d7f"
+    }
+    ```
+
+  - **GET**
+
+    - **Endpoint**
+
+    - '/api/v1/production-log'
+
+    - **Resoponse example**
+
+    ```json
+    [
+      {
+        "shiftProduction": {
+          "firstShift": {
+            "materialType": {
+              "starched": true,
+              "weight": 180
+            },
+            "shiftManager": "Arcila",
+            "materialProduced": 19900,
+            "rawMaterialConsumed": 21000,
+            "_id": "6189b4b7bfcc852bf6f10d80",
+            "fiberLoss": 5.238095238095238,
+            "id": "6189b4b7bfcc852bf6f10d80"
+          },
+          "secondShift": {
+            "materialType": {
+              "starched": false,
+              "weight": 160
+            },
+            "shiftManager": "Pepe",
+            "materialProduced": 21900,
+            "rawMaterialConsumed": 22100,
+            "_id": "6189b4b7bfcc852bf6f10d81",
+            "fiberLoss": 0.904977375565611,
+            "id": "6189b4b7bfcc852bf6f10d81"
+          },
+          "thirdShift": {
+            "materialType": {
+              "starched": true,
+              "weight": 140
+            },
+            "shiftManager": "Jose",
+            "materialProduced": 20900,
+            "rawMaterialConsumed": 21100,
+            "_id": "6189b4b7bfcc852bf6f10d82",
+            "fiberLoss": 0.9478672985781991,
+            "id": "6189b4b7bfcc852bf6f10d82"
+          },
+          "totalProduction": 62700,
+          "totalRawMaterial": 64200,
+          "totalFiberLoss": 2.336448598130841
+        },
+        "_id": "6189b4b7bfcc852bf6f10d7f",
+        "date": "2020-09-01T07:00:00.000Z",
+        "millManager": "Jorge",
+        "coalUsed": 3000,
+        "electricityConsumed": 212000,
+        "starchConsumed": 200,
+        "polycationicConsumed": 250,
+        "akdConsumed": 300,
+        "antifoamConsumed": 220,
+        "dispro51Consumed": 222,
+        "timeLost": 4,
+        "createdAt": "2021-11-08T23:37:27.703Z",
+        "updatedAt": "2021-11-08T23:37:27.703Z",
+        "__v": 0,
+        "id": "6189b4b7bfcc852bf6f10d7f"
+      }
+    ]
+    ```
+
+  - **DELETE**
+
+    - **Endpoint**
+
+    - '/api/v1/production-log/:logId'
